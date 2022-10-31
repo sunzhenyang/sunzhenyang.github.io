@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as _,a as c}from"./app.41291239.js";const n={},o=c("p",null,"Web API \u6559\u7A0B\uFF0C\u63D0\u4F9B\u5404\u79CD\u6D4F\u89C8\u5668 API \u6587\u6863\uFF0C\u6B63\u5728\u5EFA\u8BBE\u4E2D...",-1),s=[o];function a(r,l){return t(),_("div",null,s)}var i=e(n,[["render",a],["__file","index.html.vue"]]);export{i as default};

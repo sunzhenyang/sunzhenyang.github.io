@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as o,a as e,d as _}from"./app.02d2b54f.js";const a={},s=e("p",null,[e("code",null,"gzip"),_("\u547D\u4EE4\u7528\u4E8E\u538B\u7F29\u6587\u4EF6\u3002")],-1),n=[s];function r(l,d){return c(),o("div",null,n)}var p=t(a,[["render",r],["__file","gzip.html.vue"]]);export{p as default};

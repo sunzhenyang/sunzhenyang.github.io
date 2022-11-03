@@ -1,1 +1,0 @@
-import{_ as n,o as t,c as _,a as e}from"./app.02d2b54f.js";const c={},o=e("p",null,[e("img",{src:"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/20200512161232.jpg",alt:"",loading:"lazy"})],-1),a=[o];function s(l,i){return t(),_("div",null,a)}var d=n(c,[["render",s],["__file","07.CSS Function \u6C47\u603B.html.vue"]]);export{d as default};

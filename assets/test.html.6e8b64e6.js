@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as s,a as e,d as c}from"./app.20c50cc3.js";const o={},r=e("h2",{id:"java-test",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#java-test","aria-hidden":"true"},"#"),c(" Java Test")],-1),_=e("p",null,"\u5BFC\u822A\u6D4B\u8BD5",-1),n=[r,_];function d(i,l){return a(),s("div",null,n)}var f=t(o,[["render",d],["__file","test.html.vue"]]);export{f as default};

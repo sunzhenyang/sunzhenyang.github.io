@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a,a as r}from"./app.20c50cc3.js";const s={},c=r("p",null,"star: true \u6536\u85CF timeline: true \u65F6\u95F4\u7EBF sticky \u7F6E\u9876 isOriginal \u539F\u521B",-1),_=[c];function n(o,i){return t(),a("div",null,_)}var m=e(s,[["render",n],["__file","param.html.vue"]]);export{m as default};

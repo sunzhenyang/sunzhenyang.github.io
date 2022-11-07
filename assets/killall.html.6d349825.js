@@ -1,2 +1,0 @@
-import{_ as e,o as l,c as a,e as s}from"./app.05e84ac7.js";const n={},c=s(`<p><code>killall</code>\u547D\u4EE4\u7EC8\u6B62\u7ED9\u5B9A\u540D\u5B57\u7684\u4E00\u7CFB\u5217\u76F8\u5173\u8FDB\u7A0B\u3002</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">killall</span> processname
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),i=[c];function o(t,r){return l(),a("div",null,i)}var _=e(n,[["render",o],["__file","killall.html.vue"]]);export{_ as default};

@@ -1,0 +1,1 @@
+import{_ as o,o as n,c as a,a as e,b as r,w as c,r as s,d as l}from"./app.28262187.js";const _={},d=l("\u5B57\u7B26\u7F16\u7801");function i(u,m){const t=s("RouterLink");return n(),a("div",null,[e("ul",null,[e("li",null,[r(t,{to:"/notes/other/encode.html"},{default:c(()=>[d]),_:1})])])])}var h=o(_,[["render",i],["__file","index.html.vue"]]);export{h as default};

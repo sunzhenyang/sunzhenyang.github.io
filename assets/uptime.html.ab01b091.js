@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as o,a as e,d as _}from"./app.28262187.js";const a={},s=e("p",null,[e("code",null,"uptime"),_("\u547D\u4EE4\u663E\u793A\u672C\u6B21\u5F00\u673A\u8FD0\u884C\u7684\u65F6\u95F4\u3002")],-1),n=[s];function r(l,d){return c(),o("div",null,n)}var u=t(a,[["render",r],["__file","uptime.html.vue"]]);export{u as default};

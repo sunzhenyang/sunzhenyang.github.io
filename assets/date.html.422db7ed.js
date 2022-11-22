@@ -1,2 +1,0 @@
-import{_ as e,o as a,c as s,e as n}from"./app.031bf402.js";const t={},c=n(`<p><code>date</code>\u547D\u4EE4\u663E\u793A\u5F53\u524D\u7684\u65E5\u671F\u548C\u65F6\u95F4\u3002</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">date</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),d=[c];function o(i,r){return a(),s("div",null,d)}var _=e(t,[["render",o],["__file","date.html.vue"]]);export{_ as default};

@@ -1,0 +1,1 @@
+import{_ as e,P as t,Q as n,$ as _}from"./framework-0028f3de.js";const c={},o=_("p",null,"Web API 教程，提供各种浏览器 API 文档，正在建设中...",-1),s=[o];function r(a,l){return t(),n("div",null,s)}const i=e(c,[["render",r],["__file","index.html.vue"]]);export{i as default};

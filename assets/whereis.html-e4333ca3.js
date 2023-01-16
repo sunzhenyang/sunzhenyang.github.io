@@ -1,0 +1,3 @@
+import{_ as e,P as s,Q as n,a2 as a}from"./framework-6c45d443.js";const i={},c=a(`<p><code>whereis</code>用来显示某个命令的位置。如果有多个程序符合条件，会全部列出。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">whereis</span> <span class="token function">node</span>
+/usr/bin/node /usr/sbin/node
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),o=[c];function t(d,r){return s(),n("div",null,o)}const u=e(i,[["render",t],["__file","whereis.html.vue"]]);export{u as default};

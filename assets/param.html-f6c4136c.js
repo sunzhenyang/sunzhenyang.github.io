@@ -1,0 +1,1 @@
+import{_ as e,P as t,Q as r,$ as s}from"./framework-6c45d443.js";const a={},c=s("p",null,"star: true 收藏 timeline: true 时间线 sticky 置顶 isOriginal 原创",-1),n=[c];function _(o,i){return t(),r("div",null,n)}const m=e(a,[["render",_],["__file","param.html.vue"]]);export{m as default};

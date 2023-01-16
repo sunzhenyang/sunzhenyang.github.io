@@ -1,0 +1,1 @@
+import{_ as t,P as c,Q as o,$ as e,a0 as s}from"./framework-6c45d443.js";const _={},n=e("p",null,[e("code",null,"df"),s("命令显示磁盘信息。")],-1),a=[n];function l(r,d){return c(),o("div",null,a)}const i=t(_,[["render",l],["__file","df.html.vue"]]);export{i as default};

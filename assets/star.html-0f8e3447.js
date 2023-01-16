@@ -1,0 +1,1 @@
+import{_ as t,P as a,Q as r,$ as e,a0 as s}from"./framework-6c45d443.js";const c={},o=e("h2",{id:"收藏测试",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#收藏测试","aria-hidden":"true"},"#"),s(" 收藏测试")],-1),n=[o];function _(d,i){return a(),r("div",null,n)}const l=t(c,[["render",_],["__file","star.html.vue"]]);export{l as default};

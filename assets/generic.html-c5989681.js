@@ -1,20 +1,20 @@
 import{_ as s,P as n,Q as a,a2 as e}from"./framework-6c45d443.js";const t={},p=e(`<h2 id="需求分析" tabindex="-1"><a class="header-anchor" href="#需求分析" aria-hidden="true">#</a> 需求分析</h2><p>通常情况下，我们会把后端返回数据格式单独放入一个接口中：</p><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token comment">// 请求接口数据</span>
 <span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">ResponseData<span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> <span class="token builtin">any</span><span class="token operator">&gt;</span></span> <span class="token punctuation">{</span>
-  <span class="token comment">/**
+  <span class="token doc-comment comment">/**
    * 状态码
-   * @type { number }
+   * <span class="token keyword">@type</span> <span class="token punctuation">{</span> number <span class="token punctuation">}</span>
    */</span>
   code<span class="token operator">:</span> <span class="token builtin">number</span>
 
-  <span class="token comment">/**
+  <span class="token doc-comment comment">/**
    * 数据
-   * @type { T }
+   * <span class="token keyword">@type</span> <span class="token punctuation">{</span> T <span class="token punctuation">}</span>
    */</span>
   result<span class="token operator">:</span> <span class="token constant">T</span>
 
-  <span class="token comment">/**
+  <span class="token doc-comment comment">/**
    * 消息
-   * @type { string }
+   * <span class="token keyword">@type</span> <span class="token punctuation">{</span> string <span class="token punctuation">}</span>
    */</span>
   message<span class="token operator">:</span> <span class="token builtin">string</span>
 <span class="token punctuation">}</span>

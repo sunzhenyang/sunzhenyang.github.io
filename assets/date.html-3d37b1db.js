@@ -1,0 +1,2 @@
+import{_ as e,P as a,Q as s,a2 as t}from"./framework-7099b8bf.js";const n={},c=t(`<p><code>date</code>命令显示当前的日期和时间。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">date</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),d=[c];function o(i,l){return a(),s("div",null,d)}const _=e(n,[["render",o],["__file","date.html.vue"]]);export{_ as default};

@@ -1,0 +1,2 @@
+import{_ as e,P as l,Q as a,a2 as s}from"./framework-c9f7520d.js";const n={},c=s(`<p><code>killall</code>命令终止给定名字的一系列相关进程。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">killall</span> processname
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),t=[c];function i(o,d){return l(),a("div",null,t)}const _=e(n,[["render",i],["__file","killall.html.vue"]]);export{_ as default};

@@ -1,1 +1,0 @@
-import{_ as c,P as o,Q as a,$ as e,a1 as t}from"./framework-7099b8bf.js";const n={},l=e("p",null,[e("code",null,"cat"),t("命令用于显示一个文本文件的内容。")],-1),s=e("p",null,[e("code",null,"cat - >> filename"),t("用于向一个现有文件的尾部追加内容。")],-1),_=[l,s];function r(d,i){return o(),a("div",null,_)}const f=c(n,[["render",r],["__file","cat.html.vue"]]);export{f as default};

@@ -1,1 +1,0 @@
-import{_ as e,P as t,Q as c,$ as n}from"./framework-c9f7520d.js";const _={},o=n("p",null,"本教程全面介绍 JavaScript 核心语法，覆盖了 ES5 和 DOM 规范的所有内容。",-1),s=[o];function a(r,l){return t(),c("div",null,s)}const d=e(_,[["render",a],["__file","index.html.vue"]]);export{d as default};

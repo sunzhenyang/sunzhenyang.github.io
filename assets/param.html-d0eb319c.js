@@ -1,0 +1,1 @@
+import{_ as e,Q as t,S as a,a0 as r}from"./framework-ef386a32.js";const s={},c=r("p",null,"star: true 收藏 timeline: true 时间线 sticky 置顶 isOriginal 原创",-1),n=[c];function _(o,i){return t(),a("div",null,n)}const m=e(s,[["render",_],["__file","param.html.vue"]]);export{m as default};

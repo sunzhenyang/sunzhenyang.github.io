@@ -1,0 +1,1 @@
+import{_ as o,Q as n,S as c,$ as a,a0 as e,a1 as t}from"./framework-ef386a32.js";const s={},l=e("p",null,"技术文档",-1),r=e("blockquote",null,[e("p",null,[t("本栏主要收集网络开源技术文档，方便自己学习及检索内容"),e("br"),t("如有侵权，请联系我")])],-1);function _(d,i){return n(),c("div",null,[l,a(" more "),r])}const u=o(s,[["render",_],["__file","index.html.vue"]]);export{u as default};

@@ -1,0 +1,2 @@
+import{_ as s,Q as n,S as t,a0 as e,a2 as a}from"./framework-e3ca42fb.js";const c={},l=e("p",null,[e("code",null,"gzcat"),a("命令用于查看一个"),e("code",null,"gz"),a("文件，但并不实际解压它。")],-1),o=e("div",{class:"language-bash line-numbers-mode","data-ext":"sh"},[e("pre",{class:"language-bash"},[e("code",null,`$ gzcat filename
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),d=[l,o];function r(_,i){return n(),t("div",null,d)}const m=s(c,[["render",r],["__file","gzcat.html.vue"]]);export{m as default};

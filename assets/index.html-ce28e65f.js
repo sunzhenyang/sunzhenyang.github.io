@@ -1,0 +1,1 @@
+import{_ as a,Q as t,S as r,$ as c,a0 as e,a2 as n}from"./framework-e3ca42fb.js";const o={},s=e("h2",{id:"后端开发",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#后端开发","aria-hidden":"true"},"#"),n(" 后端开发")],-1);function d(_,i){return t(),r("div",null,[c(" more "),s])}const h=a(o,[["render",d],["__file","index.html.vue"]]);export{h as default};

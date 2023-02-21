@@ -1,1 +1,0 @@
-import{_ as e,Q as n,S as t,a0 as s}from"./framework-e3ca42fb.js";const _={},c=s("p",null,"Bash 是 Unix 系统和 Linux 系统的一种 Shell（命令行环境），是目前绝大多数 Linux 发行版的默认 Shell。",-1),l=[c];function o(a,i){return n(),t("div",null,l)}const d=e(_,[["render",o],["__file","index.html.vue"]]);export{d as default};

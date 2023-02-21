@@ -1,1 +1,0 @@
-import{_ as e,Q as t,S as n,a0 as _}from"./framework-e3ca42fb.js";const c={},o=_("p",null,"Web API 教程，提供各种浏览器 API 文档，正在建设中...",-1),s=[o];function a(r,l){return t(),n("div",null,s)}const i=e(c,[["render",a],["__file","index.html.vue"]]);export{i as default};

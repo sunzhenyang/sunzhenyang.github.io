@@ -1,1 +1,0 @@
-import{_ as n,Q as c,S as o,a0 as e,a2 as t}from"./framework-e3ca42fb.js";const s={},_=e("p",null,[e("code",null,"gunzip"),t("命令用于解压"),e("code",null,"gzip"),t("命令压缩的文件。")],-1),a=[_];function l(r,i){return c(),o("div",null,a)}const d=n(s,[["render",l],["__file","gunzip.html.vue"]]);export{d as default};

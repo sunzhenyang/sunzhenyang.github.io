@@ -1,0 +1,1 @@
+import{_ as a,Q as t,S as r,$ as c,a0 as e,a1 as s}from"./framework-9339b303.js";const n={},o=e("h2",{id:"javascript-知识点",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#javascript-知识点","aria-hidden":"true"},"#"),s(" JavaScript 知识点")],-1);function d(i,_){return t(),r("div",null,[c(" more "),o])}const h=a(n,[["render",d],["__file","index.html.vue"]]);export{h as default};

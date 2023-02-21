@@ -1,1 +1,0 @@
-import{_ as t,Q as c,S as o,a0 as e,a2 as s}from"./framework-e3ca42fb.js";const _={},a=e("p",null,[e("code",null,"gzip"),s("命令用于压缩文件。")],-1),n=[a];function l(r,i){return c(),o("div",null,n)}const p=t(_,[["render",l],["__file","gzip.html.vue"]]);export{p as default};

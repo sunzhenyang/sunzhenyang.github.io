@@ -1,0 +1,1 @@
+import{_ as a,P as t,Q as r,Z as _,$ as e,a0 as c}from"./framework-f3782457.js";const o={},s=e("h2",{id:"选择结构",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#选择结构","aria-hidden":"true"},"#"),c(" 选择结构")],-1);function n(d,i){return t(),r("div",null,[_(" more "),s])}const h=a(o,[["render",n],["__file","04.选择结构.html.vue"]]);export{h as default};

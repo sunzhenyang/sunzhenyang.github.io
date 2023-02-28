@@ -1,1 +1,0 @@
-import{_ as a,P as t,Q as r,Z as c,$ as e,a0 as o}from"./framework-f3782457.js";const _={},s=e("h2",{id:"二维数组",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#二维数组","aria-hidden":"true"},"#"),o(" 二维数组")],-1);function n(d,i){return t(),r("div",null,[c(" more "),s])}const h=a(_,[["render",n],["__file","二维数组.html.vue"]]);export{h as default};

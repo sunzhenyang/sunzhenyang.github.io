@@ -1,0 +1,1 @@
+import{_ as t,Q as c,S as o,a0 as e,a1 as s}from"./framework-3ab2aaf6.js";const _={},a=e("p",null,[e("code",null,"uptime"),s("命令显示本次开机运行的时间。")],-1),n=[a];function l(r,i){return c(),o("div",null,n)}const d=t(_,[["render",l],["__file","uptime.html.vue"]]);export{d as default};

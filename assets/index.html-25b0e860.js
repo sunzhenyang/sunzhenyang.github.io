@@ -1,0 +1,1 @@
+import{_ as t,Q as n,S as o,$ as c,a0 as e}from"./framework-3ab2aaf6.js";const a={},l=e("blockquote",null,[e("p",null,"Linux 常见问题归纳")],-1);function r(s,_){return n(),o("div",null,[c(" more "),l])}const i=t(a,[["render",r],["__file","index.html.vue"]]);export{i as default};

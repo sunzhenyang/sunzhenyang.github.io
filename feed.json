@@ -176,6 +176,24 @@
       ]
     },
     {
+      "title": "设计模式",
+      "url": "https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html",
+      "id": "https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html",
+      "summary": "设计模式测试页面",
+      "content_html": "<p>设计模式测试页面</p>\n<!-- more -->\n<p>设计模式\n设计模式\n设计模式\n设计模式\n设计模式\n设计模式</p>\n",
+      "date_published": "2023-02-22T00:00:00.000Z",
+      "date_modified": "2023-03-05T14:27:41.000Z",
+      "authors": [
+        {
+          "name": "Yang",
+          "url": "https://codemake.fun/"
+        }
+      ],
+      "tags": [
+        "Java"
+      ]
+    },
+    {
       "title": "pointer-events",
       "url": "https://codemake.fun/fe/css/knowledge/08.pointer-events.html",
       "id": "https://codemake.fun/fe/css/knowledge/08.pointer-events.html",

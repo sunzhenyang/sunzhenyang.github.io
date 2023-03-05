@@ -6,8 +6,8 @@
     <link>https://codemake.fun/</link>
     <description>今日事，今日毕！</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 05 Mar 2023 10:44:07 GMT</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2023 10:44:07 GMT</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2023 14:30:27 GMT</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2023 14:30:27 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Yang</copyright>
@@ -958,6 +958,25 @@
 </ul>
 <h5> instanceof 操作符</h5>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>设计模式</title>
+      <link>https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</link>
+      <guid>https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</guid>
+      <source url="https://codemake.fun/rss.xml">设计模式</source>
+      <description>设计模式测试页面</description>
+      <author>874530670@qq.com (Yang)</author>
+      <category>Java</category>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>设计模式测试页面</p>
+<!-- more -->
+<p>设计模式
+设计模式
+设计模式
+设计模式
+设计模式
+设计模式</p>
+]]></content:encoded>
     </item>
     <item>
       <title>pointer-events</title>

@@ -11,7 +11,7 @@
   <icon>https://codemake.fun/assets/icon/logo.png</icon>
   <logo>https://codemake.fun/avatar.png</logo>
   <rights>Copyright by Yang</rights>
-  <updated>2023-03-05T10:44:07.304Z</updated>
+  <updated>2023-03-05T14:30:27.851Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://codemake.fun/atom.xml"/>
   <link rel="alternate" href="https://codemake.fun/"/>
@@ -1039,6 +1039,36 @@
 </ul>
 <h5> instanceof 操作符</h5>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>Yang</name>
+      <email>874530670@qq.com</email>
+      <uri>https://codemake.fun/</uri>
+    </author>
+    <category term="Java"/>
+    <contributor>
+      <name>Yang</name>
+      <email>874530670@qq.com</email>
+      <uri>https://codemake.fun/</uri>
+    </contributor>
+    <published>2023-02-22T00:00:00.000Z</published>
+    <rights>Copyright by Yang</rights>
+  </entry>
+  <entry>
+    <title type="text">设计模式</title>
+    <id>https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</id>
+    <link href="https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
+    <updated>2023-03-05T14:27:41.000Z</updated>
+    <summary type="html"><![CDATA[<p>设计模式测试页面</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>设计模式测试页面</p>
+<!-- more -->
+<p>设计模式
+设计模式
+设计模式
+设计模式
+设计模式
+设计模式</p>
+]]></content>
     <author>
       <name>Yang</name>
       <email>874530670@qq.com</email>

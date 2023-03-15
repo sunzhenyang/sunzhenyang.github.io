@@ -1,1 +1,0 @@
-import{_ as t,Q as _,S as o,$ as c,a0 as e}from"./framework-3ab2aaf6.js";const n={},s=e("p",null,"设计模式测试页面",-1),a=e("p",null,"设计模式 设计模式 设计模式 设计模式 设计模式 设计模式",-1);function r(l,m){return _(),o("div",null,[s,c(" more "),a])}const f=t(n,[["render",r],["__file","设计模式.html.vue"]]);export{f as default};

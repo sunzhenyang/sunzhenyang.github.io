@@ -1,2 +1,0 @@
-import{_ as e,Q as s,S as a,a3 as n}from"./framework-3ab2aaf6.js";const c={},t=n(`<p><code>lpr</code>命令用于打印文件。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">lpr</span> filename
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),l=[t];function r(o,d){return s(),a("div",null,l)}const _=e(c,[["render",r],["__file","lpr.html.vue"]]);export{_ as default};

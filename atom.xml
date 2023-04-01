@@ -5,23 +5,170 @@
   <subtitle>今日事，今日毕！</subtitle>
   <icon>https://codemake.fun/assets/icon/logo.png</icon>
   <logo>https://codemake.fun/banner.jpeg</logo>
-  <updated>2023-03-30T01:17:40.640Z</updated>
+  <updated>2023-04-01T01:03:04.635Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://codemake.fun/atom.xml"/>
   <link rel="alternate" href="https://codemake.fun/"/>
+  <category term="Java"/>
+  <category term="UML"/>
   <category term="环境配置"/>
   <category term="other"/>
-  <category term="Java"/>
   <category term="JavaScript"/>
   <category term="css"/>
   <category term="CSS"/>
   <category term="plugins"/>
   <entry>
+    <title type="text">枚举</title>
+    <id>https://codemake.fun/notes/java/13.%E6%9E%9A%E4%B8%BE.html</id>
+    <link href="https://codemake.fun/notes/java/13.%E6%9E%9A%E4%B8%BE.html"/>
+    <updated>2023-04-01T00:37:51.000Z</updated>
+    <summary type="text">枚举 是一些常量值的集合，以 enum 关键字定义，可以声明在类的内部，也可以声明到独立的类中，但不能定义在方法内 优点写错单词会有提示，减少代码中的 bug; 语义明了，增加代码可读性; 写法 ```java // WeekDemo.java 定义在类内 public class WeekDemo { enum Week {MONDAY, TU...</summary>
+    <content type="html"><![CDATA[<!-- more -->
+<h2> 枚举</h2>
+<blockquote>
+<p>是一些常量值的集合，以 <code>enum</code> 关键字定义，可以声明在类的内部，也可以声明到独立的类中，但不能定义在方法内</p>
+</blockquote>
+<h3> 优点</h3>
+<ul>
+<li>写错单词会有提示，减少代码中的 bug</li>
+<li>语义明了，增加代码可读性</li>
+</ul>
+<h3> 写法</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Java"/>
+    <published>2023-03-06T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">UML类图</title>
+    <id>https://codemake.fun/notes/other/200.UML%E7%B1%BB%E5%9B%BE.html</id>
+    <link href="https://codemake.fun/notes/other/200.UML%E7%B1%BB%E5%9B%BE.html"/>
+    <updated>2023-03-31T09:28:18.000Z</updated>
+    <summary type="text">UML 类图 UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系; 类的层次结构代表类与类之间的关系，类的关系有很多种...</summary>
+    <content type="html"><![CDATA[<!-- more -->
+<h2> UML 类图</h2>
+<blockquote>
+<p>UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言</p>
+</blockquote>
+<ul>
+<li>
+<p>可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系</p>
+</li>
+<li>
+<p>类的层次结构代表类与类之间的关系，类的关系有很多种，包括泛化、实现、依赖、关联、聚合和组合。</p>
+</li>
+<li>
+<p>在大的类别上还可分为两种：横向关系和纵向关系</p>
+<ul>
+<li>横向关系就是泛化、实现，而纵向关系就是剩下的 4 种，他们的强弱关系：<code>依赖 &lt; 关联 &lt; 聚合 &lt; 组合</code>。</li>
+<li>理解这些类的关系，并应用于类的层次结构设计中，有助于我们更好的进行代码组织结构优化。</li>
+</ul>
+</li>
+</ul>
+<h3> 泛化</h3>
+<blockquote>
+<p>泛化关系就是继承，表示一般与特殊的关系，即 “一般” 是 “特殊” 的泛化</p>
+</blockquote>
+<ul>
+<li>
+<p>在继承中，“一般类” 就是父类，“特殊类” 就是子类。它指定了子类如何特化父类的所有特征和行为。他们之间是 “is A” 的关系。也就是说如果两个类之间满足 “A is a B” 的关系，则 A 就是 B 的子类</p>
+</li>
+<li>
+<p>在 UML 类图设计中，<code>继承用一条空心三角箭头的实线表示，从子类指向父类</code></p>
+</li>
+<li>
+<p>例如：猫类继承自动物类，即：猫是动物的一种，既有猫的特征也有动物的共性的关系。此时，实现由猫类出发，空心箭头指向动物类。</p>
+</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131223646896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3> 实现</h3>
+<blockquote>
+<p>实现和泛化相似，逻辑上也可以通过 “is a” 表示。</p>
+</blockquote>
+<ul>
+<li>
+<p>区别在于，实现关系通常是继承自一个抽象类或接口，表示类是接口或者抽象类所有特征和行为的实现， 而泛化关系通常继承一个具体类。</p>
+</li>
+<li>
+<p>在 UML 类图设计中，<code>实现是用一条带空心三角箭头的虚线表示，从子类指向抽象父类或者接口</code></p>
+</li>
+<li>
+<p>例如：鹦鹉具有飞翔的能力，自然也满足 “鹦鹉 is a 能飞”，即鹦鹉是能飞的这样的关系。此时虚线从鹦鹉类触发，空心箭头指向飞翔</p>
+</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131223646896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3> 依赖</h3>
+<blockquote>
+<p>依赖就是一个类 A 使用到了另一个类 B，即一个类的实现需要另一个类的协助。而这种使用关系是具有临时性的、相对弱的。他们之间是 “use a” 的关系。</p>
+</blockquote>
+<ul>
+<li>
+<p>通常，我们在类 A 中，把类 B 的对象作为方法参数时，方法中使用到了类 B 对象作为局部变量时，提现的就是两者之间的依赖关系。建议<strong>避免双向依赖</strong>。</p>
+</li>
+<li>
+<p>在 UML 类图设计中，<code>依赖用一条带箭头的虚线表示，从类 A 指向依赖的 B 类</code></p>
+</li>
+<li>
+<p>例如：某人需要过河，需要借用一条船，此时，人与船之间的关系就是依赖。即在人类的过河方法中，需要依赖船的对象作为方法的输入参数。此时，肩头有人类出发，指向船。</p>
+</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131224112466.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3> 关联</h3>
+<blockquote>
+<p>关联体现的是两个类之间一种强依赖的关系，这种关系比依赖更强，一般是长期性的，是一种拥有的关系，它使一个类知道另一个类的属性和方法。他们之间能用 “has a” 表示。</p>
+</blockquote>
+<ul>
+<li>
+<p>通常，我们在类 A 中，把类 B 的对象作为类中成员时，体现的就是两者之间的关联关系，</p>
+</li>
+<li>
+<p><strong>关联可以是单向、双向的</strong>。</p>
+</li>
+<li>
+<p>在 UML 类图设计中</p>
+<ul>
+<li><code>双向关联，用一条实现或一条实线 + 两个普通箭头（或实心三角形箭头）表示</code></li>
+<li><code>单项关联，用一条实线 + 一个普通箭头（或实心三角形箭头）表示</code></li>
+<li><strong>无论单向还是双向，箭头均指向被拥有者</strong></li>
+</ul>
+</li>
+</ul>
+<p>例如：老师和学生是双向关联，一个老师会管理多名学生，一名学生也会有多名授课老师。学生和学号质检室单项关联，一个学生只能对应一个唯一的学号</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131224848610.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3> 聚合</h3>
+<blockquote>
+<p>聚合关系是一种强的关联关系，它体现的是整体与部分的关系，而且部分可以离开整体而单独存在，它们可以具有各自的生命周期，部分可以属于多个整体对象，也可以为多个整体对象共享。他们之间也是 “has a” 的关系。</p>
+</blockquote>
+<ul>
+<li>
+<p>关联和聚合在语法上无法区分，必须结合具体的逻辑场景</p>
+</li>
+<li>
+<p>在 UML 类图设计中，<code>聚合关系以空心菱形加实线表示，菱形指向整体</code>。</p>
+</li>
+<li>
+<p>例如：学校有很多老师，老师离开学校还可以正常运行</p>
+</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131225151896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3> 组合</h3>
+<blockquote>
+<p>组合也是部分和整体的关系，但是比聚合关系还要强的关系。此时整体与部分是不可分的，整体的生命周期结束也就意味着部分的生命周期结束，即要求普通的聚合关系中代表整体的对象，负责代表部分的对象的生命周期。它体现的是一种 “contain-a” 的关系</p>
+</blockquote>
+<ul>
+<li>在 UML 类图设计中，<code>组合关系以实心菱形加实线表示，菱形指向整体</code></li>
+<li>例如：公司和部门是整体和部分的关系，没有公司就不存在部门</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131225803263.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content>
+    <category term="UML"/>
+    <published>2023-02-22T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">Node安装与配置</title>
     <id>https://codemake.fun/notes/other/001.Node%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html</id>
     <link href="https://codemake.fun/notes/other/001.Node%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html"/>
     <updated>2023-03-30T01:11:28.000Z</updated>
-    <summary type="text">nvm管理（推荐） nvm 是一个 node 的版本管理工具（全称：node.js version management） 为了解决 node 各种版本不兼容的现象，可以通过它安装和切换不同版本的 node 请确保本地所有 node 版本已卸载 下载 下载地址：【nvm-windows】 (https://github.com/coreybutler/...</summary>
+    <summary type="text">nvm管理（推荐） nvm 是一个 node 的版本管理工具（全称：node.js version management） 为了解决 node 各种版本不兼容的现象，可以通过它安装和切换不同版本的 node ::: danger 请确保本地所有 node 版本已卸载 ::: 下载 下载地址：【nvm-windows】 (https://githu...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> nvm管理（推荐）</h2>
 <blockquote>
@@ -216,7 +363,7 @@
     <id>https://codemake.fun/notes/other/100.encode.html</id>
     <link href="https://codemake.fun/notes/other/100.encode.html"/>
     <updated>2023-03-29T09:12:00.000Z</updated>
-    <summary type="text">码点 某个字符规定对应的数值 码元 Javascript 字符串的 length 属性返回的是 码元 对于 UTF-16 来说，一个码元是 16bit（两个字节）; 对于 UTF-32 来说，一个码元是 32bit（四个字节）; JavaScript 内部，字符以 UTF-16（字符用两个字节或四个字节表示的格式储存）; 码点范围介于 0-65535 ...</summary>
+    <summary type="text">码点 某个字符规定对应的数值 ```javascript // 根据字符获取码点 const str = &amp;apos;a&amp;apos; console.log(str.codePointAt()) // 97 // 根据码点获取字符 console.log(String.fromCodePoint(97)) // a ``` 码元 Javascript 字符串的 len...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 码点</h2>
 <blockquote>
@@ -900,8 +1047,8 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <title type="text">接口</title>
     <id>https://codemake.fun/notes/java/12.%E6%8E%A5%E5%8F%A3.html</id>
     <link href="https://codemake.fun/notes/java/12.%E6%8E%A5%E5%8F%A3.html"/>
-    <updated>2023-03-17T06:41:56.000Z</updated>
-    <summary type="text">解决多重继承问题，但又不会产生致命方块的问题 基本概念 接口定义了某一批类所需要遵守的规范; 接口不能实例化，只能通过引用指向类实例; 接口不关心这些类的内部数据，也不关心这些类里的方法的实现细节，它之规定这些类里必须提供某些方法; 实现类必须实现接口中所有方法，未全部实现则需将类变为抽象类; 可以根据业务需要创建接口包，需设置接口为 public 访...</summary>
+    <updated>2023-04-01T00:37:51.000Z</updated>
+    <summary type="text">解决多重继承问题，但又不会产生致命方块的问题 基本概念接口定义了某一批类所需要遵守的规范; 定义：public interface test(){}; 接口不关心这些类的内部数据，也不关心这些类里的方法的实现细节，它之规定这些类里必须提供某些方法; 实现类必须实现接口中所有方法，未全部实现则需将类变为抽象类; 调用：import 包名.* 或...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>解决多重继承问题，但又不会产生致命方块的问题</p>
@@ -910,9 +1057,9 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <ul>
 <li>
 <p>接口定义了某一批类所需要遵守的规范</p>
-</li>
-<li>
-<p>接口不能实例化，只能通过引用指向类实例</p>
+<ul>
+<li>定义：<code>public interface test(){}</code></li>
+</ul>
 </li>
 <li>
 <p>接口不关心这些类的内部数据，也不关心这些类里的方法的实现细节，它之规定这些类里必须提供某些方法</p>
@@ -921,22 +1068,25 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <p>实现类必须实现接口中所有方法，未全部实现则需将类变为抽象类</p>
 </li>
 <li>
-<p>可以根据业务需要创建接口包，需设置接口为 <code>public</code> 访问权限</p>
-<ul>
-<li>调用：<code>import 包名.*</code> 或 <code>import 包名.接口名</code></li>
-</ul>
+<p>调用：<code>import 包名.*</code> 或 <code>import 包名.接口名</code></p>
 </li>
 <li>
-<p>接口不能直接实例化对象，只能设置接口的引用指向具体的接口实现类。接口的灵活性就在于“规定一个类必须做什么，而不管你如何做”。可以<strong>定义一个接口类型的引用来指向实现接口的类的实例，当这个引用调用方法时，会根据实际引用类的实例来判断具体调用哪个方法，这是一种典型的多态的表现</strong></p>
+<p>接口不能实例化，只能通过引用指向类实例</p>
 </li>
 <li>
-<p>当<strong>接口引用指向实现类时，不能直接调用实现类独有的方法，需要进行强制类型转换才可以调用</strong></p>
+<p>接口的灵活性就在于“规定一个类必须做什么，而不管你如何做”。可以<strong>定义一个接口类型的引用来指向实现接口的类的实例，当这个引用调用方法时，会根据实际引用类的实例来判断具体调用哪个方法，这是一种典型的多态的表现</strong></p>
+</li>
+<li>
+<p><strong>当接口引用指向实现类时，不能直接调用实现类独有的方法，需要进行强制类型转换才可以调用</strong></p>
 </li>
 <li>
 <p>默认方法和静态方法自 JDK1.8 后可以在接口中应用，默认方法可以在实现类中应用，静态方法只属于接口</p>
 </li>
 <li>
-<p>接口访问修饰符</p>
+<p>在一个Java文件中可以存在多个类，多个接口。但是 <strong>只能存在一个public修饰的类或接口</strong>，且此时<strong>文件名需要与public修饰的类或者接口同名</strong></p>
+</li>
+<li>
+<p>接口只能使用两种访问修饰符</p>
 <ul>
 <li><strong>默认访问权限（包内可见）</strong></li>
 <li><code>public</code></li>
@@ -945,33 +1095,38 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <li>
 <p>常量</p>
 <ul>
-<li>默认访问修饰符： <code>public static final</code> ，缺省不影响使用</li>
+<li>默认访问修饰符： <code>public static final</code> ，三个任意一个缺省不影响使用</li>
 <li>接口中定义的常量在定义时必须初始化</li>
-<li>可通过 <code>接口名.常量</code> 访问</li>
+<li>可通过 <code>接口名.常量名</code> 访问</li>
 </ul>
 </li>
 <li>
 <p>抽象方法（成员方法）</p>
 <ul>
-<li>默认访问修饰符：<code>public abstract</code> ，缺省不影响使用</li>
-<li>实现类中实现抽象方法后，可通过接口引用或者实现类引用访问相关方法</li>
+<li>默认访问修饰符：<code>public abstract</code> ，两个任意一个缺省不影响使用</li>
+<li>实现类中实现抽象方法后，可通过 <strong>接口引用</strong> 或者 <strong>实现类引用</strong> 访问相关方法</li>
 </ul>
 </li>
 <li>
 <p>默认方法</p>
 <ul>
 <li>接口中可以使用 <code>default</code> 关键字定义默认方法，子类中不需要实现，可以带方法体</li>
+<li>定义：<strong><code>public default 返回值类型 方法名(参数列表){方法体}</code></strong> （<code>public</code> 为默认访问修饰符，可省略）</li>
+<li>可以在实现类中重写与重载，重写时去掉 <code>default</code> 关键字，重载的方法无法通过接口引用访问
+<ul>
+<li>重写方法后，可以通过 <strong><code>接口名.super.默认方法名()</code></strong> 调用接口中原有的默认方法，不加 <code>super</code> 只能调用接口的静态成员</li>
+</ul>
+</li>
 <li>使用场景：使用接口中的某些方法，而其他一些方法重新实现没有意义</li>
-<li><code>public default 返回值类型 方法名(参数列表){方法体}</code> （<code>public</code> 为默认访问修饰符，可省略）</li>
-<li>使用场景：希望实现类能更多地应用接口中的方法</li>
 </ul>
 </li>
 <li>
 <p>静态方法</p>
 <ul>
 <li>接口中可以使用 <code>static</code> 关键字定义静态方法，可以带方法体</li>
-<li>实现类无法重写静态方法，可以存在相同静态格式，但相互独立</li>
-<li><code>public static 返回值类型 方法名(参数列表){方法体}</code> （<code>public</code> 为默认访问修饰符，可省略）</li>
+<li>实现类中无法继承接口中的静态方法</li>
+<li>不可以在实现类中重写，可以存在相同静态格式，但相互独立</li>
+<li>定义：<strong><code>public static 返回值类型 方法名(参数列表){方法体}</code></strong> （<code>public</code> 为默认访问修饰符，可省略）</li>
 <li>在实现类中需要通过接口名进行访问</li>
 <li>使用场景：希望更多的接口拓展方法支持在无实例对象产生的情况下调用</li>
 </ul>
@@ -980,7 +1135,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <h2> 多接口</h2>
 <ul>
 <li>
-<p>实现类可以通过 <code>implements</code> 实现多个接口，通过逗号分隔，当实现类同事继承父类并实现接口时，需要先继承后实现</p>
+<p>实现类可以通过 <code>implements</code> 实现多个接口，通过 <strong>逗号分隔</strong>，当实现类同事继承父类并实现接口时，需要先继承后实现</p>
 </li>
 <li>
 <p>多个接口中存在相同成员，类同时实现多个接口，子类无法分辨，需要在子类中重新定义</p>
@@ -993,26 +1148,26 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <ul>
 <li>子接口可以通过 <code>extends</code> 继承多个接口，接口之间通过逗号分隔</li>
 <li>多个接口中有重名方法，子接口继承时应重写父接口中的重名方法</li>
-<li>单继承：子接口可继承父接口中定义的常量、抽象方法、默认方法，无法继承静态方法</li>
-<li>多继承：只可继承父接口中定义的抽象方法，常量和默认方法无法分辨</li>
+<li>单继承中：子接口可继承父接口中定义的常量、抽象方法、默认方法，无法继承静态方法</li>
+<li>多继承中：只可继承父接口中定义的抽象方法，常量和默认方法无法分辨</li>
 </ul>
 <h2> 接口与抽象类</h2>
 <ul>
 <li>抽象类通常用来捕捉子类的通用特性，即更加侧重重用</li>
-<li>接口多是为了把程序模块进行固化的契约，即侧重降低耦合，可以理解为 <strong>"更加抽象的抽象类"</strong>，</li>
+<li>接口多是为了把程序模块进行固化的契约，即侧重降低耦合，可以理解为 <strong>更加抽象的抽象类</strong></li>
 <li>当希望描述多种毫无关系的类型之间的共同行为能力，更推荐用接口</li>
-<li>当多类间可以形成可追溯侧产生轨迹，则更对剑抽象类继承</li>
+<li>当多类间可以形成可追溯的产生轨迹，则更推荐抽象类继承</li>
 </ul>
 ]]></content>
     <category term="Java"/>
-    <published>2023-02-22T00:00:00.000Z</published>
+    <published>2023-03-05T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">fileDownload successCallback 不触发</title>
     <id>https://codemake.fun/fe/javascript/question/02.fileDownload%20successCallback%20%E4%B8%8D%E8%A7%A6%E5%8F%91.html</id>
     <link href="https://codemake.fun/fe/javascript/question/02.fileDownload%20successCallback%20%E4%B8%8D%E8%A7%A6%E5%8F%91.html"/>
     <updated>2023-03-17T06:41:56.000Z</updated>
-    <summary type="text">Java代码中需要添加</summary>
+    <summary type="text">Java代码中需要添加 ```java response.setHeader(&amp;quot;Set-Cookie&amp;quot;,&amp;quot;fileDownload=true;path=/&amp;quot;); ```</summary>
     <content type="html"><![CDATA[<!-- more -->
 <br>
 <p><strong>Java代码中需要添加</strong></p>
@@ -1025,7 +1180,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E6%B3%A8%E8%A7%A3.html</id>
     <link href="https://codemake.fun/notes/java/%E6%B3%A8%E8%A7%A3.html"/>
     <updated>2023-03-07T02:17:27.000Z</updated>
-    <summary type="text">说明 可以声明包、类、属性、方法、局部变量、方法参数等的前面 用来对这些元素进行说明、注释 按运行机制分类; 源码注解：只在源码阶段保留，在编译阶段会被丢弃; @Override：标注重写父类方法; 编译时注解：在编译时期保留，在加载 class 文件时会被丢弃; @NotNull：空值检查; 运行时注解：在运行阶段还起作用，甚至会影响运行逻辑的注解;...</summary>
+    <summary type="text">说明 可以声明包、类、属性、方法、局部变量、方法参数等的前面 用来对这些元素进行说明、注释按运行机制分类; 源码注解：只在源码阶段保留，在编译阶段会被丢弃; @Override：标注重写父类方法; 编译时注解：在编译时期保留，在加载 class 文件时会被丢弃; @NotNull：空值检查; 运行时注解：在运行阶段还起作用，甚至会影响运...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 说明</h2>
 <blockquote>
@@ -1076,7 +1231,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/999.%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5.html</id>
     <link href="https://codemake.fun/notes/java/999.%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5.html"/>
     <updated>2023-03-01T09:26:45.000Z</updated>
-    <summary type="text">Scanner 接收控制台输入内容 接收数据 方法 -------------- -------------------- int 类型 nextInt() long 类型 nextLong() float 类型 nextFloat() double 类型 nextDouble() String 类型 next() boolean 类型 nextBoo...</summary>
+    <summary type="text">Scanner 接收控制台输入内容 接收数据 方法 | -------------- -------------------- | int 类型 nextInt() | long 类型 nextLong() | float 类型 nextFloat() | double 类型 nextDouble() | String 类型 next() | boo...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> Scanner</h2>
 <blockquote>
@@ -1130,7 +1285,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/04.%E8%BF%90%E7%AE%97%E7%AC%A6.html</id>
     <link href="https://codemake.fun/notes/java/04.%E8%BF%90%E7%AE%97%E7%AC%A6.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">表达式由运算符和操作数组成; 按操作数个数运算符可分为：单目运算符、双目运算符、三目运算符; 分类 算术运算符： + - * / %（取余） ++（自增） --（自减）; 除法运算时，当分子分母都是整型时，结果为整除后的结果（舍弃小数点后的）。如果需要保留小数点后的内容，则需要分子或分母必须有一个为浮点型; 赋值运算符： = ; 复合赋值运算符：+= ...</summary>
+    <summary type="text">表达式由运算符和操作数组成; 按操作数个数运算符可分为：单目运算符、双目运算符、三目运算符; 分类算术运算符： + - * / %（取余） ++（自增） --（自减）; 除法运算时，当分子分母都是整型时，结果为整除后的结果（舍弃小数点后的）。如果需要保留小数点后的内容，则需要分子或分母必须有一个为浮点型; 赋值运算符： = ; 复合赋值运算符...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>表达式由运算符和操作数组成</li>
@@ -1227,7 +1382,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/05.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.html</id>
     <link href="https://codemake.fun/notes/java/05.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">选择结构 循环结构 break ：跳出当前循环或 switch 结构; continue：跳出本次循环; while 适用于不知道循环次数，只知道满足某个条件继续执行或结束执行时使用 循环变量必须先初始化; 循环变量的值必须被改变（否则会死循环）; switch 用于匹配的表达式计算结果只能是 byte、short、int、char、String 中的一种</summary>
+    <summary type="text">选择结构 ```java if(){} if(){} else{} if(){} else if(){} else if(){} else{} ``` 循环结构break ：跳出当前循环或 switch 结构; continue：跳出本次循环; while 适用于不知道循环次数，只知道满足某个条件继续执行或结束执行时使用 循环变量必须先初始化;...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 选择结构</h2>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 循环结构</h2>
@@ -1272,7 +1427,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/06.%E6%95%B0%E7%BB%84.html</id>
     <link href="https://codemake.fun/notes/java/06.%E6%95%B0%E7%BB%84.html"/>
     <updated>2023-02-28T09:11:56.000Z</updated>
-    <summary type="text">相同类型 的数据按顺序组成的一种 引用数据类型 声明 两种声明方式均可 创建 创建时，长度必须指定; 会在内存中开辟连续的存储空间; 数组名是一个对象，指向数组的第一个元素; 先声明后创建 声明时创建 初始化 声明的同时给数组赋值 使用 默认值 数据类型 说明 *默认值* -------- ------------ -------- byte 字节型 ...</summary>
+    <summary type="text">相同类型 的数据按顺序组成的一种 引用数据类型 声明 两种声明方式均可 ```java // 数据类型[] 数组名 int[] myIntArray; // 数据类型 数组名[] int myIntArray[]; // 二维数组声明 int[][] intArray; int intArray[][]; int[] intArray[]; ``` ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p><code>相同类型</code> 的数据按顺序组成的一种 <code>引用数据类型</code></p>
@@ -1364,7 +1519,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/07.%E6%96%B9%E6%B3%95.html</id>
     <link href="https://codemake.fun/notes/java/07.%E6%96%B9%E6%B3%95.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">方法是用来解决一类问题的代码的有序组合，是一个功能模块 语法格式：访问修饰符 返回类型 方法名(参数列表){ 方法体 }; main：特殊的方法，程序执行的入口; 访问修饰符 方法允许被访问的权限范围，分类如下，详细描述在 面向对象 - 封装 笔记文件里 不写修饰符; public：公开的; protected：受保护的; private：私有的; 分...</summary>
+    <summary type="text">方法是用来解决一类问题的代码的有序组合，是一个功能模块语法格式：访问修饰符 返回类型 方法名(参数列表){ 方法体 }; main：特殊的方法，程序执行的入口; 访问修饰符 方法允许被访问的权限范围，分类如下，详细描述在 面向对象 - 封装 笔记文件里不写修饰符; public：公开的; protected：受保护的; private：私...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>方法是用来解决一类问题的代码的有序组合，是一个功能模块</p>
@@ -1432,8 +1587,8 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <title type="text">面向对象</title>
     <id>https://codemake.fun/notes/java/08.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html</id>
     <link href="https://codemake.fun/notes/java/08.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html"/>
-    <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">类和对象 类是模子，确定对象将会拥有的特征（属性）和行为（方法），是对象的类型; 对象是类的实例表现，是特定类型的数据，声明对象在 栈 中，实例化对象在 堆 中; 一个 Java 文件中可以存在多个类，多个接口，但是只能存在一个 public 修饰的类或接口，且此时文件名需要与 public 修饰的类或者接口同名; 包 命名规范 由英文小写字母组成; ...</summary>
+    <updated>2023-04-01T00:37:51.000Z</updated>
+    <summary type="text">类和对象类是模子，确定对象将会拥有的特征（属性）和行为（方法），是对象的类型; 对象是类的实例表现，是特定类型的数据，声明对象在 栈 中，实例化对象在 堆 中; 一个 Java 文件中可以存在多个类，多个接口，但是只能存在一个 public 修饰的类或接口，且此时文件名需要与 public 修饰的类或者接口同名; 包 命名规范由英文小写字母组成...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 类和对象</h2>
 <ul>
@@ -1675,7 +1830,91 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
 <p>不能使用 <code>static</code>、<code>final</code>、<code>private</code> 修饰</p>
 </li>
 </ul>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 基本原则（SOLID）</h2>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 内部类</h2>
+<blockquote>
+<p>在 Java 中，可以将一个类定义在另一个类里面或者一个方法里面，这样的类称为内部类。与之对应，包含内部类的类被称为外部类</p>
+</blockquote>
+<p>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类，更好的实现了信息隐藏</p>
+<h3> 成员内部类</h3>
+<ul>
+<li>内部类中最常见的就是成员内部类，定义在类内部，可以看成是外部类的一个成员，也称为普通内部类</li>
+<li>在成员内部类中 <strong>无法声明静态成员</strong></li>
+<li>内部类在外部使用时，无法直接实例化，需要借由外部类信息才能完成实例化</li>
+<li>内部类的访问修饰符可以任意，但是访问范围会受到影响</li>
+<li>内部类可以直接访问外部类的成员，如果出现同名属性，优先访问内部类中定义的</li>
+<li>可以在内部类中使用 <strong><code>外部类名.this.成员</code></strong> 的方式，访问外部类中的同名信息</li>
+<li>外部类访问内部类信息，需要通过内部类实例，无法直接访问</li>
+<li>内部类编译后 <strong><code>.class</code></strong> 文件命名：<strong><code>外部类名$内部类名.class</code></strong></li>
+<li>应用场景：当两个类（A，B）彼此之间需要相互访问，且对其中某一类的应用限制较高（譬如B只在A的某种特定应用时才需要），可以将B设置为A的成员内部类</li>
+</ul>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 静态内部类</h3>
+<ul>
+<li>内部类加上 <code>static</code> 修饰符，也称为嵌套内部类，它无需依赖外部类的实例</li>
+<li>静态内部类中，只能直接访问外部类的静态成员，如果需要调用外部非静态成员，可以通过外部对象实例</li>
+<li>可以通过 <code>外部类.内部类.静态成员</code> 的方式，访问内部类中的静态成员</li>
+<li>当内部类属性与外部类属性同名时，默认直接调用内部类中的成员</li>
+<li>如果需要访问外部类中的静态属性，可以通过 <strong><code>外部类.属性</code></strong> 的方式</li>
+<li>如果需要访问外部类中的非静态属性，可以通过 <strong><code>new 外部类().属性</code></strong> 的方式</li>
+<li>使用场景：当类 A 需要使用类 B，而 B 并不需要直接访问外部类 A 的成员变量和方法时，可以将 B 作为 A 的静态内部类</li>
+</ul>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 方法内部类</h3>
+<ul>
+<li>定义在外部类方法中的类，作用范围在方法内，也称局部内部类</li>
+<li>方法内部类中 <strong>不能定义静态成员</strong></li>
+<li>和方法内部成员使用规则一样，不能使用 <code>public</code>、<code>protected</code>、<code>private</code> 修饰</li>
+<li>方法内部类中可以包含 <code>final</code>、<code>abstract</code> 修饰的成员，但不推荐</li>
+<li>类中普通方法如需访问外部方法中的局部变量，则该变量也需定义为final（jdk1.8之后底层默认会给该变量加上final）</li>
+<li>内部类编译后 <code>.class</code> 文件命名：<code>外部类+$数字+内部类.class</code></li>
+<li>应用场景：由于类对象只能在当前方法或者代码块中创建、使用，相当于一次性产品，使用场景比较少</li>
+</ul>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 匿名内部类</h3>
+<ul>
+<li>
+<p>将类的定义与类的创建放到一起完成 <code>new Person(){ ... }</code></p>
+</li>
+<li>
+<p>没有类名，没有 <code>class</code> 关键字，也无法产生具体类实例对象名</p>
+</li>
+<li>
+<p>必须继承或实现一个接口，指定给 new 的类型为匿名类的父类或父接口，但不能有显示的 <code>extends</code> 或 <code>implements</code> 子句</p>
+</li>
+<li>
+<p>编译后的文件命名：<code>外部类$数字.class</code></p>
+</li>
+<li>
+<p>无法在类型名称前添加修饰符 <code>public protected private abstract static</code></p>
+</li>
+<li>
+<p>不能出现构造方法、静态成员、抽象方法，可添加构造代码块</p>
+</li>
+<li>
+<p>匿名内部类可以实现接口也可以继承父类，但是不可兼得</p>
+</li>
+<li>
+<p>适用场景：多可用于作为方法参数或者返回值，然后根据不同类型，无需产生具体类和对象名，返回不同的实现即可。</p>
+</li>
+</ul>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 问答</h3>
+<blockquote>
+<p>问：方法内部类中为什么不能有静态成员？</p>
+</blockquote>
+<p>答：由于 static 类型的属性和方法，在类加载的时候就会存在于内存中。因此要想使用某个类的static属性和方法，那么这个类必须要先加载到虚拟机中。但是，普通的方法内部类并不会随外部类一起加载，只有在实例化外部类之后才会加载。因此，如果在外部类并没有实例化，内部类还没有加载的时候，直接调用内部类的静态成员或方法，这明显是矛盾的。所以普通的方法内部类不能有静态成员变量或静态方法。</p>
+<br>
+<blockquote>
+<p>问：为什么方法中返回值是 Object，返回的是方法调用还不报错？</p>
+</blockquote>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>答：这里并不是返回方法调用，而是返回内部类Heart对象的beat方法的返回结果，整个方法最后一句的执行顺序是：1、通过 new 实例化内部类对象。 2、调用其 beat 方法。3、将 beat 方法返回值通过 return 带回，也就是此时的 Object 返回值，此处，也因为 Object 是 Java 中的根类，基于向上转型的原则，可以返回具体的子类String 类型的对象</p>
+<br>
+<blockquote>
+<p>什么是方法签名？</p>
+</blockquote>
+<p>答：在 Java 中，方法签名着重指代：方法名和参数列表（包括：参数的类型、个数以及顺序）</p>
+<br>
+<blockquote>
+<p>接口和抽象类不能直接实例化，为什么下面代码可以这么写？</p>
+</blockquote>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>答：此处并不是实例化 Person，可以理解为是创建了一个没有名字的 Person 类型的子类对象，如下面代码与上面的功能是一致的</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 基本原则（SOLID）</h2>
 <h3> 单一职责原则（SRP）</h3>
 <blockquote>
 <p>一个类应该只有一个发生变化的原因</p>
@@ -1694,7 +1933,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/09.%E5%B0%81%E8%A3%85.html</id>
     <link href="https://codemake.fun/notes/java/09.%E5%B0%81%E8%A3%85.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">将类的某些信息隐藏在类内部，不允许外部程序直接访问 特点 隐藏对象的信息，留出访问的接口，只能通过规定的方法访问和操作数据; 隐藏类的实例细节，方便修改和实现; 访问修饰符 private：私有的，只允许在本类中进行访问; 默认：允许在当前类、同包子类/同包非子类访问，跨包子类/跨包非子类不允许访问; protected：受保护的， 允许在本类、同包子...</summary>
+    <summary type="text">将类的某些信息隐藏在类内部，不允许外部程序直接访问 特点隐藏对象的信息，留出访问的接口，只能通过规定的方法访问和操作数据; 隐藏类的实例细节，方便修改和实现; 访问修饰符private：私有的，只允许在本类中进行访问; 默认：允许在当前类、同包子类/同包非子类访问，跨包子类/跨包非子类不允许访问; protected：受保护的， 允许在本类、...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>将类的某些信息隐藏在类内部，不允许外部程序直接访问</p>
@@ -1773,7 +2012,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/10.%E7%BB%A7%E6%89%BF.html</id>
     <link href="https://codemake.fun/notes/java/10.%E7%BB%A7%E6%89%BF.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但不能选择性的继承父类 子类会继承父类所有 public 类型的实例变量和方法，但不会继承父类所有的 private 类型变量和方法; 初始化顺序 父类静态成员 &amp;gt; 子类静态成员 &amp;gt; 父类对象构造 &amp;gt; 子类对象构...</summary>
+    <summary type="text">一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但不能选择性的继承父类子类会继承父类所有 public 类型的实例变量和方法，但不会继承父类所有的 private 类型变量和方法; 初始化顺序父类静态成员 &amp;gt; 子类静态成员 &amp;gt; 父类对象构造 &amp;gt; 子类对象构...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但<strong>不能选择性的继承父类</strong></p>
@@ -1901,7 +2140,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/11.%E5%A4%9A%E6%80%81.html</id>
     <link href="https://codemake.fun/notes/java/11.%E5%A4%9A%E6%80%81.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">多态：允许不同类的对象对同一消息做出不同的响应 可以借由向上转型和动态绑定机制完成; 向上转型实现了将子类对象向上转型为父类类型; 动态绑定机制能识别出对象转型前的类型，从而自动调用该类的方法; 分类 编译时多态：又称设计时多态，通过方法重载实现; 运行时多态：程序运行时动态决定调用哪个方法，Java 中指的多态一般指的就是运行时多态; 必要条件 满足...</summary>
+    <summary type="text">多态：允许不同类的对象对同一消息做出不同的响应可以借由向上转型和动态绑定机制完成; 向上转型实现了将子类对象向上转型为父类类型; 动态绑定机制能识别出对象转型前的类型，从而自动调用该类的方法; 分类编译时多态：又称设计时多态，通过方法重载实现; 运行时多态：程序运行时动态决定调用哪个方法，Java 中指的多态一般指的就是运行时多态; 必要条件...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>多态：允许不同类的对象对同一消息做出不同的响应</p>
@@ -1969,7 +2208,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-03-07T02:17:27.000Z</updated>
-    <summary type="text">设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结 创建型模式 关注对象创建过程的模式 单例模式 目的：使得类的一个对象成为该类系统中的唯一实例 定义：一个类有且仅有一个实例，并且自行实例化向整个系统提供 要点 某个类只能有一个实例; 必须自行创建实例; 必须自行向整个系统提供这个实例; 实现 只提供私有的构造方法; 含有一个...</summary>
+    <summary type="text">设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结 创建型模式 关注对象创建过程的模式 单例模式 目的：使得类的一个对象成为该类系统中的唯一实例 定义：一个类有且仅有一个实例，并且自行实例化向整个系统提供 要点某个类只能有一个实例; 必须自行创建实例; 必须自行向整个系统提供这个实例; 实现只提供私有的构造方法;...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结</p>
@@ -2059,7 +2298,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/css/knowledge/08.pointer-events.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/08.pointer-events.html"/>
     <updated>2023-02-26T13:11:37.000Z</updated>
-    <summary type="text">【文档地址】 (https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events) 【参考文章】 (https://juejin.cn/post/7171765872900440078) 常用值 值 描述 ------ ------------------------------------...</summary>
+    <summary type="text">【文档地址】 (https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events) 【参考文章】 (https://juejin.cn/post/7171765872900440078) 常用值 值 描述 | ------ ----------------------------------...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events" target="_blank" rel="noopener noreferrer">【文档地址】</a> <a href="https://juejin.cn/post/7171765872900440078" target="_blank" rel="noopener noreferrer">【参考文章】</a></p>
@@ -2103,7 +2342,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/02.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/notes/java/02.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">分类 基本数据类型; 数值型; 整数类型; byte：字节型; short：短整型; int：整型; long：长整型，以大写的或小写的（L/l）结尾，未加 L 被视为 int; 浮点类型; float：单精度浮点型，以大写的或小写的（F/f）结尾; double：双精度浮点型，浮点型字面值默认为 double 类型; 字符型(char); 布尔型(b...</summary>
+    <summary type="text">分类 基本数据类型; 数值型; 整数类型; byte：字节型; short：短整型; int：整型; long：长整型，以大写的或小写的（L/l）结尾，未加 L 被视为 int; 浮点类型; float：单精度浮点型，以大写的或小写的（F/f）结尾; double：双精度浮点型，浮点型字面值默认为 double 类型; 字符型(ch...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 分类</h2>
 <figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210317115821602.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
@@ -2310,7 +2549,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/03.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F.html</id>
     <link href="https://codemake.fun/notes/java/03.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F.html"/>
     <updated>2023-03-15T02:18:59.000Z</updated>
-    <summary type="text">标识符 命名规则 可以由字母、数字、下划线和美元符($)组成; 不能以数字开头; 严格区分大小写; 不能是 Java 关键字和保留字（ goto、const ）; 不能包含空格; 命名最好有意义，能反映出其作用; 关键字 abstract boolean break byte case catch --------- --------- -------...</summary>
+    <summary type="text">标识符 命名规则可以由字母、数字、下划线和美元符($)组成; 不能以数字开头; 严格区分大小写; 不能是 Java 关键字和保留字（ goto、const ）; 不能包含空格; 命名最好有意义，能反映出其作用; 关键字 abstract boolean break byte case catch | --------- --------- ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 标识符</h2>
 <h3> 命名规则</h3>
@@ -2425,7 +2664,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">JDK8 开始支持，用来让程序编写更优雅; 可以简洁的实现匿名内部类与函数声明与调用; 基于 Lambda 提供的 stream 流式处理极大简化对集合的操作; 语法格式 (参数列表) -&amp;gt; 实现语句 参数列表使用逗号分隔参数; 参数类型可省略; 单参数括号可省略; -&amp;gt;：Lambda 表达式操作符; 实现语句单行直接写，多行用 {} 包裹; 函数式编...</summary>
+    <summary type="text">JDK8 开始支持，用来让程序编写更优雅; 可以简洁的实现匿名内部类与函数声明与调用; 基于 Lambda 提供的 stream 流式处理极大简化对集合的操作; 语法格式 (参数列表) -&amp;gt; 实现语句参数列表使用逗号分隔参数; 参数类型可省略; 单参数括号可省略; -&amp;gt;：Lambda 表达式操作符; 实现语句单行直接写，多行用 {} 包...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>JDK8 开始支持，用来让程序编写更优雅</li>
@@ -2528,7 +2767,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/Math.html</id>
     <link href="https://codemake.fun/notes/java/Math.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">Math Math.random() 返回介于 0 ~ 1.0 之间的双精度浮点值 Math.abs() 返回双精度浮点数类型参数的绝对值，这个方法有覆盖的版本，因此传入整型会返回整型，传入双精度浮点数会返回双精度浮点数 Math.round() 根据参数是浮点型或双精度浮点数返回四舍五入之后的整形或长整型 Math.min() 返回两参数中较小的那一...</summary>
+    <summary type="text">Math Math.random() 返回介于 0 ~ 1.0 之间的双精度浮点值 Math.abs() 返回双精度浮点数类型参数的绝对值，这个方法有覆盖的版本，因此传入整型会返回整型，传入双精度浮点数会返回双精度浮点数 Math.round() 根据参数是浮点型或双精度浮点数返回四舍五入之后的整形或长整型 Math.min() 返回两参数中较...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> Math</h2>
 <h3> Math.random()</h3>
@@ -2556,136 +2795,11 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <published>2023-02-22T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">UML类图</title>
-    <id>https://codemake.fun/notes/java/UML%E7%B1%BB%E5%9B%BE.html</id>
-    <link href="https://codemake.fun/notes/java/UML%E7%B1%BB%E5%9B%BE.html"/>
-    <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">UML 类图 UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言 可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系; 类的层次结构代表类与类之间的关系，类的关系有很多种，包...</summary>
-    <content type="html"><![CDATA[<!-- more -->
-<h2> UML 类图</h2>
-<blockquote>
-<p>UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言</p>
-</blockquote>
-<ul>
-<li>
-<p>可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系</p>
-</li>
-<li>
-<p>类的层次结构代表类与类之间的关系，类的关系有很多种，包括泛化、实现、依赖、关联、聚合和组合。</p>
-</li>
-<li>
-<p>在大的类别上还可分为两种：横向关系和纵向关系</p>
-<ul>
-<li>横向关系就是泛化、实现，而纵向关系就是剩下的 4 种，他们的强弱关系：<code>依赖 &lt; 关联 &lt; 聚合 &lt; 组合</code>。</li>
-<li>理解这些类的关系，并应用于类的层次结构设计中，有助于我们更好的进行代码组织结构优化。</li>
-</ul>
-</li>
-</ul>
-<h3> 泛化</h3>
-<blockquote>
-<p>泛化关系就是继承，表示一般与特殊的关系，即 “一般” 是 “特殊” 的泛化</p>
-</blockquote>
-<ul>
-<li>
-<p>在继承中，“一般类” 就是父类，“特殊类” 就是子类。它指定了子类如何特化父类的所有特征和行为。他们之间是 “is A” 的关系。也就是说如果两个类之间满足 “A is a B” 的关系，则 A 就是 B 的子类</p>
-</li>
-<li>
-<p>在 UML 类图设计中，<code>继承用一条空心三角箭头的实线表示，从子类指向父类</code></p>
-</li>
-<li>
-<p>例如：猫类继承自动物类，即：猫是动物的一种，既有猫的特征也有动物的共性的关系。此时，实现由猫类出发，空心箭头指向动物类。</p>
-</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131223646896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h3> 实现</h3>
-<blockquote>
-<p>实现和泛化相似，逻辑上也可以通过 “is a” 表示。</p>
-</blockquote>
-<ul>
-<li>
-<p>区别在于，实现关系通常是继承自一个抽象类或接口，表示类是接口或者抽象类所有特征和行为的实现， 而泛化关系通常继承一个具体类。</p>
-</li>
-<li>
-<p>在 UML 类图设计中，<code>实现是用一条带空心三角箭头的虚线表示，从子类指向抽象父类或者接口</code></p>
-</li>
-<li>
-<p>例如：鹦鹉具有飞翔的能力，自然也满足 “鹦鹉 is a 能飞”，即鹦鹉是能飞的这样的关系。此时虚线从鹦鹉类触发，空心箭头指向飞翔</p>
-</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131223646896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h3> 依赖</h3>
-<blockquote>
-<p>依赖就是一个类 A 使用到了另一个类 B，即一个类的实现需要另一个类的协助。而这种使用关系是具有临时性的、相对弱的。他们之间是 “use a” 的关系。</p>
-</blockquote>
-<ul>
-<li>
-<p>通常，我们在类 A 中，把类 B 的对象作为方法参数时，方法中使用到了类 B 对象作为局部变量时，提现的就是两者之间的依赖关系。建议<strong>避免双向依赖</strong>。</p>
-</li>
-<li>
-<p>在 UML 类图设计中，<code>依赖用一条带箭头的虚线表示，从类 A 指向依赖的 B 类</code></p>
-</li>
-<li>
-<p>例如：某人需要过河，需要借用一条船，此时，人与船之间的关系就是依赖。即在人类的过河方法中，需要依赖船的对象作为方法的输入参数。此时，肩头有人类出发，指向船。</p>
-</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131224112466.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h3> 关联</h3>
-<blockquote>
-<p>关联体现的是两个类之间一种强依赖的关系，这种关系比依赖更强，一般是长期性的，是一种拥有的关系，它使一个类知道另一个类的属性和方法。他们之间能用 “has a” 表示。</p>
-</blockquote>
-<ul>
-<li>
-<p>通常，我们在类 A 中，把类 B 的对象作为类中成员时，体现的就是两者之间的关联关系，</p>
-</li>
-<li>
-<p><strong>关联可以是单向、双向的</strong>。</p>
-</li>
-<li>
-<p>在 UML 类图设计中</p>
-<ul>
-<li><code>双向关联，用一条实现或一条实线 + 两个普通箭头（或实心三角形箭头）表示</code></li>
-<li><code>单项关联，用一条实线 + 一个普通箭头（或实心三角形箭头）表示</code></li>
-<li><strong>无论单向还是双向，箭头均指向被拥有者</strong></li>
-</ul>
-</li>
-</ul>
-<p>例如：老师和学生是双向关联，一个老师会管理多名学生，一名学生也会有多名授课老师。学生和学号质检室单项关联，一个学生只能对应一个唯一的学号</p>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131224848610.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h3> 聚合</h3>
-<blockquote>
-<p>聚合关系是一种强的关联关系，它体现的是整体与部分的关系，而且部分可以离开整体而单独存在，它们可以具有各自的生命周期，部分可以属于多个整体对象，也可以为多个整体对象共享。他们之间也是 “has a” 的关系。</p>
-</blockquote>
-<ul>
-<li>
-<p>关联和聚合在语法上无法区分，必须结合具体的逻辑场景</p>
-</li>
-<li>
-<p>在 UML 类图设计中，<code>聚合关系以空心菱形加实线表示，菱形指向整体</code>。</p>
-</li>
-<li>
-<p>例如：学校有很多老师，老师离开学校还可以正常运行</p>
-</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131225151896.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h3> 组合</h3>
-<blockquote>
-<p>组合也是部分和整体的关系，但是比聚合关系还要强的关系。此时整体与部分是不可分的，整体的生命周期结束也就意味着部分的生命周期结束，即要求普通的聚合关系中代表整体的对象，负责代表部分的对象的生命周期。它体现的是一种 “contain-a” 的关系</p>
-</blockquote>
-<ul>
-<li>在 UML 类图设计中，<code>组合关系以实心菱形加实线表示，菱形指向整体</code></li>
-<li>例如：公司和部门是整体和部分的关系，没有公司就不存在部门</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210131225803263.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-]]></content>
-    <category term="Java"/>
-    <published>2023-02-22T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">MD5</title>
     <id>https://codemake.fun/notes/java/md5.html</id>
     <link href="https://codemake.fun/notes/java/md5.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">MD5 Commons-Codec 是 Apache 提供的编码/解码组件; 通过 Commons-Codec 可轻易生产源数据的 MD5 摘要; 官网：https://commons.apache.org/proper/commons-codec/; MD5 摘要方法：String md5 = DigestUtils.md5Hex(源数据);</summary>
+    <summary type="text">MD5Commons-Codec 是 Apache 提供的编码/解码组件; 通过 Commons-Codec 可轻易生产源数据的 MD5 摘要; 官网：https://commons.apache.org/proper/commons-codec/; MD5 摘要方法：String md5 = DigestUtils.md5Hex(源数据); ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> MD5</h2>
 <ul>
@@ -2703,7 +2817,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.html</id>
     <link href="https://codemake.fun/notes/java/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.html"/>
     <updated>2023-03-01T09:26:45.000Z</updated>
-    <summary type="text">内存管理 堆栈 栈 每个方法（Method）在执行时，都会创建一个栈帧，用于存储局部变量表、操作数、动态链接、方法出口信息等 栈中所存储，多用于保存局部信息的值，比如：方法中的基本数据类型定义的变量、对象的引用（也称为对象实例）等。当局部作用范围结束时，站内信息立即自动释放。; 当存储内容是由基本数据类型（byte、short、long、double、...</summary>
+    <summary type="text">内存管理 堆栈 栈 每个方法（Method）在执行时，都会创建一个栈帧，用于存储局部变量表、操作数、动态链接、方法出口信息等栈中所存储，多用于保存局部信息的值，比如：方法中的基本数据类型定义的变量、对象的引用（也称为对象实例）等。当局部作用范围结束时，站内信息立即自动释放。; 当存储内容是由基本数据类型（byte、short、long、doubl...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 内存管理</h2>
 <h3> 堆栈</h3>
@@ -2737,91 +2851,8 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <title type="text">内部类</title>
     <id>https://codemake.fun/notes/java/%E5%86%85%E9%83%A8%E7%B1%BB.html</id>
     <link href="https://codemake.fun/notes/java/%E5%86%85%E9%83%A8%E7%B1%BB.html"/>
-    <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">内部类 在 Java 中，可以将一个类定义在另一个类里面或者一个方法里面，这样的类称为内部类; 与之对应，包含内部类的类被称为外部类; 成员内部类 内部类中最常见的就是成员内部类，也称为普通内部类; 内部类在外部使用时，无法直接实例化，需要借由外部类信息才能完成实例化; 内部类的访问修饰符可以任意，但是访问范围会受到影响; 内部类可以直接访问外部类的成...</summary>
+    <updated>2023-03-31T09:28:18.000Z</updated>
     <content type="html"><![CDATA[<!-- more -->
-<h3> 内部类</h3>
-<ul>
-<li>
-<p>在 Java 中，可以将一个类定义在另一个类里面或者一个方法里面，这样的类称为内部类</p>
-</li>
-<li>
-<p>与之对应，包含内部类的类被称为外部类</p>
-</li>
-</ul>
-<h4> 成员内部类</h4>
-<ul>
-<li>
-<p>内部类中最常见的就是成员内部类，也称为普通内部类</p>
-</li>
-<li>
-<p>内部类在外部使用时，无法直接实例化，需要借由外部类信息才能完成实例化</p>
-</li>
-<li>
-<p>内部类的访问修饰符可以任意，但是访问范围会受到影响</p>
-</li>
-<li>
-<p>内部类可以直接访问外部类的成员，如果出现同名属性，优先访问内部类中定义的</p>
-</li>
-<li>
-<p>可以在内部类中使用 <code>外部类.this.成员</code> 的方式，访问外部类中的同名信息</p>
-</li>
-<li>
-<p>外部类访问内部类信息，需要通过内部类实例，无法直接访问</p>
-</li>
-<li>
-<p>内部类编译后 <code>.class</code> 文件命名：<code>外部类$内部类.class</code></p>
-</li>
-</ul>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4> 静态内部类</h4>
-<ul>
-<li>
-<p>内部类加上 <code>static</code> 修饰符</p>
-</li>
-<li>
-<p>静态内部类中，只能直接访问外部类的静态成员，如果需要调用外部非静态成员，可以通过对象实例</p>
-</li>
-<li>
-<p>静态内部类对象实例化时，可以不依赖于外部类对象</p>
-</li>
-<li>
-<p>可以通过 <code>外部类.内部类.静态成员</code> 的方式，访问内部类中的静态成员</p>
-</li>
-<li>
-<p>当内部类属性与外部类属性同名时，默认直接调用内部类中的成员</p>
-</li>
-<li>
-<p>如果需要访问外部类中的静态属性，可以通过 <code>外部类.属性</code> 的方式</p>
-</li>
-<li>
-<p>如果需要访问外部类中的非静态属性，可以通过 <code>new 外部类().属性</code> 的方式</p>
-</li>
-</ul>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4> 方法内部类</h4>
-<ul>
-<li>定义在外部类方法中的内部类，也称局部内部类</li>
-<li>作用范围在方法内</li>
-</ul>
-<ul>
-<li>和方法内部成员使用规则一样，不能使用 <code>public</code>、<code>protected</code>、<code>private</code> 修饰</li>
-<li>方法内部类中不能包含静态成员</li>
-<li>方法内部类中可以包含 <code>final</code>、<code>abstract</code> 修饰的成员，但不推荐</li>
-</ul>
-<ul>
-<li>内部类编译后 <code>.class</code> 文件命名：<code>外部类+$数字+内部类.class</code></li>
-</ul>
-<h4> 匿名内部类</h4>
-<ul>
-<li>将类的定义与类的创建，放到一起完成</li>
-<li>匿名内部类没有类型名称、实例对象名称</li>
-<li>编译后的文件命名：<code>外部类$数字.class</code></li>
-<li>无法在类型名称前添加修饰符 <code>public protected private abstract static</code></li>
-<li>无法在内部编写构造方法，可添加构造代码块</li>
-<li>不能出现静态成员</li>
-<li>匿名内部类可以实现接口也可以继承父类，但是不可兼得</li>
-</ul>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/2-11 常见内部类的比较.png" alt="2-11 常见内部类的比较" tabindex="0" loading="lazy"><figcaption>2-11 常见内部类的比较</figcaption></figure>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/2-12 关于内部类的常见问题.png" alt="2-12 关于内部类的常见问题" tabindex="0" loading="lazy"><figcaption>2-12 关于内部类的常见问题</figcaption></figure>
 ]]></content>
     <category term="Java"/>
     <published>2023-02-22T00:00:00.000Z</published>
@@ -2831,7 +2862,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E5%8C%85%E8%A3%85%E7%B1%BB.html</id>
     <link href="https://codemake.fun/notes/java/%E5%8C%85%E8%A3%85%E7%B1%BB.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">包装类 类型特点; 不允许被继承，没有子类; 包装类是引用类型，拥有方法和属性; 基本数据类型只包含数值信息; 存储方式; 包装类型对象实例化，借由 new 在堆空间进行空间分配，对应栈空间中存储地址引用; 基本数据类型变量对应栈空间中存储的是具体数据值; 初始值; 包装类的对象为初始化时，初始值均为 null; 基本数据类型有各自的默认初始值; 基本...</summary>
+    <summary type="text">包装类类型特点; 不允许被继承，没有子类; 包装类是引用类型，拥有方法和属性; 基本数据类型只包含数值信息; 存储方式; 包装类型对象实例化，借由 new 在堆空间进行空间分配，对应栈空间中存储地址引用; 基本数据类型变量对应栈空间中存储的是具体数据值; 初始值; 包装类的对象为初始化时，初始值均为 null; 基本数据类型有各自的...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h3> 包装类</h3>
 <ul>
@@ -2964,7 +2995,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E5%8F%8D%E5%B0%84.html</id>
     <link href="https://codemake.fun/notes/java/%E5%8F%8D%E5%B0%84.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">反射（Reflect） 是在 运行时 动态访问类与对象的技术 在 JDK1.2 版本后的高级特性，隶属于 java.lang.reflect; 创建对象的实际从编译的时候延迟到程序运行时; 大多数 Java 框架都基于反射实现参数配置、动态注入等特性; 核心类 Class 描述 JVM 代表类和接口的类; Class 对象具体包含了某个特定类的结构信息...</summary>
+    <summary type="text">反射（Reflect） 是在 运行时 动态访问类与对象的技术在 JDK1.2 版本后的高级特性，隶属于 java.lang.reflect; 创建对象的实际从编译的时候延迟到程序运行时; 大多数 Java 框架都基于反射实现参数配置、动态注入等特性; ```java // 示例 package com.imooc.reflect; import...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 反射（Reflect）</h2>
 <blockquote>
@@ -3105,7 +3136,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E5%AD%97%E7%AC%A6%E4%B8%B2.html</id>
     <link href="https://codemake.fun/notes/java/%E5%AD%97%E7%AC%A6%E4%B8%B2.html"/>
     <updated>2023-02-28T09:11:56.000Z</updated>
-    <summary type="text">String：具有不可变性; 对象一旦被创建，则不能修改，是不可变的; 所谓修改其实是创建了新的对象，所指向的内存空间不变; StringBuilder：可变，当频繁操作字符串时，建议使用; StringBuffer：和 StringBuilder 基本一致，StringBuffer 是线程安全的，StringBuilder 则没有，所以 String...</summary>
+    <summary type="text">String：具有不可变性; 对象一旦被创建，则不能修改，是不可变的; 所谓修改其实是创建了新的对象，所指向的内存空间不变; StringBuilder：可变，当频繁操作字符串时，建议使用; StringBuffer：和 StringBuilder 基本一致，StringBuffer 是线程安全的，StringBuilder 则没有，所以 St...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li><code>String</code>：具有不可变性
@@ -3210,7 +3241,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E5%BC%82%E5%B8%B8.html</id>
     <link href="https://codemake.fun/notes/java/%E5%BC%82%E5%B8%B8.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">异常 异常本质上是程序上的错误，在程序运行过程中，意外发生的情况，背离我们程序本身的意图的表现，都可以理解为异常 分类; 编译时异常; 括号配对; 语句分号; 关键字错误; 等等; 运行时异常; 使用空的对象引用调用方法; 数组访问时下标越界; 算术运算时除数为 0; 类型转换时无法正常转型; Throwable 异常根类 Error 程序无法处理的错...</summary>
+    <summary type="text">异常 异常本质上是程序上的错误，在程序运行过程中，意外发生的情况，背离我们程序本身的意图的表现，都可以理解为异常分类; 编译时异常; 括号配对; 语句分号; 关键字错误; 等等; 运行时异常; 使用空的对象引用调用方法; 数组访问时下标越界; 算术运算时除数为 0; 类型转换时无法正常转型; Throwable 异常根类 Er...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 异常</h2>
 <blockquote>
@@ -3337,25 +3368,11 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <published>2023-02-22T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">枚举</title>
-    <id>https://codemake.fun/notes/java/%E6%9E%9A%E4%B8%BE.html</id>
-    <link href="https://codemake.fun/notes/java/%E6%9E%9A%E4%B8%BE.html"/>
-    <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">枚举 3-3 拓展：枚举的基本使用 3-5 拓展：枚举在switch结构中的应用</summary>
-    <content type="html"><![CDATA[<!-- more -->
-<h3> 枚举</h3>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/3-3 拓展：枚举的基本使用.png" alt="3-3 拓展：枚举的基本使用" tabindex="0" loading="lazy"><figcaption>3-3 拓展：枚举的基本使用</figcaption></figure>
-<figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/3-5 拓展：枚举在switch结构中的应用.png" alt="3-5 拓展：枚举在switch结构中的应用" tabindex="0" loading="lazy"><figcaption>3-5 拓展：枚举在switch结构中的应用</figcaption></figure>
-]]></content>
-    <category term="Java"/>
-    <published>2023-02-22T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">正则表达式</title>
     <id>https://codemake.fun/notes/java/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">正则表达式 字符匹配 表达式 说明 :-------------------------- ------------------------------------ ------------------ A 精准匹配单个字符 x y 允许出现的两个字符 [xyz] 字符集合，允许出现集合内任意单个字符 `[a-z][A-Z]0-9` 字符范围 ````...</summary>
+    <summary type="text">正则表达式 字符匹配 表达式 说明 | :-------------------------- ------------------------------------ ------------------ A 精准匹配单个字符 | x y 允许出现的两个字符 [xyz] 字符集合，允许出现集合内任意单个字符 | `[a-z][A-Z]0-9` 字符范...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 正则表达式</h2>
 <h3> 字符匹配</h3>
@@ -3510,7 +3527,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E6%B3%9B%E5%9E%8B.html</id>
     <link href="https://codemake.fun/notes/java/%E6%B3%9B%E5%9E%8B.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">泛型 在 Java 中增加泛型之前，泛型程序设计使用继承来实现; 坏处; 需要强制类型转换; 可向集合中添加任意类型的对象，存在风险; 使用; 多态与泛型 变量声明的类型必须匹配传递给实际对象的类型（前后尖括号类型必须一致）;</summary>
+    <summary type="text">泛型在 Java 中增加泛型之前，泛型程序设计使用继承来实现; 坏处; 需要强制类型转换; 可向集合中添加任意类型的对象，存在风险; 使用; ```java List list = new ArrayList(); // Java SE7 及以后的版本中，构造方法中可以省略泛型类型 List list = new ArrayList(); `...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 泛型</h2>
 <ul>
@@ -3542,7 +3559,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/%E9%9B%86%E5%90%88.html</id>
     <link href="https://codemake.fun/notes/java/%E9%9B%86%E5%90%88.html"/>
     <updated>2023-02-26T08:25:54.000Z</updated>
-    <summary type="text">集合 Java 中的集合是工具类，可以存储任意数量的具有共同属性的对象 应用场景 无法预测存储数据的数量; 同时存储有一对一关系的数据; 需要进行数据的增删; 解决数据重复问题; 集合框架 Collection 存储类的对象 子接口及实现类 List：数据有序，允许重复; ArrayList; LinkedList; Queue：数据有序，允许重复; ...</summary>
+    <summary type="text">集合 Java 中的集合是工具类，可以存储任意数量的具有共同属性的对象 应用场景无法预测存储数据的数量; 同时存储有一对一关系的数据; 需要进行数据的增删; 解决数据重复问题; 集合框架 Collection 存储类的对象 子接口及实现类List：数据有序，允许重复; ArrayList; LinkedList; Queue：数据有...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 集合</h2>
 <blockquote>
@@ -3777,7 +3794,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/notes/java/01.%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html</id>
     <link href="https://codemake.fun/notes/java/01.%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html"/>
     <updated>2023-02-27T13:31:55.000Z</updated>
-    <summary type="text">JVM Java 虚拟机，全称：Java Virtual Machine; JVM 是 Java 平台无关性实现的关键; JRE Java 运行时环境，全称：Java Runtime Environment; 包括 Java 虚拟机(JVM)、Java 核心类库和支持文件; 和 JDK 的区别; 如果只需要运行 Java 程序, 下载并安装 JRE 即...</summary>
+    <summary type="text">JVMJava 虚拟机，全称：Java Virtual Machine; JVM 是 Java 平台无关性实现的关键; JREJava 运行时环境，全称：Java Runtime Environment; 包括 Java 虚拟机(JVM)、Java 核心类库和支持文件; 和 JDK 的区别; 如果只需要运行 Java 程序, 下载并安装 J...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> JVM</h2>
 <ul>
@@ -3847,7 +3864,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/javascript/knowledge/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-02-21T06:41:21.000Z</updated>
-    <summary type="text">数据类型 分类; 基本数据类型：; Undefined、; Null、; Boolean、; Number、; BigInt; String、; Symbol; 复杂数据类型：; Object; Undefined 类型 Undefined 类型只有一个值，即 undefined; 使用 var 声明变量但未初始化时，值为 undefined; 对未声...</summary>
+    <summary type="text">数据类型分类; 基本数据类型：; Undefined、; Null、; Boolean、; Number、; BigInt; String、; Symbol; 复杂数据类型：; Object; Undefined 类型Undefined 类型只有一个值，即 undefined; 使用 var 声明变量但未初始化时，值为 und...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 数据类型</h2>
 <ul>
@@ -4136,7 +4153,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/javascript/knowledge/05.new%E5%91%BD%E4%BB%A4%E5%8E%9F%E7%90%86.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/05.new%E5%91%BD%E4%BB%A4%E5%8E%9F%E7%90%86.html"/>
     <updated>2023-02-22T06:55:56.000Z</updated>
-    <summary type="text">运行过程 使用 new 命令时，它后面的函数依次执行下面的步骤： 1. 创建一个空对象，作为将要返回的实例对象。 2. 将这个空对象的原型，指向构造函数的 prototype 属性。 3. 将这个空对象赋值给函数内部的 this 关键字。 4. 开始执行构造函数内部的代码。 5. 如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例...</summary>
+    <summary type="text">运行过程 使用 new 命令时，它后面的函数依次执行下面的步骤： 1. 创建一个空对象，作为将要返回的实例对象。 2. 将这个空对象的原型，指向构造函数的 prototype 属性。 3. 将这个空对象赋值给函数内部的 this 关键字。 4. 开始执行构造函数内部的代码。 5. 如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 运行过程</h2>
 <blockquote>
@@ -4159,7 +4176,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">背景 场景：假如项目布局使用的是自适应的布局方式，div 给出的宽度是百分比的形式，即占窗口宽度的 100%，但边框border和内边距padding是用像素来表示的，此时就会造成一个问题是 div 总宽度超过窗口宽度。为了避免这种问题，可以使用属性box-sizing:border-box来把 标准盒模型 变成 代替(IE)盒模型 ，从而使 div ...</summary>
+    <summary type="text">背景 场景：假如项目布局使用的是自适应的布局方式，div 给出的宽度是百分比的形式，即占窗口宽度的 100%，但边框border和内边距padding是用像素来表示的，此时就会造成一个问题是 div 总宽度超过窗口宽度。为了避免这种问题，可以使用属性box-sizing:border-box来把 标准盒模型 变成 代替(IE)盒模型 ，从而使 div...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 背景</h2>
 <blockquote>
@@ -4215,7 +4232,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/css/knowledge/02.Flex%20%E5%B8%83%E5%B1%80.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/02.Flex%20%E5%B8%83%E5%B1%80.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">简介 display: flex： 意为&amp;quot;弹性布局&amp;quot;，用来为盒状模型提供最大的灵活性 display: inline-flex： 创建一个弹性容器，行为类似于 inline-block 元素。它会跟其他行内元素一起流式排列，但不会自动增长到 100%的 宽度。内部的弹性子元素跟使用 display: flex 创建的 Flexbox 里的弹性子元素行为...</summary>
+    <summary type="text">简介 display: flex： 意为&amp;quot;弹性布局&amp;quot;，用来为盒状模型提供最大的灵活性 display: inline-flex： 创建一个弹性容器，行为类似于 inline-block 元素。它会跟其他行内元素一起流式排列，但不会自动增长到 100%的 宽度。内部的弹性子元素跟使用 display: flex 创建的 Flexbox 里的弹性子元素...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 简介</h2>
 <blockquote>
@@ -4414,7 +4431,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/css/knowledge/03.%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/03.%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">从 CSS 代码存放位置看权重优先级：; 内嵌样式 &amp;gt; 内部样式表 &amp;gt; 外联样式表; 从样式选择器看权重优先级：; important &amp;gt; 内嵌样式 &amp;gt; ID &amp;gt; 类 伪类 属性选择 &amp;gt; 标签 | 伪对象 &amp;gt; 继承 &amp;gt; 通配符。; important 的权重为 1,0,0,0; ID 的权重为 0,1,0,0; 类的权重为 0,0,1,0; 伪类的权重...</summary>
+    <summary type="text">从 CSS 代码存放位置看权重优先级：; 内嵌样式 &amp;gt; 内部样式表 &amp;gt; 外联样式表; 从样式选择器看权重优先级：; important &amp;gt; 内嵌样式 &amp;gt; ID &amp;gt; 类 伪类 属性选择 &amp;gt; 标签 | 伪对象 &amp;gt; 继承 &amp;gt; 通配符。; important 的权重为 1,0,0,0; ID 的权重为 0,1,0,0; 类的权重为 0,0,1,0;...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>从 CSS 代码存放位置看权重优先级：
@@ -4448,7 +4465,7 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <id>https://codemake.fun/fe/css/knowledge/04.%E8%BF%87%E6%B8%A1.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/04.%E8%BF%87%E6%B8%A1.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">html结构先给元素设置transition过渡，指定样式和时间，这里设置all全部样式都采用0.3s的过渡 鼠标经过元素测试效果 宽度过渡 .div1:hover{width: 150px;} 1 背景色过渡 .div2:hover{background: #999;} 1 按贝塞尔曲线设置的过渡 /贝塞尔曲线过渡/ .div3{transition...</summary>
+    <summary type="text">```css / 关键字：过度属性 所需时间 速度曲线 何时开始 / transition: width 5s liner 5s ``` html结构 ```html ``` 先给元素设置transition过渡，指定样式和时间，这里设置all全部样式都采用0.3s的过渡 ```css .box1&amp;gt;div{ / 给元素所有变化都添加过渡动画, 也可以指...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>html结构</p>
 <div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>先给元素设置transition过渡，指定样式和时间，这里设置all全部样式都采用0.3s的过渡</p>
@@ -4478,7 +4495,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/knowledge/05.%E5%8A%A8%E7%94%BB.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/05.%E5%8A%A8%E7%94%BB.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">属性 transition-property：要设置动画的所有属性（多个属性逗号隔开，全部属性使用 all）; transition-duration：动画持续的时间，单位为秒 s 或者毫秒 ms; transition-timing-function：时间函数，表示动画进程在时间上的分布，默认值 ease; linear、`ease、ease-in、...</summary>
+    <summary type="text">属性transition-property：要设置动画的所有属性（多个属性逗号隔开，全部属性使用 all）; transition-duration：动画持续的时间，单位为秒 s 或者毫秒 ms; transition-timing-function：时间函数，表示动画进程在时间上的分布，默认值 ease; linear、`ease、ease-...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 属性</h2>
 <ul>
@@ -4527,7 +4544,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/knowledge/06.Stylus%20%E6%B7%B7%E5%85%A5(Mixins).html</id>
     <link href="https://codemake.fun/fe/css/knowledge/06.Stylus%20%E6%B7%B7%E5%85%A5(Mixins).html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">混入(Mixins) 混入和函数定义方法一致，但是应用却大相径庭。 一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。 下面有定义的border-radius(n)方法，其却作为一个mixin（如，作为状态调用，而非表达式）调用。 当border-radius()选择器...</summary>
+    <summary type="text">混入(Mixins) 混入和函数定义方法一致，但是应用却大相径庭。 一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。 ```stylus ellipsis() overflow hidden white-space nowrap text-overflow ellip...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 混入(Mixins)</h2>
 <p>混入和函数定义方法一致，但是应用却大相径庭。</p>
@@ -4562,7 +4579,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html</id>
     <link href="https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">多行文本超出省略号 底部阴影 页面变灰色</summary>
+    <summary type="text">多行文本超出省略号 ```css display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; ``` 底部阴影 ```css .box:before { content: &amp;quot;&amp;quot;;...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 多行文本超出省略号</h2>
 <div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 底部阴影</h2>
@@ -4576,7 +4593,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html</id>
     <link href="https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">See the Pen 水平垂直居中的几种方式 by xugaoyi (@xugaoyi) on CodePen.</summary>
+    <summary type="text">See the Pen 水平垂直居中的几种方式 by xugaoyi (@xugaoyi) on CodePen. ```html 水平居中 行内，text-align: center; 块元素 （定宽度） margin: 0 auto 块元素（不定宽度） 块元素 flex实现 （定不定宽度可以） 垂直居中 单行的行内元素，设置行高 多行的行内元素，多...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <iframe height="880" style="width: 100%;" scrolling="no" title="水平垂直居中的几种方式" src="https://codepen.io/xugaoyi/embed/poJLeYv?height=880&amp;theme-id=light&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/xugaoyi/pen/poJLeYv'>水平垂直居中的几种方式</a> by xugaoyi
@@ -4591,7 +4608,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。 CSS 深色模式 (Dark Mode) 在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下: :root...</summary>
+    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。 CSS 深色模式 (Dark Mode) 在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下: ```cs...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。</p>
@@ -4633,7 +4650,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">结论 ES5 标准中性能最高的数组去重方法为: ES6 标准中性能最高的数组去重方法为: 代码既简洁性能又相对高的去重方法为： 测试模板 测试代码</summary>
+    <summary type="text">结论 ES5 标准中性能最高的数组去重方法为: ```js // 耗时约23ms arr = arr.sort() let result = [arr[0]] for (let i = 1, len = arr.length; i &amp;lt; len; i++) { arr[i] !== arr[i - 1] &amp;&amp; result.push(arr[i]) } ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 结论</h2>
 <p>ES5 标准中性能最高的数组去重方法为:</p>
@@ -4650,7 +4667,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/03.%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/03.%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案 区别 防抖函数：只会在高频事件结束后 n 毫秒调用一次函数; 节流函数：会在高频事件触发过程当中每隔 n 毫秒调用一次函数。; 防抖函数 触发高频事件后一段时间（wait）只会执行一次函数，如果指定时间（wait）内高频事件再次被触发，则重新计算时间。 节流函数 规定在一个单位时...</summary>
+    <summary type="text">防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案 区别防抖函数：只会在高频事件结束后 n 毫秒调用一次函数; 节流函数：会在高频事件触发过程当中每隔 n 毫秒调用一次函数。; 防抖函数 触发高频事件后一段时间（wait）只会执行一次函数，如果指定时间（wait）内高频事件再次被触发，则重新计算时间。 ```js // 防抖...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案</p>
@@ -4697,7 +4714,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/04.%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BF%AE%E6%94%B9%20URL%20%E5%8F%82%E6%95%B0.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/04.%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BF%AE%E6%94%B9%20URL%20%E5%8F%82%E6%95%B0.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">可以使用 !qs库 (https://www.npmjs.com/package/qs) 获取 url 参数 修改 url 参数 不刷新页面修改 url 参数 URL 的编码和解码 比如，UTF-8 的操作系统上，http://www.example.com/q=春节这个 URL 之中，汉字“春节”不是 URL 的合法字符，所以被浏览器自动转成http...</summary>
+    <summary type="text">可以使用 !qs库 (https://www.npmjs.com/package/qs) 获取 url 参数 ```js /**获取url里的参数; @param arg 参数名; @returns; */ function getURLString(arg) { var reg = new RegExp(&amp;apos;(^&amp;)&amp;apos; + arg + &amp;apos;=(*)...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>可以使用 <img src="https://www.npmjs.com/package/qs" alt="qs库" loading="lazy"></p>
@@ -4725,7 +4742,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/06.for-in%20%E5%92%8C%20for-of%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/06.for-in%20%E5%92%8C%20for-of%20%E7%9A%84%E5%8C%BA%E5%88%AB.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">循环数组用 for...of，循环对象用 for...in for...in (https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Loopsanditeration#for...in_%E8%AF%AD%E5%8F%A5) 遍历的结果是数组元素的下标 遍历对象的可枚举属性，以及对...</summary>
+    <summary type="text">循环数组用 for...of，循环对象用 for...in for...in (https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Loopsanditeration#for...in_%E8%AF%AD%E5%8F%A5) 遍历的结果是数组元素的下标 遍历对象的可枚举属性，以...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>循环数组用 <code>for...of</code>，循环对象用 <code>for...in</code></p>
@@ -4766,7 +4783,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/07.%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/07.%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5.html"/>
     <updated>2023-02-22T08:05:47.000Z</updated>
-    <summary type="text">异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue; 异步时间至少为 4ms，如果 setTimeout 传入值少于 4ms，则会被自动追加至 4ms;</summary>
+    <summary type="text">异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue; 异步时间至少为 4ms，如果 setTimeout 传入值少于 4ms，则会被自动追加至 4ms;</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue</li>
@@ -4782,7 +4799,7 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/javascript/knowledge/08.%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%98%9F%E5%88%97.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/08.%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%98%9F%E5%88%97.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们 浏览器遍历队列，按先后顺序 逐个处理事件; 事件 onload 浏览器加载网页完毕后触发 onunload 用户关闭浏览器窗口或切换到其他网页时触发 onresize 用户调整浏览器窗口大小时触发 dragstart 用户拖曳网页中元素时触发 dro...</summary>
+    <summary type="text">浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们浏览器遍历队列，按先后顺序 逐个处理事件; 事件 onload 浏览器加载网页完毕后触发 onunload 用户关闭浏览器窗口或切换到其他网页时触发 onresize 用户调整浏览器窗口大小时触发 dragstart 用户拖曳网页中元素时触发...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们</p>
@@ -4920,7 +4937,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/09.WebSocket%20%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/09.WebSocket%20%E4%BD%BF%E7%94%A8.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">普通 HTML 中使用 Vue 中使用</summary>
+    <summary type="text">普通 HTML 中使用 ```html Title // WebSocket 测试 var ws = new WebSocket(&amp;apos;ws://websocket.org&amp;apos;) switch (ws.readyState) { case WebSocket.CONNECTING: // 值为 0，表示正在连接 break case WebSocket.OP...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 普通 HTML 中使用</h2>
 <div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Vue 中使用</h2>
@@ -4933,7 +4950,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/10.Canvas%20%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/10.Canvas%20%E4%BD%BF%E7%94%A8.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">描述 是一门使用 JavaScript 操作 Canvas 元素的技术 是一个行内元素块（inline-block）; 一般需要在 元素上指定三个属性 id、`width、height; 默认宽度（300px），默认高度（150px）; 如果在 CSS` 中定义 的宽高，在使用 JavaScript 获取元素宽高时得到的是默认宽高而非设置的; 所有操作...</summary>
+    <summary type="text">描述 是一门使用 JavaScript 操作 Canvas 元素的技术 是一个行内元素块（inline-block）; 一般需要在 元素上指定三个属性 id、`width、height; 默认宽度（300px），默认高度（150px）; 如果在 CSS` 中定义 的宽高，在使用 JavaScript 获取元素宽高时得到的是默认宽高而非设置的;...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 描述</h2>
 <blockquote>
@@ -5555,7 +5572,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/1000.%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BE%85%E5%90%88%E5%B9%B6%EF%BC%89.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/1000.%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BE%85%E5%90%88%E5%B9%B6%EF%BC%89.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">小知识点 引用独立的 JavaScript 文件时， 元素不能包含任何JavaScript代码。; alert()：仅当你要停止一切并提醒用户时，才应使用它; 在任何情况下， 结束标签都是必不可少的; 浏览器分 两遍 读取网页:第一遍读取所有的函数定义，第二遍开始执行代码。这让你可以将函数放在文件的任何地方。; 没有使用 var 声明的变量是全局变量;...</summary>
+    <summary type="text">小知识点引用独立的 JavaScript 文件时， 元素不能包含任何JavaScript代码。; alert()：仅当你要停止一切并提醒用户时，才应使用它; 在任何情况下， 结束标签都是必不可少的; 浏览器分 两遍 读取网页:第一遍读取所有的函数定义，第二遍开始执行代码。这让你可以将函数放在文件的任何地方。; 没有使用 var 声明的变量是全...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 小知识点</h2>
 <ul>
@@ -5682,7 +5699,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/11.%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E7%AC%A6.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/11.%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E7%AC%A6.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">常用操作符 一元操作符 递增操作符 前置型 ++i; 后置型 i++; 递减操作符 前置型 --i; 后置型 i--; 递增递减操作规则 在应用于一个包含有效数字字符的字符串时，现将其转化为十进制数字值，在执行加减 1 的操作，字符串变量变成数值变量; 在应用于一个不包含有效数字字符的字符串时，将变量设置为 NaN，字符串变量变成数值变量; 在应用于布...</summary>
+    <summary type="text">常用操作符 一元操作符 递增操作符前置型 ++i; 后置型 i++; 递减操作符前置型 --i; 后置型 i--; 递增递减操作规则在应用于一个包含有效数字字符的字符串时，现将其转化为十进制数字值，在执行加减 1 的操作，字符串变量变成数值变量; 在应用于一个不包含有效数字字符的字符串时，将变量设置为 NaN，字符串变量变成数值变量; 在...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 常用操作符</h2>
 <h3> 一元操作符</h3>
@@ -6157,7 +6174,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/12.%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/12.%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">引用类型 引用类型的值（对象）是引用类型的一个实例; 新对象是使用 new 操作符后跟一个构造函数来创建的; 构造函数本身就是一个函数，只不过该函数是出于创建新对象的目的而定义的; 引用类型是一种数据结构，在技术上讲是一门面向对象的语言; 不具备传统面向对象语言所支持的类和接口等基本结构; Object 类型 创建 Object 实例的方法; new ...</summary>
+    <summary type="text">引用类型引用类型的值（对象）是引用类型的一个实例; 新对象是使用 new 操作符后跟一个构造函数来创建的; 构造函数本身就是一个函数，只不过该函数是出于创建新对象的目的而定义的; 引用类型是一种数据结构，在技术上讲是一门面向对象的语言; 不具备传统面向对象语言所支持的类和接口等基本结构; Object 类型创建 Object 实例的方法; ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 引用类型</h2>
 <ul>
@@ -6861,7 +6878,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/13.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/13.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">理解对象 属性类型 ECMAScript-262 第五版在定义只有内才用的特性时，描述了属性的各种特征。ECMAScript-262 定义这些特性是为了实现 JavaScript 引擎用的，因此在 JavaScript 中不能直接访问和他们。为了表示特性是内部值，该规范把他们放在了两对儿方括号中，例如 [[Enumerable]] 数据属性 [[Con...</summary>
+    <summary type="text">理解对象 属性类型 ECMAScript-262 第五版在定义只有内才用的特性时，描述了属性的各种特征。ECMAScript-262 定义这些特性是为了实现 JavaScript 引擎用的，因此在 JavaScript 中不能直接访问和他们。为了表示特性是内部值，该规范把他们放在了两对儿方括号中，例如 [[Enumerable]] 数据属性[[Co...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 理解对象</h2>
 <h3> 属性类型</h3>
@@ -6990,7 +7007,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/14.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/14.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-03-01T09:26:45.000Z</updated>
-    <summary type="text">设计原则 引言 设计：按照一种思路或者标准来实现功能; 功能相同，可以有不同的设计方案来实现; 伴随着需求增加，设计的作用才能体现出来; 《UNIX/LINUX 设计哲学》准则 准则 1：小即是美; 准则 2：让每个程序只做好一件事; 准则 3：快速建立原型; 准则 4：舍弃高效率而取可移植性; 准则 5：采用纯文本来存储数据; 准则 6：充分利用软件...</summary>
+    <summary type="text">设计原则 引言设计：按照一种思路或者标准来实现功能; 功能相同，可以有不同的设计方案来实现; 伴随着需求增加，设计的作用才能体现出来; 《UNIX/LINUX 设计哲学》准则准则 1：小即是美; 准则 2：让每个程序只做好一件事; 准则 3：快速建立原型; 准则 4：舍弃高效率而取可移植性; 准则 5：采用纯文本来存储数据; 准则 6...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 设计原则</h2>
 <h3> 引言</h3>
@@ -7164,7 +7181,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/15.%E5%B8%B8%E8%A7%81%E8%80%83%E7%82%B9.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/15.%E5%B8%B8%E8%A7%81%E8%80%83%E7%82%B9.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">问题考点 typeof 能判断哪些类型 考点：JS 变量类型; 返回判断：; 所有值类型; 函数; 引用类型（不可细分）; 何时使用 === 何时使用 == 考点：强制类型装换; 使用：除了 == null 之外，其他一律用 ===; window.onload 和 DOMContentLoaded 的区别 考点：页面渲染过程; JS 创建 10 个 ...</summary>
+    <summary type="text">问题考点 typeof 能判断哪些类型考点：JS 变量类型; 返回判断：; 所有值类型; 函数; 引用类型（不可细分）; 何时使用 === 何时使用 ==考点：强制类型装换; 使用：除了 == null 之外，其他一律用 ===; ```javascript if (obj.a == null) { } // 相当于 // if( obj...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> 问题考点</h2>
 <h3> typeof 能判断哪些类型</h3>
@@ -7358,7 +7375,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/01.Qs.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/01.Qs.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库 GitHub (https://github.com/ljharb/qs) 引入 直接引入 导入包 简单使用</summary>
+    <summary type="text">一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库 GitHub (https://github.com/ljharb/qs) 引入 直接引入 ```html var qs = Qs ``` 导入包 ```javascript var qs = require(&amp;apos;qs&amp;apos;) import qs fro...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库</p>
@@ -7377,7 +7394,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/02.Lodash.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/02.Lodash.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个一致性、模块化、高性能的 JavaScript 实用工具库 GitHub (https://github.com/lodash/lodash) 中文文档 (https://www.lodashjs.com/)</summary>
+    <summary type="text">一个一致性、模块化、高性能的 JavaScript 实用工具库 GitHub (https://github.com/lodash/lodash) 中文文档 (https://www.lodashjs.com/)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个一致性、模块化、高性能的 JavaScript 实用工具库</p>
@@ -7392,7 +7409,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/03.Day.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/03.Day.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个轻量的处理时间和日期的 JavaScript 库 GitHub (https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md) 中文文档 (https://dayjs.gitee.io/docs/zh-CN/installation/installation)</summary>
+    <summary type="text">一个轻量的处理时间和日期的 JavaScript 库 GitHub (https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md) 中文文档 (https://dayjs.gitee.io/docs/zh-CN/installation/installation)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个轻量的处理时间和日期的 JavaScript 库</p>
@@ -7407,7 +7424,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/04.Big.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/04.Big.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个用于任意精度十进制算术的小型快速 JavaScript 库 GitHub (https://github.com/MikeMcl/big.js) 官方文档 (https://mikemcl.github.io/big.js/)</summary>
+    <summary type="text">一个用于任意精度十进制算术的小型快速 JavaScript 库 GitHub (https://github.com/MikeMcl/big.js) 官方文档 (https://mikemcl.github.io/big.js/)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个用于任意精度十进制算术的小型快速 JavaScript 库</p>
@@ -7422,7 +7439,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/05.FileSaver.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/05.FileSaver.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一款基于 HTML5 完成文件保存的插件 GitHub (https://github.com/eligrey/FileSaver.js)</summary>
+    <summary type="text">一款基于 HTML5 完成文件保存的插件 GitHub (https://github.com/eligrey/FileSaver.js)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一款基于 HTML5 完成文件保存的插件</p>
@@ -7437,7 +7454,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库 GitHub (https://github.com/RobertWHurst/KeyboardJS)</summary>
+    <summary type="text">一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库 GitHub (https://github.com/RobertWHurst/KeyboardJS)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库</p>
@@ -7452,7 +7469,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/07.Sortable.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/07.Sortable.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一款功能强大的 JavaScript 拖拽库 GitHub (https://github.com/SortableJS/Sortable)</summary>
+    <summary type="text">一款功能强大的 JavaScript 拖拽库 GitHub (https://github.com/SortableJS/Sortable)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一款功能强大的 JavaScript 拖拽库</p>
@@ -7467,7 +7484,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/08.Animation.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/08.Animation.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Anime 一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象 GitHub (https://github.com/juliangarnier/anime) Velocity 一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate(...</summary>
+    <summary type="text">Anime 一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象 GitHub (https://github.com/juliangarnier/anime) Velocity 一个高效的 Javascript 动画引擎，与 jQuery 的 $.anima...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> Anime</h2>
 <blockquote>
@@ -7503,7 +7520,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">html2canvas 一个将网页 HTML 截图为图片的 JavaScript 插件 GitHub (https://github.com/niklasvh/html2canvas) dom-to-image 一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库 GitHub (htt...</summary>
+    <summary type="text">html2canvas 一个将网页 HTML 截图为图片的 JavaScript 插件 GitHub (https://github.com/niklasvh/html2canvas) dom-to-image 一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库 GitHub ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> html2canvas</h2>
 <blockquote>
@@ -7544,7 +7561,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/10.Scroll.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/10.Scroll.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">fullPage.js 一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代 GitHub (https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs) Iscroll 一个移动端使用的轻量级滚动插件 GitHub (https://gith...</summary>
+    <summary type="text">fullPage.js 一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代 GitHub (https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs) Iscroll 一个移动端使用的轻量级滚动插件 GitHub (https://...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> fullPage.js</h2>
 <blockquote>
@@ -7575,7 +7592,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/11.Effect.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/11.Effect.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Typed.js 一个轻松实现打字效果的 js 插件 GitHub (https://github.com/mattboldt/typed.js/) 官方文档 (http://mattboldt.github.io/typed.js/docs/)</summary>
+    <summary type="text">Typed.js 一个轻松实现打字效果的 js 插件 GitHub (https://github.com/mattboldt/typed.js/) 官方文档 (http://mattboldt.github.io/typed.js/docs/)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> Typed.js</h2>
 <blockquote>
@@ -7591,7 +7608,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html"/>
     <updated>2023-02-24T09:07:04.000Z</updated>
-    <summary type="text">PDF预览插件 【GitHub】 (https://github.com/mozilla/pdf.js) 【官方文档】 (https://mozilla.github.io/pdf.js/getting_started/) 下载安装 使用方式 1. 在官方文档中下载预建版本 2. 将文件复制到项目文件夹 直接使用(预览全部) 直接访问：http://l...</summary>
+    <summary type="text">PDF预览插件 【GitHub】 (https://github.com/mozilla/pdf.js) 【官方文档】 (https://mozilla.github.io/pdf.js/getting_started/) 下载安装 使用方式 1. 在官方文档中下载预建版本 2. 将文件复制到项目文件夹 直接使用(预览全部)直接访问：http://...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>PDF预览插件</p>
@@ -7623,7 +7640,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Lottie 本文文档出处：【lottie 动画】 (https://www.cnblogs.com/yf-html/p/15406174.html)lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After ...</summary>
+    <summary type="text">Lottie 本文文档出处：【lottie 动画】 (https://www.cnblogs.com/yf-html/p/15406174.html)lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> Lottie</h2>
 <blockquote>
@@ -7664,6 +7681,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html</id>
     <link href="https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html"/>
     <updated>2023-03-17T06:41:56.000Z</updated>
+    <summary type="text">```js // jsconfig.json 中加入下面属性，重启编辑器 &amp;quot;jsx&amp;quot;: &amp;quot;preserve&amp;quot; ```</summary>
     <content type="html"><![CDATA[<!-- more -->
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <category term="JavaScript"/>
@@ -7674,6 +7692,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html</id>
     <link href="https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
+    <summary type="text">```js const flag = navigator.userAgent.match( /(phonepadpodiPhoneiPodiosiPadAndroidMobileBlackBerryIEMobileMQQBrowserJUCFennecwOSBrowserBrowserNGWebOSSymbianWindows Phone)/i ) i...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <category term="JavaScript"/>
@@ -7684,7 +7703,7 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html</id>
     <link href="https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">注意， 标签全屏时需要在标签中添加 allowfullscreen 属性</summary>
+    <summary type="text">注意， 标签全屏时需要在标签中添加 allowfullscreen 属性 ```javascript // 全屏 function handleFullScreen() { var de = document.documentElement if (de.requestFullscreen) { de.requestFullscreen() } els...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>注意，<code>&lt;iframe&gt;</code> 标签全屏时需要在标签中添加 <code>allowfullscreen</code> 属性</p>

@@ -1,0 +1,1 @@
+import{_ as e,Q as t,S as _,$ as c}from"./framework-2ed98ecf.js";const o={};function r(n,a){return t(),_("div",null,[c(" more ")])}const l=e(o,[["render",r],["__file","内部类.html.vue"]]);export{l as default};

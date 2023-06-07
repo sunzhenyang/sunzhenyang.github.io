@@ -1,3 +1,0 @@
-import{_ as e,Q as a,S as s,a3 as d}from"./framework-2ed98ecf.js";const n={},l=d(`<p><code>last</code>命令显示用户登录系统的记录。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ last
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>last</code>命令后面加上用户名，会显示该用户上次登录的信息。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ last yourUsername
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),c=[l];function t(i,r){return a(),s("div",null,c)}const u=e(n,[["render",t],["__file","last.html.vue"]]);export{u as default};

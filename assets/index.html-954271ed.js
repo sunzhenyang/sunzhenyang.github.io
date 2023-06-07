@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as o,b as c}from"./app-d18dfe82.js";const n={},_=c("p",null,"Web API 教程，提供各种浏览器 API 文档，正在建设中...",-1),s=[_];function r(a,l){return t(),o("div",null,s)}const f=e(n,[["render",r],["__file","index.html.vue"]]);export{f as default};

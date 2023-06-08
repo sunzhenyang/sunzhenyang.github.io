@@ -1,0 +1,2 @@
+import{_ as s}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c,b as e,d as a}from"./app-e1714ab0.js";const n={},l=e("p",null,[e("code",null,"gzcat"),a("命令用于查看一个"),e("code",null,"gz"),a("文件，但并不实际解压它。")],-1),o=e("div",{class:"language-bash line-numbers-mode","data-ext":"sh"},[e("pre",{class:"language-bash"},[e("code",null,`$ gzcat filename
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),r=[l,o];function d(i,_){return t(),c("div",null,r)}const h=s(n,[["render",d],["__file","gzcat.html.vue"]]);export{h as default};

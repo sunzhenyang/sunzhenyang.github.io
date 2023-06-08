@@ -1,0 +1,2 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,f as n}from"./app-e1714ab0.js";const c={},t=n(`<p><code>lpr</code>命令用于打印文件。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">lpr</span> filename
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),o=[t];function r(l,i){return s(),a("div",null,o)}const p=e(c,[["render",r],["__file","lpr.html.vue"]]);export{p as default};

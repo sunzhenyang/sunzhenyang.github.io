@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o,c,b as e,d as s}from"./app-e1714ab0.js";const _={},n=e("p",null,[e("code",null,"gzip"),s("命令用于压缩文件。")],-1),r=[n];function a(l,i){return o(),c("div",null,r)}const f=t(_,[["render",a],["__file","gzip.html.vue"]]);export{f as default};

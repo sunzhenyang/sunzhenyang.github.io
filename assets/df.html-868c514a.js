@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o,c,b as e,d as s}from"./app-a7325d6d.js";const _={},n=e("p",null,[e("code",null,"df"),s("命令显示磁盘信息。")],-1),r=[n];function a(d,l){return o(),c("div",null,r)}const m=t(_,[["render",a],["__file","df.html.vue"]]);export{m as default};

@@ -385,7 +385,7 @@
       "content_html": "<!-- more -->\n<h2> nvm管理（推荐）</h2>\n<blockquote>\n<p><code>nvm</code> 是一个 <code>node</code> 的版本管理工具（全称：node.js version management）</p>\n<p>为了解决 <code>node</code> 各种版本不兼容的现象，可以通过它安装和切换不同版本的 <code>node</code></p>\n</blockquote>\n<div class=\"hint-container danger\">\n<p class=\"hint-container-title\">警告</p>\n<p>请确保本地所有 node 版本已卸载</p>\n</div>\n<h3> 下载</h3>\n<blockquote>\n<p>下载地址：<a href=\"https://github.com/coreybutler/nvm-windows/releases\" target=\"_blank\" rel=\"noopener noreferrer\">【nvm-windows】</a>，选择自己需要的版本即可</p>\n</blockquote>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329112428655.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 安装</h3>\n<ul>\n<li>双击下载好的 <code>nvm-setup.exe</code> 文件，点击同意软件协议并点击下一步</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329140658851.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>选择 <code>nvm</code> 安装路径</li>\n</ul>\n<div class=\"hint-container danger\">\n<p class=\"hint-container-title\">警告</p>\n<p>不要安装到系统盘，可能会有权限或者存储空间不足的问题</p>\n</div>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329140726897.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>选择 <code>node</code> 安装路径（这里其实是在设置的位置新建一个快捷方式，指向 <code>nvm</code> 安装目录中的当前使用的 <code>node</code> 版本目录）</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329140818463.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>\n<p>点击下一步或 <code>Install</code> 或 <code>Finish</code>，直至安装完成</p>\n</li>\n<li>\n<p>打开命令行，输入 <code>nvm</code> 命令，显示如下命令提示，标识安装成功</p>\n</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329141343353.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 用法</h3>\n<ul>\n<li><code>nvm arch</code>：显示node是运行在 32位 还是 64位</li>\n<li><code>nvm install &lt;version&gt; [arch]</code> ：安装node\n<ul>\n<li><code> version</code>：可以是特定版本，也可以是最新稳定版本 <code>latest</code></li>\n<li>可选参数 <code>arch</code> 指定安装 32位 还是 64位 版本，默认是系统位数。可以添加 <code>--insecure</code> 绕过远程服务器的 <code>SSL</code></li>\n</ul>\n</li>\n<li><code>nvm list [available]</code> ：显示已安装的列表\n<ul>\n<li>可选参数 <code>available</code>，显示可安装的所有版本。<code>list</code> 可简化为 <code>ls</code></li>\n</ul>\n</li>\n<li><code>nvm on</code> ：开启 <code>node.js</code> 版本管理</li>\n<li><code>nvm off</code> ：关闭 <code>node.js</code> 版本管理</li>\n<li><code>nvm proxy [url]</code> ：设置下载代理\n<ul>\n<li>不加可选参数 <code>url</code>，显示当前代理</li>\n<li>将 <code>url</code> 设置为 <code>none</code> 则移除代理</li>\n</ul>\n</li>\n<li><code>nvm node_mirror [url]</code> ：设置node镜像\n<ul>\n<li>默认是 <a href=\"https://nodejs.org/dist/\" target=\"_blank\" rel=\"noopener noreferrer\">https://nodejs.org/dist/</a> 如果不写url，则使用默认url</li>\n<li>设置后可至安装目录 <code>settings.txt</code> 文件查看，也可直接在该文件操作</li>\n</ul>\n</li>\n<li><code>nvm npm_mirror [url]</code> ：设置npm镜像\n<ul>\n<li>默认是 <a href=\"https://github.com/npm/cli/archive/\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/npm/cli/archive/</a> 如果不写 <code>url</code>，则使用默认 <code>url</code></li>\n<li>设置后可至安装目录 <code>settings.txt</code> 文件查看，也可直接在该文件操作</li>\n</ul>\n</li>\n<li><code>nvm uninstall &lt;version&gt;</code> ：卸载指定版本 <code>node</code></li>\n<li><code>nvm use [version] [arch]</code> ：使用制定版本 <code>node</code>，可指定 32/64位</li>\n<li><code>nvm root [path]</code> ：设置存储不同版本node的目录，如果未设置，默认使用当前目录</li>\n<li><code>nvm version</code> ：显示 <code>nvm</code> 版本，<code>version</code> 可简化为 <code>v</code></li>\n</ul>\n<h3> 更换源</h3>\n<ul>\n<li>用记事本打开 <code>nvm</code> 安装目录中的 <code>setting.txt</code> 文件，添加如下代码，保存并关闭，重启命令行</li>\n</ul>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>建议使用源1（淘宝源），速度会快一些</p>\n</div>\n<div class=\"language-bash line-numbers-mode\" data-ext=\"sh\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329143354684.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 具体流程</h3>\n<ul>\n<li>使用 <code>nvm list available</code> 命令查看可安装的 <code>node</code> 版本</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329142544150.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<div class=\"hint-container danger\">\n<p class=\"hint-container-title\">警告</p>\n<p>一般选择 <code>LTS</code> 长期支持版，并且不建议安装最新版本</p>\n</div>\n<ul>\n<li>使用 <code>nvm install 16.17.1</code> 命令安装指定版本 <code>node</code>\n<ul>\n<li>安装时可查看到相应的 <code>node</code> 和 <code>npm</code> 版本号\n<ul>\n<li>安装后会提示使用 <code>nvm use 16.17.1</code> 命令使用当前版本 <code>node</code></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329150335222.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>使用 <code>nvm use 16.17.1</code> 切换到指定 <code>node</code> 版本，切换后使用下列命令\n<ul>\n<li><code>node -v</code>：查看当前 <code>node</code> 版本</li>\n<li><code>npm -v</code>：查看当前 <code>npm</code> 版本</li>\n<li><code>nvm list</code>：查看已安装的 <code>node</code> 版本，前标星号的为当前使用版本</li>\n</ul>\n</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329150614040.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>如果需要更换 <code>node</code> 版本，重复流程步骤对应使用不同的版本号即可</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329151553963.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h2> 直接安装（不推荐）</h2>\n<h3> 下载</h3>\n<blockquote>\n<p>下载地址：<a href=\"https://nodejs.org/en/download\" target=\"_blank\" rel=\"noopener noreferrer\">【最新版本】</a>   <a href=\"https://nodejs.org/en/download/releases\" target=\"_blank\" rel=\"noopener noreferrer\">【历史版本】</a>  <a href=\"https://nodejs.org/dist/\" target=\"_blank\" rel=\"noopener noreferrer\">【所有下载选项】</a></p>\n<p>这里以文章书写时间最新版本 <strong>18.15.0</strong> 为例</p>\n</blockquote>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329153858564.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 安装</h3>\n<ul>\n<li>双击下载好的 <code>node-v18.15.0-x64.msi</code> 文件</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329154338730.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329154403051.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>选择安装路径，然后一直下一步直至安装完成即可，中间不需要勾选别的选项</li>\n</ul>\n<div class=\"hint-container danger\">\n<p class=\"hint-container-title\">警告</p>\n<p>不要安装到系统盘，可能会有权限或者存储空间不足的问题</p>\n</div>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329154837642.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>打开命令行，使用 <code>node -v</code> 命令，显示如下表示安装成功</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329155115044.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 配置</h3>\n<ul>\n<li>在 <code>node</code> 安装目录【D:\\Develop\\nodejs】下创建两个文件夹【node_global】及【node_cache】</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329155446643.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>打开命令提示符，分别执行下面两行命令（无返回结果，执行时无报错即为成功）</li>\n</ul>\n<div class=\"language-bash line-numbers-mode\" data-ext=\"sh\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><ul>\n<li>设置环境变量，关闭 <code>cmd</code> 窗口，<code>右键我的电脑 - 属性 - 高级系统设置 - 高级 - 环境变量</code></li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329160205342.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>在【系统变量】下新建【NODE_PATH】，输入【D:\\Develop\\nodejs\\node_global\\node_modules】</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329160548075.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ul>\n<li>将【用户变量】下的【Path】修改为【D:\\Develop\\nodejs\\node_global】，点击确定</li>\n</ul>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329160817338.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329160921429.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h3> 换源</h3>\n<blockquote>\n<p>使用 <a href=\"https://www.npmjs.com/package/nrm\" target=\"_blank\" rel=\"noopener noreferrer\">【 nrm 】</a> 管理 <code>npm</code> 源</p>\n</blockquote>\n<ul>\n<li>\n<p>使用 <code>npm install -g nrm</code> 命令全局安装 <code>nrm</code></p>\n</li>\n<li>\n<p>使用 <code>nrm ls</code> 命令查看当前可用源</p>\n</li>\n<li>\n<p>使用 <code>nrm use taobao</code> 命令切换为淘宝源，<strong>不建议使用 <code>cnpm</code>，可能会有未知错误</strong></p>\n</li>\n</ul>\n<div class=\"language-text line-numbers-mode\" data-ext=\"text\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
       "image": "https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20230329112428655.png",
       "date_published": "2023-03-29T00:00:00.000Z",
-      "date_modified": "2023-03-30T01:11:28.000Z",
+      "date_modified": "2023-06-07T08:19:40.000Z",
       "authors": [],
       "tags": [
         "环境配置"
@@ -589,213 +589,6 @@
       ]
     },
     {
-      "title": "Qs",
-      "url": "https://codemake.fun/fe/javascript/plugins/01.Qs.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/01.Qs.html",
-      "summary": "一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库 GitHub (https://github.com/ljharb/qs) 引入 直接引入 导入包 简单使用",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库</p>\n<p><a href=\"https://github.com/ljharb/qs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> 引入</h2>\n<h3> 直接引入</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 导入包</h3>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h2> 简单使用</h2>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Lodash",
-      "url": "https://codemake.fun/fe/javascript/plugins/02.Lodash.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/02.Lodash.html",
-      "summary": "一个一致性、模块化、高性能的 JavaScript 实用工具库 GitHub (https://github.com/lodash/lodash) 中文文档 (https://www.lodashjs.com/)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一个一致性、模块化、高性能的 JavaScript 实用工具库</p>\n<p><a href=\"https://github.com/lodash/lodash\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://www.lodashjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Day",
-      "url": "https://codemake.fun/fe/javascript/plugins/03.Day.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/03.Day.html",
-      "summary": "一个轻量的处理时间和日期的 JavaScript 库 GitHub (https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md) 中文文档 (https://dayjs.gitee.io/docs/zh-CN/installation/installation)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一个轻量的处理时间和日期的 JavaScript 库</p>\n<p><a href=\"https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://dayjs.gitee.io/docs/zh-CN/installation/installation\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Big",
-      "url": "https://codemake.fun/fe/javascript/plugins/04.Big.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/04.Big.html",
-      "summary": "一个用于任意精度十进制算术的小型快速 JavaScript 库 GitHub (https://github.com/MikeMcl/big.js) 官方文档 (https://mikemcl.github.io/big.js/)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一个用于任意精度十进制算术的小型快速 JavaScript 库</p>\n<p><a href=\"https://github.com/MikeMcl/big.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://mikemcl.github.io/big.js/\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "FileSaver",
-      "url": "https://codemake.fun/fe/javascript/plugins/05.FileSaver.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/05.FileSaver.html",
-      "summary": "一款基于 HTML5 完成文件保存的插件 GitHub (https://github.com/eligrey/FileSaver.js)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一款基于 HTML5 完成文件保存的插件</p>\n<p><a href=\"https://github.com/eligrey/FileSaver.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "KeyboardJS",
-      "url": "https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html",
-      "summary": "一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库 GitHub (https://github.com/RobertWHurst/KeyboardJS)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库</p>\n<p><a href=\"https://github.com/RobertWHurst/KeyboardJS\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Sortable",
-      "url": "https://codemake.fun/fe/javascript/plugins/07.Sortable.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/07.Sortable.html",
-      "summary": "一款功能强大的 JavaScript 拖拽库 GitHub (https://github.com/SortableJS/Sortable)",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>一款功能强大的 JavaScript 拖拽库</p>\n<p><a href=\"https://github.com/SortableJS/Sortable\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Animation",
-      "url": "https://codemake.fun/fe/javascript/plugins/08.Animation.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/08.Animation.html",
-      "summary": "Anime 一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象 GitHub (https://github.com/juliangarnier/anime) Velocity 一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate(...",
-      "content_html": "<!-- more -->\n<h2> Anime</h2>\n<blockquote>\n<p>一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象</p>\n<p><a href=\"https://github.com/juliangarnier/anime\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Velocity</h2>\n<blockquote>\n<p>一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate() 有相同的 API, 同时还支持彩色动画、转换、循环、画架、SVG 支持和滚动等效果</p>\n<p><a href=\"https://github.com/julianshapiro/velocity\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Vivus</h2>\n<blockquote>\n<p>一个零依赖的 JavaScript 动画库，使用用 SVG 制作动画，使其具有被绘制的外观</p>\n<p><a href=\"https://github.com/maxwellito/vivus\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> GreenSock</h2>\n<blockquote>\n<p>一个 JavaScript 动画库，用于创建高性能、零依赖、跨浏览器动画，已在超过 400 万个网站上使用, 并且可以在 React、Vue、Angular 项目中使用</p>\n<p><a href=\"https://github.com/greensock/GSAP\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Kute.js</h2>\n<blockquote>\n<p>一个强大高性能且可扩展的原生 JavaScript 动画引擎，具有跨浏览器动画的基本功能</p>\n<p><a href=\"https://github.com/cubiq/iscroll\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://github.com/iiunknown/iscroll5.doc.cn\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "图像相关",
-      "url": "https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html",
-      "summary": "html2canvas 一个将网页 HTML 截图为图片的 JavaScript 插件 GitHub (https://github.com/niklasvh/html2canvas) dom-to-image 一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库 GitHub (htt...",
-      "content_html": "<!-- more -->\n<h2> html2canvas</h2>\n<blockquote>\n<p>一个将网页 HTML 截图为图片的 JavaScript 插件</p>\n<p><a href=\"https://github.com/niklasvh/html2canvas\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> dom-to-image</h2>\n<blockquote>\n<p>一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库</p>\n<p><a href=\"https://github.com/tsayen/dom-to-image\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> pica</h2>\n<blockquote>\n<p>一个在浏览器中调整图像大小，而不会出现像素失真，处理速度非常快的图片处理库</p>\n<p><a href=\"https://github.com/nodeca/pica\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Fabric</h2>\n<blockquote>\n<p>一个易于使用的基于 HTML5 canvas 元素的图片编辑器</p>\n<p><a href=\"https://github.com/fabricjs/fabric.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> cropperjs</h2>\n<blockquote>\n<p>一款强大的图片裁切库, 支持灵活的图片裁切方式</p>\n<p><a href=\"https://github.com/fengyuanchen/cropperjs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Grade</h2>\n<blockquote>\n<p>一个基于图像中的前 2 种主要颜色生成互补渐变背景的库</p>\n<p><a href=\"https://github.com/benhowdle89/grade\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Scroll",
-      "url": "https://codemake.fun/fe/javascript/plugins/10.Scroll.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/10.Scroll.html",
-      "summary": "fullPage.js 一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代 GitHub (https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs) Iscroll 一个移动端使用的轻量级滚动插件 GitHub (https://gith...",
-      "content_html": "<!-- more -->\n<h2> fullPage.js</h2>\n<blockquote>\n<p>一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代</p>\n<p><a href=\"https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Iscroll</h2>\n<blockquote>\n<p>一个移动端使用的轻量级滚动插件</p>\n<p><a href=\"https://github.com/cubiq/iscroll\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://iiunknown.gitbooks.io/iscroll-5-api-cn/content/\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n<h2> WOW</h2>\n<blockquote>\n<p>一个页面向下滚动时触发动画的 JavaScript 库</p>\n<p><a href=\"https://github.com/matthieua/WOW\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Scroll Reveal</h2>\n<blockquote>\n<p>一个页面（向上火向下）滚动时触发动画的 JavaScript 库</p>\n<p><a href=\"https://github.com/jlmakes/scrollreveal\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "Effect",
-      "url": "https://codemake.fun/fe/javascript/plugins/11.Effect.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/11.Effect.html",
-      "summary": "Typed.js 一个轻松实现打字效果的 js 插件 GitHub (https://github.com/mattboldt/typed.js/) 官方文档 (http://mattboldt.github.io/typed.js/docs/)",
-      "content_html": "<!-- more -->\n<h2> Typed.js</h2>\n<blockquote>\n<p>一个轻松实现打字效果的 js 插件</p>\n<p><a href=\"https://github.com/mattboldt/typed.js/\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"http://mattboldt.github.io/typed.js/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n</blockquote>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "PDF预览",
-      "url": "https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html",
-      "summary": "PDF预览插件 【GitHub】 (https://github.com/mozilla/pdf.js) 【官方文档】 (https://mozilla.github.io/pdf.js/getting_started/) 下载安装 使用方式 1. 在官方文档中下载预建版本 2. 将文件复制到项目文件夹 直接使用(预览全部) 直接访问：http://l...",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>PDF预览插件</p>\n<p><a href=\"https://github.com/mozilla/pdf.js\" target=\"_blank\" rel=\"noopener noreferrer\">【GitHub】</a> <a href=\"https://mozilla.github.io/pdf.js/getting_started/\" target=\"_blank\" rel=\"noopener noreferrer\">【官方文档】</a></p>\n</blockquote>\n<h2> 下载安装</h2>\n<h2> 使用方式</h2>\n<ol>\n<li>在官方文档中下载预建版本</li>\n</ol>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165319373.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ol start=\"2\">\n<li>\n<p>将文件复制到项目文件夹</p>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165437871.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n</li>\n</ol>\n<h3> 直接使用(预览全部)</h3>\n<ul>\n<li>直接访问：<code>http://localhost/web/viewer.html?file=pdf_url</code></li>\n</ul>\n<h3> 自定义显示方式</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "image": "https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165319373.png",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-02-24T09:07:04.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "动画相关",
-      "url": "https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html",
-      "id": "https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html",
-      "summary": "Lottie 本文文档出处：【lottie 动画】 (https://www.cnblogs.com/yf-html/p/15406174.html)lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After ...",
-      "content_html": "<!-- more -->\n<h2> Lottie</h2>\n<blockquote>\n<p>本文文档出处：<a href=\"https://www.cnblogs.com/yf-html/p/15406174.html\" target=\"_blank\" rel=\"noopener noreferrer\">【lottie 动画】</a><br>lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库<br>可以使用 <code>Bodymovin</code> 解析以 <code>JSON</code> 格式导出的 Adobe After Effects 动画，并在本地进行渲染<br><a href=\"http://airbnb.io/lottie/#/web\" target=\"_blank\" rel=\"noopener noreferrer\">【官方文档】</a> <a href=\"https://github.com/airbnb/lottie\" target=\"_blank\" rel=\"noopener noreferrer\">【GitHub】</a></p>\n</blockquote>\n<h3> 安装</h3>\n<blockquote>\n<p>通过一个叫 Bodymovin 的开源 After Effects 插件，以 JSON 文件的形式进行输出，Lottie 通过 JSON 格式下载动画数据并实时提供给开发者</p>\n</blockquote>\n<ul>\n<li><code>bodymovin</code> 插件下载安装</li>\n<li>安装并解压 <code>bodymovin</code></li>\n<li>打开 AE，添加 <code>bodymovin</code> 扩展</li>\n<li>导出 <code>data.json</code> 文件，动画的数据文件 详细可参考：<a href=\"https://wenku.baidu.com/view/af9328ddbbf67c1cfad6195f312b3169a451eafc.html\" target=\"_blank\" rel=\"noopener noreferrer\">【AE 插件 Bodymovin.zxp 的安装与使用】</a></li>\n</ul>\n<h3> 使用</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 优点</h3>\n<ul>\n<li>动画由设计使用专业的动画制作工具Adobe After Effects来实现，使动画实现更加方便，动画效果也更好</li>\n<li>前端可以方便的调用动画，并对动画进行控制，减少前端动画工作量</li>\n<li>设计制作动画，前端展现动画，专业人做专业事，分工合理</li>\n<li>卖家秀即买家秀，还原程度百分之百</li>\n<li>使用lottie方案，json文件大小会比gif文件小很多，性能也会更好</li>\n</ul>\n<h3> 缺点</h3>\n<ul>\n<li>lottie-web 文件本身仍然比较大，lottie.js 大小为 513k，轻量版压缩后也有 144k，经过 gzip 后，大小为 39k。所以，需要注意 lottie-web的 加载。目前 H5 项目有离线包，PC 项目也会上 PWA，会对其进行缓存，保证加载速度</li>\n<li>lottie 动画其实可以理解为 svg动画/canvas动画，不能给已存在的 html 添加动画效果</li>\n<li>动画 json文 件的导出，目前是将AE里面的参数一一导出成 json 内容，如果设计师建了很多的图层，可能仍然有json文件比较大（20kb）的问题。需要设计师遵循一定的规范</li>\n<li>有很少量的AE动画效果，lottie无法实现，有些是因为性能问题，有些是没有做。比如：描边动画等</li>\n</ul>\n",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "plugins"
-      ]
-    },
-    {
-      "title": "判断是否为移动端浏览器",
-      "url": "https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html",
-      "id": "https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html",
-      "content_html": "<!-- more -->\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "网页全屏显示",
-      "url": "https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html",
-      "id": "https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html",
-      "summary": "注意， 标签全屏时需要在标签中添加 allowfullscreen 属性",
-      "content_html": "<!-- more -->\n<blockquote>\n<p>注意，<code>&lt;iframe&gt;</code> 标签全屏时需要在标签中添加 <code>allowfullscreen</code> 属性</p>\n</blockquote>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-01-11T09:12:15.000Z",
-      "authors": [],
-      "tags": [
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "无法使用 JSX，除非提供了 --jsx 标志",
-      "url": "https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html",
-      "id": "https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html",
-      "content_html": "<!-- more -->\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2023-01-11T09:12:15.000Z",
-      "date_modified": "2023-03-17T06:41:56.000Z",
-      "authors": [],
-      "tags": [
-        "JavaScript"
-      ]
-    },
-    {
       "title": "数组去重性能对比",
       "url": "https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html",
       "id": "https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html",
@@ -972,6 +765,213 @@
       "id": "https://codemake.fun/fe/javascript/knowledge/15.%E5%B8%B8%E8%A7%81%E8%80%83%E7%82%B9.html",
       "summary": "问题考点 typeof 能判断哪些类型 考点：JS 变量类型; 返回判断：; 所有值类型; 函数; 引用类型（不可细分）; 何时使用 === 何时使用 == 考点：强制类型装换; 使用：除了 == null 之外，其他一律用 ===; window.onload 和 DOMContentLoaded 的区别 考点：页面渲染过程; JS 创建 10 个 ...",
       "content_html": "<!-- more -->\n<h2> 问题考点</h2>\n<h3> typeof 能判断哪些类型</h3>\n<ul>\n<li>考点：JS 变量类型</li>\n<li>返回判断：\n<ul>\n<li>所有值类型</li>\n<li>函数</li>\n<li>引用类型（不可细分）</li>\n</ul>\n</li>\n</ul>\n<h3> 何时使用 === 何时使用 ==</h3>\n<ul>\n<li>考点：强制类型装换</li>\n<li>使用：除了 <code>== null</code> 之外，其他一律用 <code>===</code></li>\n</ul>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> window.onload 和 DOMContentLoaded 的区别</h3>\n<ul>\n<li>考点：页面渲染过程</li>\n</ul>\n<h3> JS 创建 10 个 a 标签，点击时候弹出对应的序号</h3>\n<ul>\n<li>考点：JS 作用域</li>\n</ul>\n<h3> 手写节流 throttle 、防抖 debounce</h3>\n<ul>\n<li>考点：性能、体验优化</li>\n</ul>\n<h3> Promise 解决了什么问题</h3>\n<ul>\n<li>考点：JS 异步</li>\n</ul>\n<h2> 知识体系</h2>\n<h3> 基础语法</h3>\n<h4> 变量类型和计算</h4>\n<h3> JS-Web-API</h3>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 原型关系</h3>\n<ul>\n<li>每个 class 都有显式原型 prototype</li>\n<li>每个实例都有隐式原型 <strong>proto</strong></li>\n<li>实例的隐式原型指向对应 class 的 prototype</li>\n<li>每个 class 的显式原型的隐式原型指向其父类的隐式原型</li>\n<li>Object 的隐式原型指向 null</li>\n<li>instanceof：沿着隐式原型往上找到对应的显式原型</li>\n</ul>\n<h3> class 本质</h3>\n<ul>\n<li>原型和原型链的图示</li>\n<li>属性和方法的执行规则</li>\n</ul>\n<p>![](<a href=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-vuepress-img/img/iShot2021-11-07\" target=\"_blank\" rel=\"noopener noreferrer\">https://cdn.jsdelivr.net/gh/sunzhenyang/blog-vuepress-img/img/iShot2021-11-07</a> 20.21.38.png)</p>\n<h3> 闭包</h3>\n<h4> 作用域应用的特殊情况</h4>\n<ul>\n<li>函数作为参数被传递</li>\n<li>函数作为返回值被返回</li>\n</ul>\n<h4> 应用</h4>\n<p>隐藏数据</p>\n<p><strong>自由变量的查找，是在函数定义的地方，向上级作用于查找，不是在执行的地方！！！</strong></p>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> this</h3>\n<h4> 调用场景</h4>\n<ul>\n<li>作为普通函数</li>\n<li>使用 call apply bind</li>\n<li>作为对象方法被调用</li>\n<li>class 方法中被调用</li>\n<li>箭头函数</li>\n</ul>\n<p>*<em>this 取值是在函数执行时被确定的，不是在函数定义时确定的！！！</em></p>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h2> 作业</h2>\n<ul>\n<li>研究 call bind apply</li>\n<li>手写 call bind apply</li>\n<li>闭包隐藏数据</li>\n<li></li>\n</ul>\n<h2> 运行环境</h2>\n<h3> 加载过程</h3>\n<ul>\n<li>DNS 解析：域名 -&gt; IP 地址</li>\n<li>浏览器根据 IP 地址向服务器发起 http 请求（三次握手等等）</li>\n<li>服务器处理 http 请求，并返回给浏览器</li>\n</ul>\n<h3> 渲染过程</h3>\n<ul>\n<li>根据 HTML 生成 DOM Tree</li>\n<li>根据 CSS 生成 CSSOM</li>\n<li>将 DOM Tree 和 CSSOM 整合形成 Render Tree</li>\n<li>遇到 <code>&lt;script&gt;</code> 则暂停渲染，优先加载并执行 JS 代码，完成再继续</li>\n<li>直至 Render Tree 渲染完成</li>\n</ul>\n<h3> 性能优化</h3>\n<ul>\n<li>空间换时间（适用于所有变成的性能优化）\n<ul>\n<li>多使用内存、缓存或其他方法</li>\n<li>减少 CPU 计算量，介绍网络加载耗时</li>\n</ul>\n</li>\n<li>从何入手\n<ul>\n<li>让加载更快\n<ul>\n<li>减少资源体积，压缩代码</li>\n<li>减少访问次数：合并代码，SSR 服务器端渲染</li>\n<li>缓存\n<ul>\n<li>静态资源加 hash 后缀，根据文件内容计算 hash</li>\n<li>文件内容不变，则 hash 不变，则 url 不变</li>\n<li>url 和 文件不变，则会自动触发 http 缓存机制，返回 304</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>让渲染更快\n<ul>\n<li>CSS 放在 head，JS 放在 body 最下面</li>\n<li>尽早开始执行 JS，用 DOMContentLoaded 触发</li>\n<li>懒加载（ 图片懒加载，上滑加载更多 ）</li>\n<li>对 DOM 查询进行缓存</li>\n<li>频繁 DOM 操作，合并到一起插入 DOM 结构 （ createDocumentFragment ）</li>\n</ul>\n</li>\n<li>让渲染更加流程\n<ul>\n<li>节流 throttle</li>\n<li>防抖 debounce</li>\n</ul>\n</li>\n<li>使用更快的网络：CDN</li>\n</ul>\n</li>\n</ul>\n<h4> 防抖 debounce</h4>\n<h5> 场景</h5>\n<ul>\n<li>监听输入框文字变化后触发 change 事件</li>\n<li>直接用 keyup 事件，则会频繁触发 change 事件</li>\n<li>防抖：用户结束或暂停时，才会触发 change 事件</li>\n</ul>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h4> 节流 throttle</h4>\n<h5> 场景</h5>\n<ul>\n<li>拖拽一个元素时，要随时拿到该元素被拖拽的位置</li>\n<li>直接用 drag 事件，则会频繁触发，很容易导致卡顿</li>\n<li>节流：无论拖拽速度多快，都会每个 100ms 触发一次</li>\n</ul>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 安全</h3>\n<h4> 常见的 web 前端攻击方式</h4>\n<h5> XSS 跨站请求攻击</h5>\n<h5> 攻击方式</h5>\n<ul>\n<li>一个博客网站，我发表一篇博客，其中嵌入 <code>&lt;script&gt;</code> 脚本</li>\n<li>脚本内容：获取 cookie，发送到我的服务器（ 服务器配合跨域 ）</li>\n<li>发布之篇博客，有人查看它，轻松收割访问者 cookie</li>\n</ul>\n<h5> 预防</h5>\n<ul>\n<li>替换特殊字符，如 <code>&lt;</code> 变为 <code>&amp;lt;</code>， <code>&gt;</code> 变为 <code>&amp;gt;</code></li>\n<li><code>&lt;script&gt;</code> 变为 <code> &amp;lt;script&amp;gt;</code>，直接显示，而不会作为脚本执行</li>\n<li>前端要替换，后端也要替换，都做总不会有错</li>\n</ul>\n<h5> 工具</h5>\n<ul>\n<li><a href=\"https://github.com/leizongmin/js-xss/blob/master/README.zh.md\" target=\"_blank\" rel=\"noopener noreferrer\">根据白名单过滤 HTML(防止 XSS 攻击)</a></li>\n</ul>\n<h5> XSRF 跨站请求伪造</h5>\n<h5> 攻击方式</h5>\n<ul>\n<li>你正在购物，看中了某个商品，商品 id 是 100</li>\n<li>付费接口是 <a href=\"http://xxx.com/pay?id=100%EF%BC%8C%E4%BD%86%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E9%AA%8C%E8%AF%81\" target=\"_blank\" rel=\"noopener noreferrer\">xxx.com/pay?id=100，但没有任何验证</a></li>\n<li>我是攻击者，我看中了一个商品，id 是 200</li>\n<li>我向你发送一封电子邮件，邮件标题很吸引人</li>\n<li>但邮件正文隐藏着 &lt;img <a href=\"http://src=xxx.com/pay?id=200\" target=\"_blank\" rel=\"noopener noreferrer\">src=xxx.com/pay?id=200</a> /&gt;</li>\n<li>你已查看右键，就帮我购买了 id 是 200 的商品</li>\n</ul>\n<h5> 预防</h5>\n<ul>\n<li>使用 POST 接口</li>\n<li>增加验证，例如密码、短信验证码、指纹等</li>\n</ul>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Qs",
+      "url": "https://codemake.fun/fe/javascript/plugins/01.Qs.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/01.Qs.html",
+      "summary": "一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库 GitHub (https://github.com/ljharb/qs) 引入 直接引入 导入包 简单使用",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库</p>\n<p><a href=\"https://github.com/ljharb/qs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> 引入</h2>\n<h3> 直接引入</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 导入包</h3>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h2> 简单使用</h2>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Lodash",
+      "url": "https://codemake.fun/fe/javascript/plugins/02.Lodash.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/02.Lodash.html",
+      "summary": "一个一致性、模块化、高性能的 JavaScript 实用工具库 GitHub (https://github.com/lodash/lodash) 中文文档 (https://www.lodashjs.com/)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一个一致性、模块化、高性能的 JavaScript 实用工具库</p>\n<p><a href=\"https://github.com/lodash/lodash\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://www.lodashjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Day",
+      "url": "https://codemake.fun/fe/javascript/plugins/03.Day.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/03.Day.html",
+      "summary": "一个轻量的处理时间和日期的 JavaScript 库 GitHub (https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md) 中文文档 (https://dayjs.gitee.io/docs/zh-CN/installation/installation)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一个轻量的处理时间和日期的 JavaScript 库</p>\n<p><a href=\"https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://dayjs.gitee.io/docs/zh-CN/installation/installation\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Big",
+      "url": "https://codemake.fun/fe/javascript/plugins/04.Big.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/04.Big.html",
+      "summary": "一个用于任意精度十进制算术的小型快速 JavaScript 库 GitHub (https://github.com/MikeMcl/big.js) 官方文档 (https://mikemcl.github.io/big.js/)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一个用于任意精度十进制算术的小型快速 JavaScript 库</p>\n<p><a href=\"https://github.com/MikeMcl/big.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://mikemcl.github.io/big.js/\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "FileSaver",
+      "url": "https://codemake.fun/fe/javascript/plugins/05.FileSaver.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/05.FileSaver.html",
+      "summary": "一款基于 HTML5 完成文件保存的插件 GitHub (https://github.com/eligrey/FileSaver.js)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一款基于 HTML5 完成文件保存的插件</p>\n<p><a href=\"https://github.com/eligrey/FileSaver.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "KeyboardJS",
+      "url": "https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html",
+      "summary": "一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库 GitHub (https://github.com/RobertWHurst/KeyboardJS)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库</p>\n<p><a href=\"https://github.com/RobertWHurst/KeyboardJS\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Sortable",
+      "url": "https://codemake.fun/fe/javascript/plugins/07.Sortable.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/07.Sortable.html",
+      "summary": "一款功能强大的 JavaScript 拖拽库 GitHub (https://github.com/SortableJS/Sortable)",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>一款功能强大的 JavaScript 拖拽库</p>\n<p><a href=\"https://github.com/SortableJS/Sortable\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Animation",
+      "url": "https://codemake.fun/fe/javascript/plugins/08.Animation.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/08.Animation.html",
+      "summary": "Anime 一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象 GitHub (https://github.com/juliangarnier/anime) Velocity 一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate(...",
+      "content_html": "<!-- more -->\n<h2> Anime</h2>\n<blockquote>\n<p>一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象</p>\n<p><a href=\"https://github.com/juliangarnier/anime\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Velocity</h2>\n<blockquote>\n<p>一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate() 有相同的 API, 同时还支持彩色动画、转换、循环、画架、SVG 支持和滚动等效果</p>\n<p><a href=\"https://github.com/julianshapiro/velocity\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Vivus</h2>\n<blockquote>\n<p>一个零依赖的 JavaScript 动画库，使用用 SVG 制作动画，使其具有被绘制的外观</p>\n<p><a href=\"https://github.com/maxwellito/vivus\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> GreenSock</h2>\n<blockquote>\n<p>一个 JavaScript 动画库，用于创建高性能、零依赖、跨浏览器动画，已在超过 400 万个网站上使用, 并且可以在 React、Vue、Angular 项目中使用</p>\n<p><a href=\"https://github.com/greensock/GSAP\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Kute.js</h2>\n<blockquote>\n<p>一个强大高性能且可扩展的原生 JavaScript 动画引擎，具有跨浏览器动画的基本功能</p>\n<p><a href=\"https://github.com/cubiq/iscroll\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://github.com/iiunknown/iscroll5.doc.cn\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "图像相关",
+      "url": "https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html",
+      "summary": "html2canvas 一个将网页 HTML 截图为图片的 JavaScript 插件 GitHub (https://github.com/niklasvh/html2canvas) dom-to-image 一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库 GitHub (htt...",
+      "content_html": "<!-- more -->\n<h2> html2canvas</h2>\n<blockquote>\n<p>一个将网页 HTML 截图为图片的 JavaScript 插件</p>\n<p><a href=\"https://github.com/niklasvh/html2canvas\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> dom-to-image</h2>\n<blockquote>\n<p>一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库</p>\n<p><a href=\"https://github.com/tsayen/dom-to-image\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> pica</h2>\n<blockquote>\n<p>一个在浏览器中调整图像大小，而不会出现像素失真，处理速度非常快的图片处理库</p>\n<p><a href=\"https://github.com/nodeca/pica\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Fabric</h2>\n<blockquote>\n<p>一个易于使用的基于 HTML5 canvas 元素的图片编辑器</p>\n<p><a href=\"https://github.com/fabricjs/fabric.js\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> cropperjs</h2>\n<blockquote>\n<p>一款强大的图片裁切库, 支持灵活的图片裁切方式</p>\n<p><a href=\"https://github.com/fengyuanchen/cropperjs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Grade</h2>\n<blockquote>\n<p>一个基于图像中的前 2 种主要颜色生成互补渐变背景的库</p>\n<p><a href=\"https://github.com/benhowdle89/grade\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Scroll",
+      "url": "https://codemake.fun/fe/javascript/plugins/10.Scroll.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/10.Scroll.html",
+      "summary": "fullPage.js 一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代 GitHub (https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs) Iscroll 一个移动端使用的轻量级滚动插件 GitHub (https://gith...",
+      "content_html": "<!-- more -->\n<h2> fullPage.js</h2>\n<blockquote>\n<p>一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代</p>\n<p><a href=\"https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Iscroll</h2>\n<blockquote>\n<p>一个移动端使用的轻量级滚动插件</p>\n<p><a href=\"https://github.com/cubiq/iscroll\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"https://iiunknown.gitbooks.io/iscroll-5-api-cn/content/\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></p>\n</blockquote>\n<h2> WOW</h2>\n<blockquote>\n<p>一个页面向下滚动时触发动画的 JavaScript 库</p>\n<p><a href=\"https://github.com/matthieua/WOW\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n<h2> Scroll Reveal</h2>\n<blockquote>\n<p>一个页面（向上火向下）滚动时触发动画的 JavaScript 库</p>\n<p><a href=\"https://github.com/jlmakes/scrollreveal\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "Effect",
+      "url": "https://codemake.fun/fe/javascript/plugins/11.Effect.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/11.Effect.html",
+      "summary": "Typed.js 一个轻松实现打字效果的 js 插件 GitHub (https://github.com/mattboldt/typed.js/) 官方文档 (http://mattboldt.github.io/typed.js/docs/)",
+      "content_html": "<!-- more -->\n<h2> Typed.js</h2>\n<blockquote>\n<p>一个轻松实现打字效果的 js 插件</p>\n<p><a href=\"https://github.com/mattboldt/typed.js/\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> <a href=\"http://mattboldt.github.io/typed.js/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n</blockquote>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "PDF预览",
+      "url": "https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html",
+      "summary": "PDF预览插件 【GitHub】 (https://github.com/mozilla/pdf.js) 【官方文档】 (https://mozilla.github.io/pdf.js/getting_started/) 下载安装 使用方式 1. 在官方文档中下载预建版本 2. 将文件复制到项目文件夹 直接使用(预览全部) 直接访问：http://l...",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>PDF预览插件</p>\n<p><a href=\"https://github.com/mozilla/pdf.js\" target=\"_blank\" rel=\"noopener noreferrer\">【GitHub】</a> <a href=\"https://mozilla.github.io/pdf.js/getting_started/\" target=\"_blank\" rel=\"noopener noreferrer\">【官方文档】</a></p>\n</blockquote>\n<h2> 下载安装</h2>\n<h2> 使用方式</h2>\n<ol>\n<li>在官方文档中下载预建版本</li>\n</ol>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165319373.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<ol start=\"2\">\n<li>\n<p>将文件复制到项目文件夹</p>\n<figure><img src=\"https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165437871.png\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n</li>\n</ol>\n<h3> 直接使用(预览全部)</h3>\n<ul>\n<li>直接访问：<code>http://localhost/web/viewer.html?file=pdf_url</code></li>\n</ul>\n<h3> 自定义显示方式</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
+      "image": "https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img@main/img/image-20220826165319373.png",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-02-24T09:07:04.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "动画相关",
+      "url": "https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html",
+      "id": "https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html",
+      "summary": "Lottie 本文文档出处：【lottie 动画】 (https://www.cnblogs.com/yf-html/p/15406174.html)lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After ...",
+      "content_html": "<!-- more -->\n<h2> Lottie</h2>\n<blockquote>\n<p>本文文档出处：<a href=\"https://www.cnblogs.com/yf-html/p/15406174.html\" target=\"_blank\" rel=\"noopener noreferrer\">【lottie 动画】</a><br>lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库<br>可以使用 <code>Bodymovin</code> 解析以 <code>JSON</code> 格式导出的 Adobe After Effects 动画，并在本地进行渲染<br><a href=\"http://airbnb.io/lottie/#/web\" target=\"_blank\" rel=\"noopener noreferrer\">【官方文档】</a> <a href=\"https://github.com/airbnb/lottie\" target=\"_blank\" rel=\"noopener noreferrer\">【GitHub】</a></p>\n</blockquote>\n<h3> 安装</h3>\n<blockquote>\n<p>通过一个叫 Bodymovin 的开源 After Effects 插件，以 JSON 文件的形式进行输出，Lottie 通过 JSON 格式下载动画数据并实时提供给开发者</p>\n</blockquote>\n<ul>\n<li><code>bodymovin</code> 插件下载安装</li>\n<li>安装并解压 <code>bodymovin</code></li>\n<li>打开 AE，添加 <code>bodymovin</code> 扩展</li>\n<li>导出 <code>data.json</code> 文件，动画的数据文件 详细可参考：<a href=\"https://wenku.baidu.com/view/af9328ddbbf67c1cfad6195f312b3169a451eafc.html\" target=\"_blank\" rel=\"noopener noreferrer\">【AE 插件 Bodymovin.zxp 的安装与使用】</a></li>\n</ul>\n<h3> 使用</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 优点</h3>\n<ul>\n<li>动画由设计使用专业的动画制作工具Adobe After Effects来实现，使动画实现更加方便，动画效果也更好</li>\n<li>前端可以方便的调用动画，并对动画进行控制，减少前端动画工作量</li>\n<li>设计制作动画，前端展现动画，专业人做专业事，分工合理</li>\n<li>卖家秀即买家秀，还原程度百分之百</li>\n<li>使用lottie方案，json文件大小会比gif文件小很多，性能也会更好</li>\n</ul>\n<h3> 缺点</h3>\n<ul>\n<li>lottie-web 文件本身仍然比较大，lottie.js 大小为 513k，轻量版压缩后也有 144k，经过 gzip 后，大小为 39k。所以，需要注意 lottie-web的 加载。目前 H5 项目有离线包，PC 项目也会上 PWA，会对其进行缓存，保证加载速度</li>\n<li>lottie 动画其实可以理解为 svg动画/canvas动画，不能给已存在的 html 添加动画效果</li>\n<li>动画 json文 件的导出，目前是将AE里面的参数一一导出成 json 内容，如果设计师建了很多的图层，可能仍然有json文件比较大（20kb）的问题。需要设计师遵循一定的规范</li>\n<li>有很少量的AE动画效果，lottie无法实现，有些是因为性能问题，有些是没有做。比如：描边动画等</li>\n</ul>\n",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "plugins"
+      ]
+    },
+    {
+      "title": "无法使用 JSX，除非提供了 --jsx 标志",
+      "url": "https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html",
+      "id": "https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html",
+      "content_html": "<!-- more -->\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-03-17T06:41:56.000Z",
+      "authors": [],
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "判断是否为移动端浏览器",
+      "url": "https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html",
+      "id": "https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html",
+      "content_html": "<!-- more -->\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
+      "date_published": "2023-01-11T09:12:15.000Z",
+      "date_modified": "2023-01-11T09:12:15.000Z",
+      "authors": [],
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "网页全屏显示",
+      "url": "https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html",
+      "id": "https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html",
+      "summary": "注意， 标签全屏时需要在标签中添加 allowfullscreen 属性",
+      "content_html": "<!-- more -->\n<blockquote>\n<p>注意，<code>&lt;iframe&gt;</code> 标签全屏时需要在标签中添加 <code>allowfullscreen</code> 属性</p>\n</blockquote>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
       "date_published": "2023-01-11T09:12:15.000Z",
       "date_modified": "2023-01-11T09:12:15.000Z",
       "authors": [],

@@ -1,0 +1,2 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,f as n}from"./app-a7325d6d.js";const c={},l=n(`<p><code>kill</code>命令用户终止指定进程。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">kill</span> PID
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),t=[l];function i(o,d){return s(),a("div",null,t)}const m=e(c,[["render",i],["__file","kill.html.vue"]]);export{m as default};

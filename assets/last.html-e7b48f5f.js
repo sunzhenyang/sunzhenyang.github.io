@@ -1,0 +1,3 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,f as d}from"./app-a7325d6d.js";const n={},c=d(`<p><code>last</code>命令显示用户登录系统的记录。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ last
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>last</code>命令后面加上用户名，会显示该用户上次登录的信息。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ last yourUsername
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),l=[c];function t(i,r){return s(),a("div",null,l)}const m=e(n,[["render",t],["__file","last.html.vue"]]);export{m as default};

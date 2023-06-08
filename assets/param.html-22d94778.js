@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as r,b as o}from"./app-d18dfe82.js";const s={},a=o("p",null,"star: true 收藏 timeline: true 时间线 sticky 置顶 isOriginal 原创",-1),c=[a];function n(_,i){return t(),r("div",null,c)}const f=e(s,[["render",n],["__file","param.html.vue"]]);export{f as default};

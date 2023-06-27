@@ -1,0 +1,1 @@
+import{_ as r}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as o,b as e,d as t}from"./app-4ebde51b.js";const s={},c=e("p",null,[t("star: true 收藏"),e("br"),t(" timeline: true 时间线"),e("br"),t(" sticky 置顶"),e("br"),t(" isOriginal 原创")],-1),n=[c];function _(i,l){return a(),o("div",null,n)}const f=r(s,[["render",_],["__file","param.html.vue"]]);export{f as default};

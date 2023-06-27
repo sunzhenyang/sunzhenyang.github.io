@@ -5,7 +5,7 @@
   <subtitle>今日事，今日毕！</subtitle>
   <icon>https://codemake.fun/assets/icon/logo.png</icon>
   <logo>https://codemake.fun/banner.jpeg</logo>
-  <updated>2023-06-08T06:23:36.358Z</updated>
+  <updated>2023-06-27T09:13:42.590Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://codemake.fun/atom.xml"/>
   <link rel="alternate" href="https://codemake.fun/"/>
@@ -2546,12 +2546,12 @@
     <content type="html"><![CDATA[<!-- more -->
 <h2> 正则表达式</h2>
 <h3> 字符匹配</h3>
-<p>| 表达式                      | 说明                                 |
-| :-------------------------- | ------------------------------------ | ------------------ |
-| <code>A</code>                         | 精准匹配单个字符                     |
-| <code>x                          | y</code>                                   | 允许出现的两个字符 |
-| <code>[xyz]</code>                     | 字符集合，允许出现集合内任意单个字符 |
-| <code>[a-z]</code><br><code>[A-Z]</code><br><code>0-9</code> | 字符范围                             |
+<p>| 表达式                      | 说明                                 |<br>
+| :-------------------------- | ------------------------------------ | ------------------ |<br>
+| <code>A</code>                         | 精准匹配单个字符                     |<br>
+| <code>x                          | y</code>                                   | 允许出现的两个字符 |<br>
+| <code>[xyz]</code>                     | 字符集合，允许出现集合内任意单个字符 |<br>
+| <code>[a-z]</code><br><code>[A-Z]</code><br><code>0-9</code> | 字符范围                             |<br>
 | <code>[^xyz]</code><br><code>[^0-9]</code>        | 集合内字符不允许出现                 |</p>
 <h3> 元字符</h3>
 <table>
@@ -2799,35 +2799,35 @@
 <blockquote>
 <p>在对象创建过程中不实例化，在静态共有方法中再实例化，时间换空间，存在线程风险</p>
 </blockquote>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>工厂方法模式
-建造者模式
-抽象工厂模式
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>工厂方法模式<br>
+建造者模式<br>
+抽象工厂模式<br>
 原型模式</p>
 <h2> 组合型模式</h2>
 <blockquote>
 <p>关注类和对象组合的模式</p>
 </blockquote>
-<p>桥接模式
-装饰器模式
-代理模式
-组合模式
-享元模式
-外观模式
+<p>桥接模式<br>
+装饰器模式<br>
+代理模式<br>
+组合模式<br>
+享元模式<br>
+外观模式<br>
 适配器模式</p>
 <h2> 行为型模式</h2>
 <blockquote>
 <p>关注对象之间的通信过程</p>
 </blockquote>
-<p>备忘录模式
-状态模式
-解释器模式
-命令模式
-模板方法模式
-访问者模式
-中介者模式
-迭代子模式
-观察者模式
-策略模式
+<p>备忘录模式<br>
+状态模式<br>
+解释器模式<br>
+命令模式<br>
+模板方法模式<br>
+访问者模式<br>
+中介者模式<br>
+迭代子模式<br>
+观察者模式<br>
+策略模式<br>
 责任链模式</p>
 ]]></content>
     <category term="Java"/>
@@ -2962,7 +2962,7 @@
     <title type="text">Node安装与配置</title>
     <id>https://codemake.fun/notes/other/001.Node%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html</id>
     <link href="https://codemake.fun/notes/other/001.Node%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html"/>
-    <updated>2023-06-07T08:19:40.000Z</updated>
+    <updated>2023-06-27T00:43:36.000Z</updated>
     <summary type="text">nvm管理（推荐） nvm 是一个 node 的版本管理工具（全称：node.js version management） 为了解决 node 各种版本不兼容的现象，可以通过它安装和切换不同版本的 node 请确保本地所有 node 版本已卸载 下载 下载地址：【nvm-windows】 (https://github.com/coreybutler/...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2> nvm管理（推荐）</h2>
@@ -3043,6 +3043,7 @@
 <li><code>nvm use [version] [arch]</code> ：使用制定版本 <code>node</code>，可指定 32/64位</li>
 <li><code>nvm root [path]</code> ：设置存储不同版本node的目录，如果未设置，默认使用当前目录</li>
 <li><code>nvm version</code> ：显示 <code>nvm</code> 版本，<code>version</code> 可简化为 <code>v</code></li>
+<li><code>nvm alias default &lt;version&gt;</code>：切换默认版本</li>
 </ul>
 <h3> 更换源</h3>
 <ul>
@@ -3184,8 +3185,8 @@
 </li>
 </ul>
 <blockquote>
-<p><code>codePointAt</code> 与 <code>charCodeAt</code> 接受的索引值都是根据码元
-<code>codePointAt</code> 函数匹配规则是码点，当它匹配到当前索引的码元后会识别当前的码元是否和后面的码元能否构成一个码点，如果是
+<p><code>codePointAt</code> 与 <code>charCodeAt</code> 接受的索引值都是根据码元<br>
+<code>codePointAt</code> 函数匹配规则是码点，当它匹配到当前索引的码元后会识别当前的码元是否和后面的码元能否构成一个码点，如果是<br>
 一个码点，则返回这两个码元的码点，如果不能构成一个码点，就按照当前的码元返回码点</p>
 <p>ES6 考虑到了这个问题，其原型上实现了 <code>Symbol.iterator</code>，使得其可以使用 <code>for of</code> 来遍历其值</p>
 </blockquote>
@@ -3764,7 +3765,7 @@
 <blockquote>
 <p><strong>Base64 编码后的数据都是 ASCll 字符</strong></p>
 </blockquote>
-<p>早期邮件传输协议基于 ASCII 文本，对于诸如图片、视频等二进制文件处理并不好。ASCII 主要用于显示现代英文，到目前为业只定义了 128 个字符，包含控制字符和可显示字符为了解决上述问题，Base64 编码顺势而生。
+<p>早期邮件传输协议基于 ASCII 文本，对于诸如图片、视频等二进制文件处理并不好。ASCII 主要用于显示现代英文，到目前为业只定义了 128 个字符，包含控制字符和可显示字符为了解决上述问题，Base64 编码顺势而生。<br>
 Base64 是编解码，主要的作用不在于安全性，而在于让内容能在各个网关间无错的传输，这才是 Base64 编码的核心作用。</p>
 <h3> 组成</h3>
 <blockquote>
@@ -4208,77 +4209,6 @@ Base64 是编解码，主要的作用不在于安全性，而在于让内容能�
     <published>2022-02-22T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">常用代码</title>
-    <id>https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html</id>
-    <link href="https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html"/>
-    <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">多行文本超出省略号 底部阴影 页面变灰色</summary>
-    <content type="html"><![CDATA[<!-- more -->
-<h2> 多行文本超出省略号</h2>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 底部阴影</h2>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 页面变灰色</h2>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="CSS"/>
-    <published>2023-01-11T09:12:15.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">水平垂直居中的几种方式</title>
-    <id>https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html</id>
-    <link href="https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html"/>
-    <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">See the Pen 水平垂直居中的几种方式 by xugaoyi (@xugaoyi) on CodePen.</summary>
-    <content type="html"><![CDATA[<!-- more -->
-<iframe height="880" style="width: 100%;" scrolling="no" title="水平垂直居中的几种方式" src="https://codepen.io/xugaoyi/embed/poJLeYv?height=880&amp;theme-id=light&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/xugaoyi/pen/poJLeYv'>水平垂直居中的几种方式</a> by xugaoyi
-  (<a href='https://codepen.io/xugaoyi'>@xugaoyi</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="CSS"/>
-    <published>2023-01-11T09:12:15.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">根据系统主题自动响应CSS深色模式</title>
-    <id>https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html</id>
-    <link href="https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html"/>
-    <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。 CSS 深色模式 (Dark Mode) 在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下: :root...</summary>
-    <content type="html"><![CDATA[<!-- more -->
-<blockquote>
-<p>很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。</p>
-</blockquote>
-<!-- more -->
-<h2> CSS 深色模式 (Dark Mode)</h2>
-<p>在<code>:root</code>根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下:</p>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p><strong><code>:root</code></strong> 这个 CSS 伪类匹配文档树的根元素。对于 HTML 来说，<strong><code>:root</code></strong> 表示 <code>&lt;html&gt;</code>元素，除了优先级更高之外，与 <code>html</code> 选择器相同。</p>
-</blockquote>
-<p>如果希望在样式表中使用这些变量，可以这样做</p>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样，如果你想改变你的主题颜色，所需要做的就是修改你定义的变量，所有使用这个变量的样式都会被更新。</p>
-<p>现在我们需要定义一组新的变量，这些变量将在调用CSS深色模式时使用。对我来说，深色模式的变量是这样的:</p>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 添加深色模式自动响应</h2>
-<p>现在我们定义了两组变量。剩下要做的一件事就是将<code>prefers-color-scheme</code>媒体查询添加到我们的深色模式变量中。</p>
-<p>使用您的深色模式变量并在外层添加<code>@media</code>查询</p>
-<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme" target="_blank" rel="noopener noreferrer"><code>prefers-color-scheme</code>文档</a></p>
-</blockquote>
-<p>这是真的! 如果有人正在使用一个深色模式的系统主题，并访问你的网站，将自动切换到深色模式。</p>
-<blockquote>
-<p>如果你的电脑系统不支持深色模式，可以使用手机测试，先把手机的系统主题调到深色模式，再打开你的网站。</p>
-</blockquote>
-<h2> JS判断深色模式</h2>
-<p>如果你的需求需要js来判断系统是否处于深色模式，可以这样做：</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/matchMedia" target="_blank" rel="noopener noreferrer"><code>matchMedia</code></a>方法返回一个<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaQueryList" target="_blank" rel="noopener noreferrer"><code>MediaQueryList</code></a>对象，该对象具有属性<code>matches</code>、<code>media</code>，具有方法<code>addListener</code>、<code>removeListener</code>。</p>
-</blockquote>
-<p><code>addListener</code>接收一个<code>MediaQueryList</code>对象作为参数。
-为深色模式添加监听器，以响应系统切换到或切换出深色模式：</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 结论</h2>
-<p>我们不仅可以在布局方面响应不同尺寸屏幕，还可以按系统主题响应深色模式。我相信你的深夜访客，或者那些喜欢深色模式的人，会感谢你的。</p>
-]]></content>
-    <category term="CSS"/>
-    <published>2023-01-11T09:12:15.000Z</published>
-  </entry>
-  <entry>
     <title type="text">盒模型</title>
     <id>https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html"/>
@@ -4685,37 +4615,74 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <published>2023-01-11T09:12:15.000Z</published>
   </entry>
   <entry>
-    <title type="text">无法使用 JSX，除非提供了 --jsx 标志</title>
-    <id>https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html</id>
-    <link href="https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html"/>
-    <updated>2023-03-17T06:41:56.000Z</updated>
+    <title type="text">常用代码</title>
+    <id>https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html</id>
+    <link href="https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html"/>
+    <updated>2023-01-11T09:12:15.000Z</updated>
+    <summary type="text">多行文本超出省略号 底部阴影 页面变灰色</summary>
     <content type="html"><![CDATA[<!-- more -->
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="JavaScript"/>
+<h2> 多行文本超出省略号</h2>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 底部阴影</h2>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 页面变灰色</h2>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="CSS"/>
     <published>2023-01-11T09:12:15.000Z</published>
   </entry>
   <entry>
-    <title type="text">判断是否为移动端浏览器</title>
-    <id>https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html</id>
-    <link href="https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html"/>
+    <title type="text">水平垂直居中的几种方式</title>
+    <id>https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html</id>
+    <link href="https://codemake.fun/fe/css/tricks/02.%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
+    <summary type="text">See the Pen 水平垂直居中的几种方式 by xugaoyi (@xugaoyi) on CodePen.</summary>
     <content type="html"><![CDATA[<!-- more -->
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="JavaScript"/>
+<iframe height="880" style="width: 100%;" scrolling="no" title="水平垂直居中的几种方式" src="https://codepen.io/xugaoyi/embed/poJLeYv?height=880&amp;theme-id=light&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xugaoyi/pen/poJLeYv'>水平垂直居中的几种方式</a> by xugaoyi
+  (<a href='https://codepen.io/xugaoyi'>@xugaoyi</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="CSS"/>
     <published>2023-01-11T09:12:15.000Z</published>
   </entry>
   <entry>
-    <title type="text">网页全屏显示</title>
-    <id>https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html</id>
-    <link href="https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html"/>
+    <title type="text">根据系统主题自动响应CSS深色模式</title>
+    <id>https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html</id>
+    <link href="https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">注意， 标签全屏时需要在标签中添加 allowfullscreen 属性</summary>
+    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。 CSS 深色模式 (Dark Mode) 在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下: :root...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
-<p>注意，<code>&lt;iframe&gt;</code> 标签全屏时需要在标签中添加 <code>allowfullscreen</code> 属性</p>
+<p>很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。</p>
 </blockquote>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="JavaScript"/>
+<!-- more -->
+<h2> CSS 深色模式 (Dark Mode)</h2>
+<p>在<code>:root</code>根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下:</p>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p><strong><code>:root</code></strong> 这个 CSS 伪类匹配文档树的根元素。对于 HTML 来说，<strong><code>:root</code></strong> 表示 <code>&lt;html&gt;</code>元素，除了优先级更高之外，与 <code>html</code> 选择器相同。</p>
+</blockquote>
+<p>如果希望在样式表中使用这些变量，可以这样做</p>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样，如果你想改变你的主题颜色，所需要做的就是修改你定义的变量，所有使用这个变量的样式都会被更新。</p>
+<p>现在我们需要定义一组新的变量，这些变量将在调用CSS深色模式时使用。对我来说，深色模式的变量是这样的:</p>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 添加深色模式自动响应</h2>
+<p>现在我们定义了两组变量。剩下要做的一件事就是将<code>prefers-color-scheme</code>媒体查询添加到我们的深色模式变量中。</p>
+<p>使用您的深色模式变量并在外层添加<code>@media</code>查询</p>
+<div class="language-css line-numbers-mode" data-ext="css"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme" target="_blank" rel="noopener noreferrer"><code>prefers-color-scheme</code>文档</a></p>
+</blockquote>
+<p>这是真的! 如果有人正在使用一个深色模式的系统主题，并访问你的网站，将自动切换到深色模式。</p>
+<blockquote>
+<p>如果你的电脑系统不支持深色模式，可以使用手机测试，先把手机的系统主题调到深色模式，再打开你的网站。</p>
+</blockquote>
+<h2> JS判断深色模式</h2>
+<p>如果你的需求需要js来判断系统是否处于深色模式，可以这样做：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/matchMedia" target="_blank" rel="noopener noreferrer"><code>matchMedia</code></a>方法返回一个<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaQueryList" target="_blank" rel="noopener noreferrer"><code>MediaQueryList</code></a>对象，该对象具有属性<code>matches</code>、<code>media</code>，具有方法<code>addListener</code>、<code>removeListener</code>。</p>
+</blockquote>
+<p><code>addListener</code>接收一个<code>MediaQueryList</code>对象作为参数。<br>
+为深色模式添加监听器，以响应系统切换到或切换出深色模式：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 结论</h2>
+<p>我们不仅可以在布局方面响应不同尺寸屏幕，还可以按系统主题响应深色模式。我相信你的深夜访客，或者那些喜欢深色模式的人，会感谢你的。</p>
+]]></content>
+    <category term="CSS"/>
     <published>2023-01-11T09:12:15.000Z</published>
   </entry>
   <entry>
@@ -4986,9 +4953,9 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
 <p>offsetTop / offsetLeft ( 元素与父级 定位元素/table/td/th/body 的距离 )</p>
 <p>clientTop / clientLeft ( 元素边框宽度 )</p>
 <p>scrollTop / scrollLeft ( 元素滚动距离 )</p>
-<p>window.scrollY / window.scrollX ( 文档/页面 滚动距离 )
+<p>window.scrollY / window.scrollX ( 文档/页面 滚动距离 )<br>
 window.pageYOffset / window.pageXOffset ( 另一种写法 -跨浏览器兼容- )</p>
-<p>window.screenTop / window.screenLeft ( 浏览器边界到操作系统桌面的距离 )
+<p>window.screenTop / window.screenLeft ( 浏览器边界到操作系统桌面的距离 )<br>
 window.screenY / window.screenX ( 另一种写法 )</p>
 <p>---------------- / ---------------</p>
 <p>offsetWidth / offsetHeight ( 元素的布局宽高度 -整数-)</p>
@@ -7747,6 +7714,40 @@ window.screenY / window.screenX ( 另一种写法 )</p>
 </ul>
 ]]></content>
     <category term="plugins"/>
+    <published>2023-01-11T09:12:15.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">无法使用 JSX，除非提供了 --jsx 标志</title>
+    <id>https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html</id>
+    <link href="https://codemake.fun/fe/javascript/question/01.%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%20JSX%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%8F%90%E4%BE%9B%E4%BA%86%20--jsx%20%E6%A0%87%E5%BF%97.html"/>
+    <updated>2023-03-17T06:41:56.000Z</updated>
+    <content type="html"><![CDATA[<!-- more -->
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="JavaScript"/>
+    <published>2023-01-11T09:12:15.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">判断是否为移动端浏览器</title>
+    <id>https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html</id>
+    <link href="https://codemake.fun/fe/javascript/tricks/01.%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8.html"/>
+    <updated>2023-01-11T09:12:15.000Z</updated>
+    <content type="html"><![CDATA[<!-- more -->
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="JavaScript"/>
+    <published>2023-01-11T09:12:15.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">网页全屏显示</title>
+    <id>https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html</id>
+    <link href="https://codemake.fun/fe/javascript/tricks/02.%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html"/>
+    <updated>2023-01-11T09:12:15.000Z</updated>
+    <summary type="text">注意， 标签全屏时需要在标签中添加 allowfullscreen 属性</summary>
+    <content type="html"><![CDATA[<!-- more -->
+<blockquote>
+<p>注意，<code>&lt;iframe&gt;</code> 标签全屏时需要在标签中添加 <code>allowfullscreen</code> 属性</p>
+</blockquote>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="JavaScript"/>
     <published>2023-01-11T09:12:15.000Z</published>
   </entry>
 </feed>

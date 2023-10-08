@@ -1,5 +1,0 @@
-import{_ as n}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,f as e}from"./app-4ebde51b.js";const t={},c=e(`<p><code>lpq</code>命令显示打印机队列。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ lpq
-Rank    Owner   Job     File<span class="token punctuation">(</span>s<span class="token punctuation">)</span>                         Total Size
-active  adnanad <span class="token number">59</span>      demo                            <span class="token number">399360</span> bytes
-1st     adnanad <span class="token number">60</span>      <span class="token punctuation">(</span>stdin<span class="token punctuation">)</span>                         <span class="token number">0</span> bytes
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),l=[c];function o(i,d){return s(),a("div",null,l)}const u=n(t,[["render",o],["__file","lpq.html.vue"]]);export{u as default};

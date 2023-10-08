@@ -1,0 +1,2 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c,f as s}from"./app-a7d5173b.js";const n={},t=s(`<p><code>cal</code>命令显示本月的日历。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">cal</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),o=[t];function l(d,i){return a(),c("div",null,o)}const m=e(n,[["render",l],["__file","cal.html.vue"]]);export{m as default};

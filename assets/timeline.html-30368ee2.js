@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as o,b as e,d as r}from"./app-a7d5173b.js";const c={},n=e("h2",{id:"时间轴测试",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#时间轴测试","aria-hidden":"true"},"#"),r(" 时间轴测试")],-1),s=[n];function i(_,d){return a(),o("div",null,s)}const m=t(c,[["render",i],["__file","timeline.html.vue"]]);export{m as default};

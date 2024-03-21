@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as r,b as e,d as o}from"./app-a7d5173b.js";const s={},c=e("h2",{id:"收藏测试",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#收藏测试","aria-hidden":"true"},"#"),o(" 收藏测试")],-1),n=[c];function _(d,i){return a(),r("div",null,n)}const f=t(s,[["render",_],["__file","star.html.vue"]]);export{f as default};

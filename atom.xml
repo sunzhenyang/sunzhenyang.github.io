@@ -5,7 +5,7 @@
   <subtitle>今日事，今日毕！</subtitle>
   <icon>https://codemake.fun/assets/icon/logo.png</icon>
   <logo>https://codemake.fun/banner.jpeg</logo>
-  <updated>2024-03-21T07:45:04.220Z</updated>
+  <updated>2024-03-28T00:45:50.991Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://codemake.fun/atom.xml"/>
   <link rel="alternate" href="https://codemake.fun/"/>
@@ -22,7 +22,18 @@
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/01.%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/01.%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">JVM Java 虚拟机，全称：Java Virtual Machine JVM 是 Java 平台无关性实现的关键 JRE Java 运行时环境，全称：Java Runtime Environment 包括 Java 虚拟机(JVM)、Java 核心类库和支持文件 和 JDK 的区别 如果只需要运行 Java 程序, 下载并安装 JRE 即可 如果要...</summary>
+    <summary type="text">JVM
+
+Java 虚拟机，全称：Java Virtual Machine
+JVM 是 Java 平台无关性实现的关键
+
+JRE
+
+Java 运行时环境，全称：Java Runtime Environment
+包括 Java 虚拟机(JVM)、Java 核心类库和支持文件
+和 JDK 的区别
+
+如果只需要运行 Java 程序, 下载并安装 JRE 即可...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>JVM</h2>
 <ul>
@@ -110,7 +121,32 @@ javac HelloWorld.java
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/02.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/02.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">分类 基本数据类型 数值型 整数类型 byte：字节型 short：短整型 int：整型 long：长整型，以大写的或小写的（L/l）结尾，未加 L 被视为 int 浮点类型 float：单精度浮点型，以大写的或小写的（F/f）结尾 double：双精度浮点型，浮点型字面值默认为 double 类型 字符型(char) 布尔型(boolean) 引用数...</summary>
+    <summary type="text">分类
+
+
+
+基本数据类型
+
+数值型
+
+整数类型
+
+byte：字节型
+short：短整型
+int：整型
+long：长整型，以大写的或小写的（L/l）结尾，未加 L 被视为 int
+
+
+浮点类型
+
+float：单精度浮点型，以大写的或小写的（F/f）结尾
+double：双精度浮点型，浮点型字面值默认为 double 类型
+
+
+
+
+字符型(char)
+布尔型...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>分类</h2>
 <figure><img src="https://cdn.jsdelivr.net/gh/sunzhenyang/blog-img/img/image-20210317115821602.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
@@ -170,7 +206,28 @@ javac HelloWorld.java
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/03.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/03.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">标识符 命名规则 可以由字母、数字、下划线和美元符($)组成 不能以数字开头 严格区分大小写 不能是 Java 关键字和保留字（ goto、const ） 不能包含空格 命名最好有意义，能反映出其作用 关键字 变量 变量没有默认值，只初始化之前使用会报错 同一个作用域内不可声明两个同名变量 命名规则 满足标识符命名规则 符合驼峰命名法规范 尽量简单，做...</summary>
+    <summary type="text">标识符
+命名规则
+
+可以由字母、数字、下划线和美元符($)组成
+不能以数字开头
+严格区分大小写
+不能是 Java 关键字和保留字（ goto、const ）
+不能包含空格
+命名最好有意义，能反映出其作用
+
+关键字
+
+变量
+
+变量没有默认值，只初始化之前使用会报错
+同一个作用域内不可声明两个同名变量
+
+命名规则
+
+满足标识符命名规则
+符合驼峰命名法规范
+...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>标识符</h2>
 <h3>命名规则</h3>
@@ -194,7 +251,19 @@ javac HelloWorld.java
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/04.%E8%BF%90%E7%AE%97%E7%AC%A6.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/04.%E8%BF%90%E7%AE%97%E7%AC%A6.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">表达式由运算符和操作数组成 按操作数个数运算符可分为：单目运算符、双目运算符、三目运算符 分类 算术运算符：+ - * / %（取余） ++（自增） --（自减） 除法运算时，当分子分母都是整型时，结果为整除后的结果（舍弃小数点后的）。如果需要保留小数点后的内容，则需要分子或分母必须有一个为浮点型 赋值运算符：= 复合赋值运算符：+= -= *= /=...</summary>
+    <summary type="text">表达式由运算符和操作数组成
+按操作数个数运算符可分为：单目运算符、双目运算符、三目运算符
+
+分类
+
+算术运算符：+   -   *   /   %（取余）   ++（自增）   --（自减）
+
+除法运算时，当分子分母都是整型时，结果为整除后的结果（舍弃小数点后的）。如果需要保留小数点后的内容，则需要分子或分母必须有一个为浮点型
+
+
+赋值运算符：=
+
+复...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>表达式由运算符和操作数组成</li>
@@ -247,7 +316,23 @@ javac HelloWorld.java
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/05.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/05.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">选择结构 循环结构 break ：跳出当前循环或 switch 结构 continue：跳出本次循环 while 适用于不知道循环次数，只知道满足某个条件继续执行或结束执行时使用 循环变量必须先初始化 循环变量的值必须被改变（否则会死循环） do while 适用于不知道循环次数，只知道满足某个条件继续执行或结束执行，并且循环肯定执行一次时使用 for...</summary>
+    <summary type="text">选择结构
+循环结构
+
+break ：跳出当前循环或 switch 结构
+continue：跳出本次循环
+
+while
+
+适用于不知道循环次数，只知道满足某个条件继续执行或结束执行时使用
+
+
+循环变量必须先初始化
+循环变量的值必须被改变（否则会死循环）
+
+do while
+
+适用于不知道循环次数，只知道满足某个条件继续执行或结束执行，并且循环肯定执行一次...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>选择结构</h2>
 <div class="language-java" data-ext="java" data-title="java"><pre class="language-java"><code><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
@@ -346,7 +431,30 @@ javac HelloWorld.java
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E7%BB%84.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E7%BB%84.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">相同类型 的数据按顺序组成的一种 引用数据类型 声明 两种声明方式均可 创建 创建时，长度必须指定 会在内存中开辟连续的存储空间 数组名是一个对象，指向数组的第一个元素 先声明后创建 声明时创建 初始化 声明的同时给数组赋值 使用 默认值 冒泡排序 由小到大排列</summary>
+    <summary type="text">相同类型 的数据按顺序组成的一种 引用数据类型
+
+声明
+
+两种声明方式均可
+
+创建
+
+创建时，长度必须指定
+会在内存中开辟连续的存储空间
+数组名是一个对象，指向数组的第一个元素
+
+先声明后创建
+声明时创建
+初始化
+
+声明的同时给数组赋值
+
+使用
+默认值
+
+冒泡排序
+
+由小到大排列</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p><code>相同类型</code> 的数据按顺序组成的一种 <code>引用数据类型</code></p>
@@ -417,7 +525,25 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/07.%E6%96%B9%E6%B3%95.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/07.%E6%96%B9%E6%B3%95.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">方法是用来解决一类问题的代码的有序组合，是一个功能模块 语法格式：访问修饰符 返回类型 方法名(参数列表){ 方法体 } main：特殊的方法，程序执行的入口 访问修饰符 方法允许被访问的权限范围，分类如下，详细描述在 面向对象 - 封装 笔记文件里 不写修饰符 public：公开的 protected：受保护的 private：私有的 分类 根据方法...</summary>
+    <summary type="text">方法是用来解决一类问题的代码的有序组合，是一个功能模块
+
+
+
+语法格式：访问修饰符 返回类型 方法名(参数列表){ 方法体 }
+
+
+main：特殊的方法，程序执行的入口
+
+
+访问修饰符
+
+方法允许被访问的权限范围，分类如下，详细描述在 面向对象 - 封装 笔记文件里
+
+
+不写修饰符
+public：公开的
+protected：受保护的
+private：私...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>方法是用来解决一类问题的代码的有序组合，是一个功能模块</p>
@@ -554,7 +680,17 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/08.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/08.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">类和对象 类是模子，确定对象将会拥有的特征（属性）和行为（方法），是对象的类型 对象是类的实例表现，是特定类型的数据，声明对象在 栈 中，实例化对象在 堆 中 一个 Java 文件中可以存在多个类，多个接口，但是只能存在一个 public 修饰的类或接口，且此时文件名需要与 public 修饰的类或者接口同名 包 命名规范 由英文小写字母组成 创建包：...</summary>
+    <summary type="text">类和对象
+
+类是模子，确定对象将会拥有的特征（属性）和行为（方法），是对象的类型
+对象是类的实例表现，是特定类型的数据，声明对象在 栈 中，实例化对象在 堆 中
+一个 Java 文件中可以存在多个类，多个接口，但是只能存在一个 public 修饰的类或接口，且此时文件名需要与 public 修饰的类或者接口同名
+
+包
+命名规范
+
+由英文小写字母组成
+创...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>类和对象</h2>
 <ul>
@@ -592,7 +728,18 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/09.%E5%B0%81%E8%A3%85.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/09.%E5%B0%81%E8%A3%85.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">将类的某些信息隐藏在类内部，不允许外部程序直接访问 特点 隐藏对象的信息，留出访问的接口，只能通过规定的方法访问和操作数据 隐藏类的实例细节，方便修改和实现 访问修饰符 private：私有的，只允许在本类中进行访问 默认：允许在当前类、同包子类/同包非子类访问，跨包子类/跨包非子类不允许访问 protected：受保护的， 允许在本类、同包子类/同包...</summary>
+    <summary type="text">将类的某些信息隐藏在类内部，不允许外部程序直接访问
+
+特点
+
+隐藏对象的信息，留出访问的接口，只能通过规定的方法访问和操作数据
+隐藏类的实例细节，方便修改和实现
+
+访问修饰符
+
+private：私有的，只允许在本类中进行访问
+默认：允许在当前类、同包子类/同包非子类访问，跨包子类/跨包非子类不允许访问
+protected：受保护的， 允许在本类、同包子...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>将类的某些信息隐藏在类内部，不允许外部程序直接访问</p>
@@ -620,7 +767,15 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/10.%E7%BB%A7%E6%89%BF.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/10.%E7%BB%A7%E6%89%BF.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但不能选择性的继承父类 子类会继承父类所有 public 类型的实例变量和方法，但不会继承父类所有的 private 类型变量和方法 初始化顺序 父类静态成员 &amp;gt; 子类静态成员 &amp;gt; 父类对象构造 &amp;gt; 子类对象构造...</summary>
+    <summary type="text">一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但不能选择性的继承父类
+
+
+子类会继承父类所有 public 类型的实例变量和方法，但不会继承父类所有的 private 类型变量和方法
+
+初始化顺序
+
+
+父类静态成员 &amp;gt; 子类静态成员 &amp;gt; 父类对象构造 &amp;gt; 子...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一种类与类之间的关系，使用已存在的类的定义作为基础建立新类，新类（子类、派生类）的定义可以增加新的数据或新的功能，也可以用父类（基类）的功能，但<strong>不能选择性的继承父类</strong></p>
@@ -766,7 +921,21 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/11.%E5%A4%9A%E6%80%81.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/11.%E5%A4%9A%E6%80%81.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">多态：允许不同类的对象对同一消息做出不同的响应 可以借由向上转型和动态绑定机制完成 向上转型实现了将子类对象向上转型为父类类型 动态绑定机制能识别出对象转型前的类型，从而自动调用该类的方法 分类 编译时多态：又称设计时多态，通过方法重载实现 运行时多态：程序运行时动态决定调用哪个方法，Java 中指的多态一般指的就是运行时多态 必要条件 满足继承关系 ...</summary>
+    <summary type="text">多态：允许不同类的对象对同一消息做出不同的响应
+
+
+可以借由向上转型和动态绑定机制完成
+向上转型实现了将子类对象向上转型为父类类型
+动态绑定机制能识别出对象转型前的类型，从而自动调用该类的方法
+
+分类
+
+编译时多态：又称设计时多态，通过方法重载实现
+运行时多态：程序运行时动态决定调用哪个方法，Java 中指的多态一般指的就是运行时多态
+
+必要条件
+
+满...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>多态：允许不同类的对象对同一消息做出不同的响应</p>
@@ -879,7 +1048,24 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/12.%E6%8E%A5%E5%8F%A3.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/12.%E6%8E%A5%E5%8F%A3.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">解决多重继承问题，但又不会产生致命方块的问题 基本概念 接口定义了某一批类所需要遵守的规范 定义：public interface test(){} 接口不关心这些类的内部数据，也不关心这些类里的方法的实现细节，它之规定这些类里必须提供某些方法 实现类必须实现接口中所有方法，未全部实现则需将类变为抽象类 调用：import 包名.* 或 import ...</summary>
+    <summary type="text">解决多重继承问题，但又不会产生致命方块的问题
+
+基本概念
+
+
+接口定义了某一批类所需要遵守的规范
+
+定义：public interface test(){}
+
+
+
+接口不关心这些类的内部数据，也不关心这些类里的方法的实现细节，它之规定这些类里必须提供某些方法
+
+
+实现类必须实现接口中所有方法，未全部实现则需将类变为抽象类
+
+
+调用：import 包名....</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>解决多重继承问题，但又不会产生致命方块的问题</p>
@@ -998,7 +1184,16 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/13.%E6%9E%9A%E4%B8%BE.html</id>
     <link href="https://codemake.fun/notes/java/Java%E5%9F%BA%E7%A1%80/13.%E6%9E%9A%E4%B8%BE.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">枚举 是一些常量值的集合，以 enum 关键字定义，可以声明在类的内部，也可以声明到独立的类中，但不能定义在方法内 优点 写错单词会有提示，减少代码中的 bug 语义明了，增加代码可读性 写法</summary>
+    <summary type="text">枚举
+
+是一些常量值的集合，以 enum 关键字定义，可以声明在类的内部，也可以声明到独立的类中，但不能定义在方法内
+
+优点
+
+写错单词会有提示，减少代码中的 bug
+语义明了，增加代码可读性
+
+写法</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>枚举</h2>
 <blockquote>
@@ -1044,7 +1239,31 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/14.%E5%BC%82%E5%B8%B8.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/14.%E5%BC%82%E5%B8%B8.html"/>
     <updated>2023-04-06T08:47:48.000Z</updated>
-    <summary type="text">异常本质上是程序上的错误，在程序运行过程中，意外发生的情况，背离我们程序本身的意图的表现，都可以理解为异常 分类 编译时异常 括号配对 语句分号 关键字错误 等等 运行时异常 使用空的对象引用调用方法 数组访问时下标越界 算术运算时除数为 0 类型转换时无法正常转型 等等 Throwable 异常根类 Error 程序无法处理的错误，表示运行应用程序中...</summary>
+    <summary type="text">异常本质上是程序上的错误，在程序运行过程中，意外发生的情况，背离我们程序本身的意图的表现，都可以理解为异常
+
+分类
+编译时异常
+
+括号配对
+语句分号
+关键字错误
+等等
+
+运行时异常
+
+使用空的对象引用调用方法
+数组访问时下标越界
+算术运算时除数为 0
+类型转换时无法正常转型
+等等
+
+Throwable
+
+异常根类
+
+Error
+
+程序无法处理的错误，表...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>异常本质上是程序上的错误，在程序运行过程中，意外发生的情况，背离我们程序本身的意图的表现，都可以理解为异常</p>
@@ -1343,7 +1562,30 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/15.%E5%8C%85%E8%A3%85%E7%B1%BB.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/15.%E5%8C%85%E8%A3%85%E7%B1%BB.html"/>
     <updated>2023-04-10T02:53:20.000Z</updated>
-    <summary type="text">类型特点 不允许被继承，没有子类 包装类是引用类型，拥有方法和属性 基本数据类型只包含数值信息 存储方式 包装类型对象实例化，借由 new 在堆空间进行空间分配，对应栈空间中存储地址引用 基本数据类型变量对应栈空间中存储的是具体数据值 初始值 包装类的对象为初始化时，初始值均为 null 基本数据类型有各自的默认初始值 装箱 基本数据类型转换为包装类的...</summary>
+    <summary type="text">类型特点
+
+不允许被继承，没有子类
+包装类是引用类型，拥有方法和属性
+基本数据类型只包含数值信息
+
+
+存储方式
+
+包装类型对象实例化，借由 new 在堆空间进行空间分配，对应栈空间中存储地址引用
+基本数据类型变量对应栈空间中存储的是具体数据值
+
+
+初始值
+
+包装类的对象为初始化时，初始值均为 null
+基本数据类型有各自的默认初始值
+
+
+
+
+装箱
+
+基...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>类型特点
@@ -1377,7 +1619,14 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/16.%E5%AD%97%E7%AC%A6%E4%B8%B2.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/16.%E5%AD%97%E7%AC%A6%E4%B8%B2.html"/>
     <updated>2023-04-10T07:30:25.000Z</updated>
-    <summary type="text">String：具有不可变性 对象一旦被创建，则不能修改，是不可变的 所谓修改其实是创建了新的对象，所指向的内存空间不变 StringBuilder：可变，当频繁操作字符串时，建议使用 StringBuffer：和 StringBuilder 基本一致，StringBuffer 是线程安全的，StringBuilder 则没有，所以 StringBuil...</summary>
+    <summary type="text">String：具有不可变性
+
+对象一旦被创建，则不能修改，是不可变的
+所谓修改其实是创建了新的对象，所指向的内存空间不变
+
+
+StringBuilder：可变，当频繁操作字符串时，建议使用
+StringBuffer：和 StringBuilder 基本一致，StringBuffer 是线程安全的，StringBuilder 则没有，所以 StringB...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li><code>String</code>：具有不可变性
@@ -1410,7 +1659,32 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/17.%E9%9B%86%E5%90%88.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/17.%E9%9B%86%E5%90%88.html"/>
     <updated>2023-04-19T08:42:23.000Z</updated>
-    <summary type="text">Java 中的集合是工具类，可以存储任意数量的具有共同属性的对象 应用场景 无法预测存储数据的数量 同时存储有一对一关系的数据 需要进行数据的增删 解决数据重复问题 集合框架 Collection 存储类的对象 子接口及实现类 List：数据有序，允许重复 ArrayList LinkedList Queue：数据有序，允许重复 LinkedList ...</summary>
+    <summary type="text">Java 中的集合是工具类，可以存储任意数量的具有共同属性的对象
+
+
+应用场景
+
+无法预测存储数据的数量
+同时存储有一对一关系的数据
+需要进行数据的增删
+解决数据重复问题
+
+集合框架
+Collection
+
+存储类的对象
+
+
+子接口及实现类
+
+List：数据有序，允许重复
+
+ArrayList
+LinkedList
+
+
+Queue：数据有序，允许重复
+...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>Java 中的集合是工具类，可以存储任意数量的具有共同属性的对象</p>
@@ -1701,7 +1975,23 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/18.%E6%B3%9B%E5%9E%8B.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/18.%E6%B3%9B%E5%9E%8B.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">在 Java 中增加泛型之前，泛型程序设计使用继承来实现 坏处 需要强制类型转换 可向集合中添加任意类型的对象，存在风险 使用 多态与泛型 变量声明的类型必须匹配传递给实际对象的类型（前后尖括号类型必须一致）</summary>
+    <summary type="text">在 Java 中增加泛型之前，泛型程序设计使用继承来实现
+
+坏处
+
+需要强制类型转换
+可向集合中添加任意类型的对象，存在风险
+
+
+
+
+
+使用
+
+
+多态与泛型
+
+变量声明的类型必须匹配传递给实际对象的类型（前后尖括号类型必须一致）</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>
@@ -1735,7 +2025,12 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/999.%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/999.%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">Scanner 接收控制台输入内容 其他</summary>
+    <summary type="text">Scanner
+
+接收控制台输入内容
+
+
+其他</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>Scanner</h2>
 <blockquote>
@@ -1752,7 +2047,25 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">JDK8 开始支持，用来让程序编写更优雅 可以简洁的实现匿名内部类与函数声明与调用 基于 Lambda 提供的 stream 流式处理极大简化对集合的操作 语法格式 (参数列表) -&amp;gt; 实现语句 参数列表使用逗号分隔参数 参数类型可省略 单参数括号可省略 -&amp;gt;：Lambda 表达式操作符 实现语句单行直接写，多行用 {} 包裹 函数式编程 基于函数式接...</summary>
+    <summary type="text">JDK8 开始支持，用来让程序编写更优雅
+可以简洁的实现匿名内部类与函数声明与调用
+基于 Lambda 提供的 stream 流式处理极大简化对集合的操作
+
+语法格式
+
+(参数列表) -&amp;gt; 实现语句
+
+
+参数列表使用逗号分隔参数
+
+参数类型可省略
+单参数括号可省略
+
+
+-&amp;gt;：Lambda 表达式操作符
+实现语句单行直接写，多行用 {} 包裹
+
+函数式编...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>JDK8 开始支持，用来让程序编写更优雅</li>
@@ -1953,7 +2266,22 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/Math.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/Math.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">Math Math.random() 返回介于 0 ~ 1.0 之间的双精度浮点值 Math.abs() 返回双精度浮点数类型参数的绝对值，这个方法有覆盖的版本，因此传入整型会返回整型，传入双精度浮点数会返回双精度浮点数 Math.round() 根据参数是浮点型或双精度浮点数返回四舍五入之后的整形或长整型 Math.min() 返回两参数中较小的那一...</summary>
+    <summary type="text">Math
+Math.random()
+
+返回介于 0 ~ 1.0 之间的双精度浮点值
+
+Math.abs()
+
+返回双精度浮点数类型参数的绝对值，这个方法有覆盖的版本，因此传入整型会返回整型，传入双精度浮点数会返回双精度浮点数
+
+Math.round()
+
+根据参数是浮点型或双精度浮点数返回四舍五入之后的整形或长整型
+
+Math.min()
+
+返回两参...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>Math</h2>
 <h3>Math.random()</h3>
@@ -1985,7 +2313,12 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/md5.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/md5.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">MD5 Commons-Codec 是 Apache 提供的编码/解码组件 通过 Commons-Codec 可轻易生产源数据的 MD5 摘要 官网：https://commons.apache.org/proper/commons-codec/ MD5 摘要方法：String md5 = DigestUtils.md5Hex(源数据)</summary>
+    <summary type="text">MD5
+
+Commons-Codec 是 Apache 提供的编码/解码组件
+通过 Commons-Codec 可轻易生产源数据的 MD5 摘要
+官网：https://commons.apache.org/proper/commons-codec/
+MD5 摘要方法：String md5 = DigestUtils.md5Hex(源数据)</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>MD5</h2>
 <ul>
@@ -2004,7 +2337,18 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">内存管理 堆栈 栈 每个方法（Method）在执行时，都会创建一个栈帧，用于存储局部变量表、操作数、动态链接、方法出口信息等 栈中所存储，多用于保存局部信息的值，比如：方法中的基本数据类型定义的变量、对象的引用（也称为对象实例）等。当局部作用范围结束时，站内信息立即自动释放。 当存储内容是由基本数据类型（byte、short、long、double、c...</summary>
+    <summary type="text">内存管理
+堆栈
+栈
+
+每个方法（Method）在执行时，都会创建一个栈帧，用于存储局部变量表、操作数、动态链接、方法出口信息等
+
+
+
+栈中所存储，多用于保存局部信息的值，比如：方法中的基本数据类型定义的变量、对象的引用（也称为对象实例）等。当局部作用范围结束时，站内信息立即自动释放。
+
+
+当存储内容是由基本数据类型（byte、short、long、do...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>内存管理</h2>
 <h3>堆栈</h3>
@@ -2039,7 +2383,21 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E5%8F%8D%E5%B0%84.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E5%8F%8D%E5%B0%84.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">反射（Reflect） 是在 运行时 动态访问类与对象的技术 在 JDK1.2 版本后的高级特性，隶属于 java.lang.reflect 创建对象的实际从编译的时候延迟到程序运行时 大多数 Java 框架都基于反射实现参数配置、动态注入等特性 核心类 Class 描述 JVM 代表类和接口的类 Class 对象具体包含了某个特定类的结构信息 通过 ...</summary>
+    <summary type="text">反射（Reflect）
+
+是在 运行时 动态访问类与对象的技术
+
+
+在 JDK1.2 版本后的高级特性，隶属于 java.lang.reflect
+创建对象的实际从编译的时候延迟到程序运行时
+大多数 Java 框架都基于反射实现参数配置、动态注入等特性
+
+核心类
+Class
+描述
+
+JVM 代表类和接口的类
+Class 对象具体包含了某个特定类的结构信...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>反射（Reflect）</h2>
 <blockquote>
@@ -2096,7 +2454,11 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">正则表达式 字符匹配 | 表达式 | 说明 | | :-------------------------- | ------------------------------------ | ------------------ | | A | 精准匹配单个字符 | | x | y | 允许出现的两个字符 | | [xyz] | 字符集合，允许出现集合内...</summary>
+    <summary type="text">正则表达式
+字符匹配
+| 表达式                      | 说明                                 |
+| :-------------------------- | ------------------------------------ | ------------------ |
+| A     ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>正则表达式</h2>
 <h3>字符匹配</h3>
@@ -2111,7 +2473,25 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E6%B3%A8%E8%A7%A3.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E6%B3%A8%E8%A7%A3.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">说明 可以声明包、类、属性、方法、局部变量、方法参数等的前面 用来对这些元素进行说明、注释 按运行机制分类 源码注解：只在源码阶段保留，在编译阶段会被丢弃 @Override：标注重写父类方法 编译时注解：在编译时期保留，在加载 class 文件时会被丢弃 @NotNull：空值检查 运行时注解：在运行阶段还起作用，甚至会影响运行逻辑的注解 @Auto...</summary>
+    <summary type="text">说明
+
+可以声明包、类、属性、方法、局部变量、方法参数等的前面
+用来对这些元素进行说明、注释
+
+
+按运行机制分类
+
+源码注解：只在源码阶段保留，在编译阶段会被丢弃
+
+@Override：标注重写父类方法
+
+
+编译时注解：在编译时期保留，在加载 class 文件时会被丢弃
+
+@NotNull：空值检查
+
+
+运行时注解：在运行阶段还起作用，甚至会影响运行逻...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>说明</h2>
 <blockquote>
@@ -2162,7 +2542,27 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/notes/java/Java%E8%BF%9B%E9%98%B6/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-04-01T04:40:50.000Z</updated>
-    <summary type="text">设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结 创建型模式 关注对象创建过程的模式 单例模式 目的：使得类的一个对象成为该类系统中的唯一实例 定义：一个类有且仅有一个实例，并且自行实例化向整个系统提供 要点 某个类只能有一个实例 必须自行创建实例 必须自行向整个系统提供这个实例 实现 只提供私有的构造方法 含有一个该类的静...</summary>
+    <summary type="text">设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结
+
+创建型模式
+
+关注对象创建过程的模式
+
+
+单例模式
+
+目的：使得类的一个对象成为该类系统中的唯一实例
+定义：一个类有且仅有一个实例，并且自行实例化向整个系统提供
+
+要点
+
+某个类只能有一个实例
+必须自行创建实例
+必须自行向整个系统提供这个实例
+
+实现
+
+只提供私有的构造方法...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>设计模式指的是一套被反复使用的、多数人知晓的、经过分类编目的代码设计经验总结</p>
@@ -2268,7 +2668,16 @@ arr<span class="token punctuation">[</span><span class="token number">0</span><s
     <id>https://codemake.fun/notes/other/200.UML%E7%B1%BB%E5%9B%BE.html</id>
     <link href="https://codemake.fun/notes/other/200.UML%E7%B1%BB%E5%9B%BE.html"/>
     <updated>2023-03-31T09:28:18.000Z</updated>
-    <summary type="text">UML 类图 UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言 可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系 类的层次结构代表类与类之间的关系，类的关系有很多种，包括...</summary>
+    <summary type="text">UML 类图
+
+UML(Unifled Modeling Language)，又称统一建模语言或标准建模语言，是一种支持模型化和软件系统开发的图形化语言
+
+
+
+可以为软件开发的所有阶段提供模型化和可视化支持，可用于多种类型软件系统开发建模的各个阶段，通常我们会结合 UML 图例来表示类与类之间的各种关系
+
+
+类的层次结构代表类与类之间的关系，类的关系有...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>UML 类图</h2>
 <blockquote>
@@ -2601,7 +3010,25 @@ nvm node_mirror https://npmmirror.com/mirrors/node/
     <id>https://codemake.fun/notes/other/100.encode.html</id>
     <link href="https://codemake.fun/notes/other/100.encode.html"/>
     <updated>2023-03-29T09:12:00.000Z</updated>
-    <summary type="text">码点 某个字符规定对应的数值 码元 Javascript 字符串的 length 属性返回的是 码元 对于 UTF-16 来说，一个码元是 16bit（两个字节） 对于 UTF-32 来说，一个码元是 32bit（四个字节） JavaScript 内部，字符以 UTF-16（字符用两个字节或四个字节表示的格式储存） 码点范围介于 0-65535 的字符...</summary>
+    <summary type="text">码点
+
+某个字符规定对应的数值
+
+码元
+
+Javascript 字符串的 length 属性返回的是 码元
+
+
+
+对于 UTF-16 来说，一个码元是 16bit（两个字节）
+
+
+对于 UTF-32 来说，一个码元是 32bit（四个字节）
+
+
+JavaScript 内部，字符以 UTF-16（字符用两个字节或四个字节表示的格式储存）
+
+码点范围介于 ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>码点</h2>
 <blockquote>
@@ -2674,7 +3101,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/css/knowledge/08.pointer-events.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/08.pointer-events.html"/>
     <updated>2023-02-26T13:11:37.000Z</updated>
-    <summary type="text">【文档地址】 【参考文章】 常用值 实例 穿透遮挡物 当点击 span 元素时，并不会触发 span 元素的点击事件，而是穿透到下方的 input 元素上并使其聚焦 防止连续提交 为按钮设置 pointer-events: none 防止连续提交</summary>
+    <summary type="text">【文档地址】 【参考文章】
+
+常用值
+
+实例
+穿透遮挡物
+
+当点击 span 元素时，并不会触发 span 元素的点击事件，而是穿透到下方的 input 元素上并使其聚焦
+
+
+防止连续提交
+
+为按钮设置  pointer-events: none 防止连续提交</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events" target="_blank" rel="noopener noreferrer">【文档地址】</a> <a href="https://juejin.cn/post/7171765872900440078" target="_blank" rel="noopener noreferrer">【参考文章】</a></p>
@@ -2691,7 +3130,34 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-02-21T06:41:21.000Z</updated>
-    <summary type="text">数据类型 分类 基本数据类型： Undefined、 Null、 Boolean、 Number、 BigInt String、 Symbol 复杂数据类型： Object Undefined 类型 Undefined 类型只有一个值，即 undefined 使用 var 声明变量但未初始化时，值为 undefined 对未声明的变量 typeof 时...</summary>
+    <summary type="text">数据类型
+
+分类
+
+基本数据类型：
+
+Undefined、
+Null、
+Boolean、
+Number、
+BigInt
+String、
+Symbol
+
+
+复杂数据类型：
+
+Object
+
+
+
+
+
+Undefined 类型
+
+Undefined 类型只有一个值，即 undefined
+使用 var 声明变量但未初始化时，值为 undefined
+对未声明...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>数据类型</h2>
 <ul>
@@ -2752,7 +3218,18 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/05.new%E5%91%BD%E4%BB%A4%E5%8E%9F%E7%90%86.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/05.new%E5%91%BD%E4%BB%A4%E5%8E%9F%E7%90%86.html"/>
     <updated>2023-02-22T06:55:56.000Z</updated>
-    <summary type="text">运行过程 使用 new 命令时，它后面的函数依次执行下面的步骤： 创建一个空对象，作为将要返回的实例对象。 将这个空对象的原型，指向构造函数的 prototype 属性。 将这个空对象赋值给函数内部的 this 关键字。 开始执行构造函数内部的代码。 如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。 代码实现</summary>
+    <summary type="text">运行过程
+
+使用 new 命令时，它后面的函数依次执行下面的步骤：
+
+
+创建一个空对象，作为将要返回的实例对象。
+将这个空对象的原型，指向构造函数的 prototype 属性。
+将这个空对象赋值给函数内部的 this 关键字。
+开始执行构造函数内部的代码。
+如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。
+
+代码实现</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>运行过程</h2>
 <blockquote>
@@ -2817,7 +3294,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/01.%E7%9B%92%E6%A8%A1%E5%9E%8B.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">背景 场景：假如项目布局使用的是自适应的布局方式，div 给出的宽度是百分比的形式，即占窗口宽度的 100%，但边框border和内边距padding是用像素来表示的，此时就会造成一个问题是 div 总宽度超过窗口宽度。为了避免这种问题，可以使用属性box-sizing:border-box来把 标准盒模型 变成 代替(IE)盒模型 ，从而使 div ...</summary>
+    <summary type="text">背景
+
+场景：假如项目布局使用的是自适应的布局方式，div 给出的宽度是百分比的形式，即占窗口宽度的 100%，但边框border和内边距padding是用像素来表示的，此时就会造成一个问题是 div 总宽度超过窗口宽度。为了避免这种问题，可以使用属性box-sizing:border-box来把 标准盒模型 变成 代替(IE)盒模型 ，从而使 div...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>背景</h2>
 <blockquote>
@@ -2883,7 +3362,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/css/knowledge/02.Flex%20%E5%B8%83%E5%B1%80.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/02.Flex%20%E5%B8%83%E5%B1%80.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">简介 display: flex： 意为&amp;quot;弹性布局&amp;quot;，用来为盒状模型提供最大的灵活性 display: inline-flex： 创建一个弹性容器，行为类似于 inline-block 元素。它会跟其他行内元素一起流式排列，但不会自动增长到 100%的 宽度。内部的弹性子元素跟使用 display: flex 创建的 Flexbox 里的弹性子元素行为...</summary>
+    <summary type="text">简介
+
+display: flex： 意为&amp;quot;弹性布局&amp;quot;，用来为盒状模型提供最大的灵活性
+
+
+display: inline-flex： 创建一个弹性容器，行为类似于 inline-block 元素。它会跟其他行内元素一起流式排列，但不会自动增长到 100%的 宽度。内部的弹性子元素跟使用 display: flex 创建的 Flexbox 里的弹性子元...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>简介</h2>
 <blockquote>
@@ -3082,7 +3566,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/css/knowledge/03.%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/03.%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">从 CSS 代码存放位置看权重优先级： 内嵌样式 &amp;gt; 内部样式表 &amp;gt; 外联样式表 从样式选择器看权重优先级： important &amp;gt; 内嵌样式 &amp;gt; ID &amp;gt; 类 | 伪类 | 属性选择 &amp;gt; 标签 | 伪对象 &amp;gt; 继承 &amp;gt; 通配符。 important 的权重为 1,0,0,0 ID 的权重为 0,1,0,0 类的权重为 0,0,1,0 伪类的权重为 0...</summary>
+    <summary type="text">从 CSS 代码存放位置看权重优先级：
+
+内嵌样式 &amp;gt; 内部样式表 &amp;gt; 外联样式表
+
+
+从样式选择器看权重优先级：
+
+important &amp;gt; 内嵌样式 &amp;gt; ID &amp;gt; 类 | 伪类 | 属性选择 &amp;gt; 标签 | 伪对象 &amp;gt; 继承 &amp;gt; 通配符。
+
+important 的权重为 1,0,0,0
+ID 的权重为 0,1,0,0
+类的权重为 0,0,1,0
+伪类的...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>从 CSS 代码存放位置看权重优先级：
@@ -3116,7 +3612,23 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/css/knowledge/04.%E8%BF%87%E6%B8%A1.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/04.%E8%BF%87%E6%B8%A1.html"/>
     <updated>2023-06-07T06:40:35.000Z</updated>
-    <summary type="text">html 结构 先给元素设置 transition 过渡，指定样式和时间，这里设置 all 全部样式都采用 0.3s 的过渡 鼠标经过元素测试效果 宽度过渡 1 背景色过渡 1 按贝塞尔曲线设置的过渡 123 # 贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)通过调整贝塞尔曲线可以设置出多种动画效果，比如反弹效果等 X轴的范围是0~1，...</summary>
+    <summary type="text">html 结构
+
+先给元素设置 transition 过渡，指定样式和时间，这里设置 all 全部样式都采用 0.3s 的过渡
+
+鼠标经过元素测试效果
+
+
+  宽度过渡
+  
+   1
+背景色过渡
+  
+   1
+按贝塞尔曲线设置的过渡
+  
+   123
+# 贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)通过调整贝塞尔曲线可以设置出多...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <div class="language-css" data-ext="css" data-title="css"><pre class="language-css"><code><span class="token comment">/*  关键字：过渡属性  所需时间   速度曲线   何时开始  */</span>
 <span class="token selector">.transition</span> <span class="token punctuation">{</span>
@@ -3167,7 +3679,13 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/knowledge/05.%E5%8A%A8%E7%94%BB.html</id>
     <link href="https://codemake.fun/fe/css/knowledge/05.%E5%8A%A8%E7%94%BB.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">属性 transition-property：要设置动画的所有属性（多个属性逗号隔开，全部属性使用 all） transition-duration：动画持续的时间，单位为秒 s 或者毫秒 ms transition-timing-function：时间函数，表示动画进程在时间上的分布，默认值 ease linear、ease、ease-in、ease...</summary>
+    <summary type="text">属性
+
+transition-property：要设置动画的所有属性（多个属性逗号隔开，全部属性使用 all）
+transition-duration：动画持续的时间，单位为秒 s 或者毫秒 ms
+transition-timing-function：时间函数，表示动画进程在时间上的分布，默认值 ease
+
+linear、ease、ease-in、ea...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>属性</h2>
 <ul>
@@ -3245,7 +3763,11 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/knowledge/06.Stylus%20%E6%B7%B7%E5%85%A5(Mixins).html</id>
     <link href="https://codemake.fun/fe/css/knowledge/06.Stylus%20%E6%B7%B7%E5%85%A5(Mixins).html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">混入(Mixins) 混入和函数定义方法一致，但是应用却大相径庭。 一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。 下面有定义的border-radius(n)方法，其却作为一个mixin（如，作为状态调用，而非表达式）调用。 当border-radius()选择器...</summary>
+    <summary type="text">混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。
+下面有定义的border-radius(n)方法，其却作为一个mixin（如，作为状态调用，而非表达式）调用。
+当border-radius()选择器...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>混入(Mixins)</h2>
 <p>混入和函数定义方法一致，但是应用却大相径庭。</p>
@@ -3323,7 +3845,9 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html</id>
     <link href="https://codemake.fun/fe/css/tricks/01.%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">多行文本超出省略号 底部阴影 页面变灰色</summary>
+    <summary type="text">多行文本超出省略号
+底部阴影
+页面变灰色</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>多行文本超出省略号</h2>
 <div class="language-css" data-ext="css" data-title="css"><pre class="language-css"><code><span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
@@ -3569,7 +4093,13 @@ X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
     <id>https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/fe/css/tricks/03.%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E8%87%AA%E5%8A%A8%E5%93%8D%E5%BA%94CSS%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。 CSS 深色模式 (Dark Mode) 在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下: :root...</summary>
+    <summary type="text">很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。
+
+
+CSS 深色模式 (Dark Mode)
+在:root根元素中定义变量来设置主题的颜色。我建议你也这样做，因为这样会使这个过程容易得多。我定义的变量如下:
+
+:r...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。</p>
@@ -3651,7 +4181,12 @@ window<span class="token punctuation">.</span><span class="token function">match
     <id>https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/02.%E5%A4%9A%E7%A7%8D%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">结论 ES5 标准中性能最高的数组去重方法为: ES6 标准中性能最高的数组去重方法为: 代码既简洁性能又相对高的去重方法为： 测试模板 测试代码</summary>
+    <summary type="text">结论
+ES5 标准中性能最高的数组去重方法为:
+ES6 标准中性能最高的数组去重方法为:
+代码既简洁性能又相对高的去重方法为：
+测试模板
+测试代码</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>结论</h2>
 <p>ES5 标准中性能最高的数组去重方法为:</p>
@@ -3775,7 +4310,20 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/03.%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/03.%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案 区别 防抖函数：只会在高频事件结束后 n 毫秒调用一次函数 节流函数：会在高频事件触发过程当中每隔 n 毫秒调用一次函数。 防抖函数 触发高频事件后一段时间（wait）只会执行一次函数，如果指定时间（wait）内高频事件再次被触发，则重新计算时间。 节流函数 规定在一个单位时间内...</summary>
+    <summary type="text">防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案
+
+区别
+
+防抖函数：只会在高频事件结束后 n 毫秒调用一次函数
+节流函数：会在高频事件触发过程当中每隔 n 毫秒调用一次函数。
+
+防抖函数
+
+触发高频事件后一段时间（wait）只会执行一次函数，如果指定时间（wait）内高频事件再次被触发，则重新计算时间。
+
+节流函数
+
+规定在一...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>防抖和节流的作用都是在高频事件中防止函数被多次调用，是一种性能优化的方案</p>
@@ -3915,7 +4463,14 @@ content2<span class="token punctuation">.</span>onmousemove <span class="token o
     <id>https://codemake.fun/fe/javascript/knowledge/04.%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BF%AE%E6%94%B9%20URL%20%E5%8F%82%E6%95%B0.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/04.%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BF%AE%E6%94%B9%20URL%20%E5%8F%82%E6%95%B0.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">可以使用 qs库 获取 url 参数 修改 url 参数 不刷新页面修改 url 参数 https://www.cnblogs.com/wuting/p/8946927.html URL 的编码和解码 比如，UTF-8 的操作系统上，http://www.example.com/q=春节这个 URL 之中，汉字“春节”不是 URL 的合法字符，所以被浏...</summary>
+    <summary type="text">可以使用 qs库
+
+获取 url 参数
+修改 url 参数
+不刷新页面修改 url 参数
+https://www.cnblogs.com/wuting/p/8946927.html
+URL 的编码和解码
+比如，UTF-8 的操作系统上，http://www.example.com/q=春节这个 URL 之中，汉字“春节”不是 URL 的合法字符，所以被...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>可以使用 <img src="https://www.npmjs.com/package/qs" alt="qs库" loading="lazy"></p>
@@ -3976,7 +4531,20 @@ content2<span class="token punctuation">.</span>onmousemove <span class="token o
     <id>https://codemake.fun/fe/javascript/knowledge/06.for-in%20%E5%92%8C%20for-of%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/06.for-in%20%E5%92%8C%20for-of%20%E7%9A%84%E5%8C%BA%E5%88%AB.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">循环数组用 for...of，循环对象用 for...in for...in 遍历的结果是数组元素的下标 遍历对象的可枚举属性，以及对象从构造函数原型中继承的属性，对于每个不同的属性，语句都会被执行，可以用 hasOwnProperty() 去掉非自身属性 不建议使用 for...in 遍历数组，因为输出的顺序是不固定的 如果迭代的对象的变量值是 nu...</summary>
+    <summary type="text">循环数组用 for...of，循环对象用 for...in
+
+for...in
+
+遍历的结果是数组元素的下标
+
+
+遍历对象的可枚举属性，以及对象从构造函数原型中继承的属性，对于每个不同的属性，语句都会被执行，可以用 hasOwnProperty() 去掉非自身属性
+
+
+不建议使用 for...in 遍历数组，因为输出的顺序是不固定的
+
+
+如果迭代的对象...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>循环数组用 <code>for...of</code>，循环对象用 <code>for...in</code></p>
@@ -4036,7 +4604,8 @@ iterable<span class="token punctuation">.</span>foo <span class="token operator"
     <id>https://codemake.fun/fe/javascript/knowledge/07.%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/07.%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5.html"/>
     <updated>2023-02-22T08:05:47.000Z</updated>
-    <summary type="text">异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue 异步时间至少为 4ms，如果 setTimeout 传入值少于 4ms，则会被自动追加至 4ms</summary>
+    <summary type="text">异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue
+异步时间至少为 4ms，如果 setTimeout 传入值少于 4ms，则会被自动追加至 4ms</summary>
     <content type="html"><![CDATA[<!-- more -->
 <ul>
 <li>异步任务进入 Event Table，待读秒结束后 回调函数 进入 Event Queue</li>
@@ -4052,7 +4621,27 @@ iterable<span class="token punctuation">.</span>foo <span class="token operator"
     <id>https://codemake.fun/fe/javascript/knowledge/08.%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%98%9F%E5%88%97.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/08.%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%98%9F%E5%88%97.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们 浏览器遍历队列，按先后顺序 逐个处理事件 事件 onload 浏览器加载网页完毕后触发 onunload 用户关闭浏览器窗口或切换到其他网页时触发 onresize 用户调整浏览器窗口大小时触发 dragstart 用户拖曳网页中元素时触发 drop...</summary>
+    <summary type="text">浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们
+
+
+浏览器遍历队列，按先后顺序 逐个处理事件
+
+事件
+onload
+
+浏览器加载网页完毕后触发
+
+onunload
+
+用户关闭浏览器窗口或切换到其他网页时触发
+
+onresize
+
+用户调整浏览器窗口大小时触发
+
+dragstart
+
+用户拖曳网页中...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>浏览器维护着一个事件队列，在幕后，浏览器不断的从这个队列中取出事件，并调用相应的事件处理程序来处理他们</p>
@@ -4179,7 +4768,8 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/09.WebSocket%20%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/09.WebSocket%20%E4%BD%BF%E7%94%A8.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">普通 HTML 中使用 Vue 中使用</summary>
+    <summary type="text">普通 HTML 中使用
+Vue 中使用</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>普通 HTML 中使用</h2>
 <div class="language-html" data-ext="html" data-title="html"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
@@ -4319,7 +4909,16 @@ window.screenY / window.screenX ( 另一种写法 )</p>
     <id>https://codemake.fun/fe/javascript/knowledge/10.Canvas%20%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/10.Canvas%20%E4%BD%BF%E7%94%A8.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">描述 是一门使用 JavaScript 操作 Canvas 元素的技术 &amp;lt;canvas&amp;gt; 是一个行内元素块（inline-block） 一般需要在 &amp;lt;canvas&amp;gt; 元素上指定三个属性 id、width、height 默认宽度（300px），默认高度（150px） 如果在 CSS 中定义 &amp;lt;canvas&amp;gt; 的宽高，在使用 JavaScript 获取元素...</summary>
+    <summary type="text">描述
+
+是一门使用 JavaScript 操作 Canvas 元素的技术
+
+
+&amp;lt;canvas&amp;gt; 是一个行内元素块（inline-block）
+一般需要在 &amp;lt;canvas&amp;gt; 元素上指定三个属性 id、width、height
+
+默认宽度（300px），默认高度（150px）
+如果在 CSS 中定义 &amp;lt;canvas&amp;gt; 的宽高，在使用 JavaScript ...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>描述</h2>
 <blockquote>
@@ -4417,7 +5016,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/1000.%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BE%85%E5%90%88%E5%B9%B6%EF%BC%89.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/1000.%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BE%85%E5%90%88%E5%B9%B6%EF%BC%89.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">小知识点 引用独立的 JavaScript 文件时，&amp;lt;script&amp;gt; 元素不能包含任何JavaScript代码。 alert()：仅当你要停止一切并提醒用户时，才应使用它 在任何情况下，&amp;lt;/script&amp;gt; 结束标签都是必不可少的 浏览器分 两遍 读取网页:第一遍读取所有的函数定义，第二遍开始执行代码。这让你可以将函数放在文件的任何地方。 没有使用 va...</summary>
+    <summary type="text">小知识点
+
+
+引用独立的 JavaScript 文件时，&amp;lt;script&amp;gt; 元素不能包含任何JavaScript代码。
+
+
+alert()：仅当你要停止一切并提醒用户时，才应使用它
+
+
+在任何情况下，&amp;lt;/script&amp;gt; 结束标签都是必不可少的
+
+
+浏览器分 两遍 读取网页:第一遍读取所有的函数定义，第二遍开始执行代码。这让你可以将函数放在文件的任何地方。...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>小知识点</h2>
 <ul>
@@ -4583,7 +5194,23 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/11.%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E7%AC%A6.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/11.%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E7%AC%A6.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">常用操作符 一元操作符 递增操作符 前置型 ++i 后置型 i++ 递减操作符 前置型 --i 后置型 i-- 递增递减操作规则 在应用于一个包含有效数字字符的字符串时，现将其转化为十进制数字值，在执行加减 1 的操作，字符串变量变成数值变量 在应用于一个不包含有效数字字符的字符串时，将变量设置为 NaN，字符串变量变成数值变量 在应用于布尔值 fal...</summary>
+    <summary type="text">常用操作符
+一元操作符
+递增操作符
+
+前置型 ++i
+后置型 i++
+
+递减操作符
+
+前置型 --i
+后置型 i--
+
+递增递减操作规则
+
+在应用于一个包含有效数字字符的字符串时，现将其转化为十进制数字值，在执行加减 1 的操作，字符串变量变成数值变量
+在应用于一个不包含有效数字字符的字符串时，将变量设置为 NaN，字符串变量变成数值变量
+在应用于布尔...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>常用操作符</h2>
 <h3>一元操作符</h3>
@@ -4663,7 +5290,26 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/12.%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/12.%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">引用类型 引用类型的值（对象）是引用类型的一个实例 新对象是使用 new 操作符后跟一个构造函数来创建的 构造函数本身就是一个函数，只不过该函数是出于创建新对象的目的而定义的 引用类型是一种数据结构，在技术上讲是一门面向对象的语言 不具备传统面向对象语言所支持的类和接口等基本结构 Object 类型 创建 Object 实例的方法 new Object...</summary>
+    <summary type="text">引用类型
+
+引用类型的值（对象）是引用类型的一个实例
+
+新对象是使用 new 操作符后跟一个构造函数来创建的
+
+构造函数本身就是一个函数，只不过该函数是出于创建新对象的目的而定义的
+
+
+
+
+引用类型是一种数据结构，在技术上讲是一门面向对象的语言
+
+不具备传统面向对象语言所支持的类和接口等基本结构
+
+
+
+Object 类型
+
+创建 Object 实例的方...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>引用类型</h2>
 <ul>
@@ -5340,7 +5986,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/13.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/13.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">理解对象 属性类型 ECMAScript-262 第五版在定义只有内才用的特性时，描述了属性的各种特征。ECMAScript-262 定义这些特性是为了实现 JavaScript 引擎用的，因此在 JavaScript 中不能直接访问和他们。为了表示特性是内部值，该规范把他们放在了两对儿方括号中，例如 [[Enumerable]] 数据属性 [[Con...</summary>
+    <summary type="text">理解对象
+属性类型
+
+ECMAScript-262 第五版在定义只有内才用的特性时，描述了属性的各种特征。ECMAScript-262 定义这些特性是为了实现 JavaScript 引擎用的，因此在 JavaScript 中不能直接访问和他们。为了表示特性是内部值，该规范把他们放在了两对儿方括号中，例如 [[Enumerable]]
+
+数据属性
+
+[[...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>理解对象</h2>
 <h3>属性类型</h3>
@@ -5526,7 +6179,21 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/14.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/14.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
     <updated>2023-03-01T09:26:45.000Z</updated>
-    <summary type="text">设计原则 引言 设计：按照一种思路或者标准来实现功能 功能相同，可以有不同的设计方案来实现 伴随着需求增加，设计的作用才能体现出来 《UNIX/LINUX 设计哲学》准则 准则 1：小即是美 准则 2：让每个程序只做好一件事 准则 3：快速建立原型 准则 4：舍弃高效率而取可移植性 准则 5：采用纯文本来存储数据 准则 6：充分利用软件的杠杆效应（软件...</summary>
+    <summary type="text">设计原则
+引言
+
+设计：按照一种思路或者标准来实现功能
+功能相同，可以有不同的设计方案来实现
+伴随着需求增加，设计的作用才能体现出来
+
+《UNIX/LINUX 设计哲学》准则
+
+准则 1：小即是美
+准则 2：让每个程序只做好一件事
+准则 3：快速建立原型
+准则 4：舍弃高效率而取可移植性
+准则 5：采用纯文本来存储数据
+准则 6：充分利用软件的杠杆效应...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>设计原则</h2>
 <h3>引言</h3>
@@ -5700,7 +6367,28 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/knowledge/15.%E5%B8%B8%E8%A7%81%E8%80%83%E7%82%B9.html</id>
     <link href="https://codemake.fun/fe/javascript/knowledge/15.%E5%B8%B8%E8%A7%81%E8%80%83%E7%82%B9.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">问题考点 typeof 能判断哪些类型 考点：JS 变量类型 返回判断： 所有值类型 函数 引用类型（不可细分） 何时使用 === 何时使用 == 考点：强制类型装换 使用：除了 == null 之外，其他一律用 === window.onload 和 DOMContentLoaded 的区别 考点：页面渲染过程 JS 创建 10 个 a 标签，点击时...</summary>
+    <summary type="text">问题考点
+typeof 能判断哪些类型
+
+考点：JS 变量类型
+返回判断：
+
+所有值类型
+函数
+引用类型（不可细分）
+
+
+
+何时使用 === 何时使用 ==
+
+考点：强制类型装换
+使用：除了 == null 之外，其他一律用 ===
+
+window.onload 和 DOMContentLoaded 的区别
+
+考点：页面渲染过程
+
+JS 创建 10 个...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>问题考点</h2>
 <h3>typeof 能判断哪些类型</h3>
@@ -6065,7 +6753,13 @@ divEL<span class="token punctuation">.</span><span class="token function">addEve
     <id>https://codemake.fun/fe/javascript/plugins/01.Qs.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/01.Qs.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库 GitHub 引入 直接引入 导入包 简单使用</summary>
+    <summary type="text">一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库
+GitHub
+
+引入
+直接引入
+导入包
+简单使用</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个 url 参数转化 ( parse 和 stringify ) 的轻量级 JavaScript 库</p>
@@ -6107,7 +6801,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/02.Lodash.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/02.Lodash.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个一致性、模块化、高性能的 JavaScript 实用工具库 GitHub 中文文档</summary>
+    <summary type="text">一个一致性、模块化、高性能的 JavaScript 实用工具库
+GitHub 中文文档</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个一致性、模块化、高性能的 JavaScript 实用工具库</p>
@@ -6122,7 +6817,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/03.Day.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/03.Day.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个轻量的处理时间和日期的 JavaScript 库 GitHub 中文文档</summary>
+    <summary type="text">一个轻量的处理时间和日期的 JavaScript 库
+GitHub 中文文档</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个轻量的处理时间和日期的 JavaScript 库</p>
@@ -6137,7 +6833,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/04.Big.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/04.Big.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个用于任意精度十进制算术的小型快速 JavaScript 库 GitHub 官方文档</summary>
+    <summary type="text">一个用于任意精度十进制算术的小型快速 JavaScript 库
+GitHub 官方文档</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个用于任意精度十进制算术的小型快速 JavaScript 库</p>
@@ -6152,7 +6849,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/05.FileSaver.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/05.FileSaver.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一款基于 HTML5 完成文件保存的插件 GitHub</summary>
+    <summary type="text">一款基于 HTML5 完成文件保存的插件
+GitHub</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一款基于 HTML5 完成文件保存的插件</p>
@@ -6167,7 +6865,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/06.KeyboardJS.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库 GitHub</summary>
+    <summary type="text">一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库
+GitHub</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一个设置键绑定和使用组合键来设置复杂的绑定 JavaScript 库</p>
@@ -6182,7 +6881,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/07.Sortable.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/07.Sortable.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">一款功能强大的 JavaScript 拖拽库 GitHub</summary>
+    <summary type="text">一款功能强大的 JavaScript 拖拽库
+GitHub</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>一款功能强大的 JavaScript 拖拽库</p>
@@ -6197,7 +6897,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/08.Animation.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/08.Animation.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Anime 一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象 GitHub Velocity 一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate() 有相同的 API, 同时还支持彩色动画、转换、循环、画架、SVG 支持和滚动等...</summary>
+    <summary type="text">Anime
+
+一个 JavaScript 动画库，可以处理 CSS 属性，单个 CSS 转换，SVG 或任何 DOM 属性以及 JavaScript 对象
+GitHub
+
+Velocity
+
+一个高效的 Javascript 动画引擎，与 jQuery 的 $.animate() 有相同的 API, 同时还支持彩色动画、转换、循环、画架、SVG 支持和...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>Anime</h2>
 <blockquote>
@@ -6233,7 +6940,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/09.%E5%9B%BE%E5%83%8F%E7%9B%B8%E5%85%B3.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">html2canvas 一个将网页 HTML 截图为图片的 JavaScript 插件 GitHub dom-to-image 一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库 GitHub pica 一个在浏览器中调整图像大小，而不会出现像素失真，处理速度非常快的图片处理库 Git...</summary>
+    <summary type="text">html2canvas
+
+一个将网页 HTML 截图为图片的 JavaScript 插件
+GitHub
+
+dom-to-image
+
+一个可以将任意 DOM 节点转换为用 JavaScript 编写的矢量（SVG）或光栅（PNG 或 JPEG）图像的库
+GitHub
+
+pica
+
+一个在浏览器中调整图像大小，而不会出现像素失真，处理速度非常快的图片处理...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>html2canvas</h2>
 <blockquote>
@@ -6274,7 +6993,24 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/10.Scroll.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/10.Scroll.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">fullPage.js 一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代 GitHub Iscroll 一个移动端使用的轻量级滚动插件 GitHub 中文文档 WOW 一个页面向下滚动时触发动画的 JavaScript 库 GitHub Scroll Reveal 一个页面（向上火向下）滚动时触发动画的 JavaScript 库 GitHub</summary>
+    <summary type="text">fullPage.js
+
+一个可轻易创建全屏滚动网站的 js 滚动动画库, 兼容性无可替代
+GitHub
+
+Iscroll
+
+一个移动端使用的轻量级滚动插件
+GitHub 中文文档
+
+WOW
+
+一个页面向下滚动时触发动画的 JavaScript 库
+GitHub
+
+Scroll Reveal
+
+一个页面（向上火向下）滚动时触发动画的 JavaScrip...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>fullPage.js</h2>
 <blockquote>
@@ -6305,7 +7041,10 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/11.Effect.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/11.Effect.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Typed.js 一个轻松实现打字效果的 js 插件 GitHub 官方文档</summary>
+    <summary type="text">Typed.js
+
+一个轻松实现打字效果的 js 插件
+GitHub 官方文档</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>Typed.js</h2>
 <blockquote>
@@ -6321,7 +7060,26 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/12.PDF%E9%A2%84%E8%A7%88.html"/>
     <updated>2023-02-24T09:07:04.000Z</updated>
-    <summary type="text">PDF预览插件 【GitHub】 【官方文档】 下载安装 使用方式 在官方文档中下载预建版本 将文件复制到项目文件夹 直接使用(预览全部) 直接访问：http://localhost/web/viewer.html?file=pdf_url 自定义显示方式</summary>
+    <summary type="text">PDF预览插件
+【GitHub】 【官方文档】
+
+下载安装
+使用方式
+
+在官方文档中下载预建版本
+
+
+
+
+将文件复制到项目文件夹
+
+
+
+直接使用(预览全部)
+
+直接访问：http://localhost/web/viewer.html?file=pdf_url
+
+自定义显示方式</summary>
     <content type="html"><![CDATA[<!-- more -->
 <blockquote>
 <p>PDF预览插件</p>
@@ -6475,7 +7233,13 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <id>https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html</id>
     <link href="https://codemake.fun/fe/javascript/plugins/13.%E5%8A%A8%E7%94%BB%E7%9B%B8%E5%85%B3.html"/>
     <updated>2023-01-11T09:12:15.000Z</updated>
-    <summary type="text">Lottie 本文文档出处：【lottie 动画】lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After Effects 动画，并在本地进行渲染【官方文档】 【GitHub】 安装 通过一个叫 Bodymo...</summary>
+    <summary type="text">Lottie
+
+本文文档出处：【lottie 动画】lottie-web 一个适用于 Web，Android，iOS，React Native 和 Windows 的移动库可以使用 Bodymovin 解析以 JSON 格式导出的 Adobe After Effects 动画，并在本地进行渲染【官方文档】 【GitHub】
+
+安装
+
+通过一个叫 Bod...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <h2>Lottie</h2>
 <blockquote>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.8" />
-    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.31" />
+    <meta name="generator" content="VuePress 2.0.0-rc.9" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.32" />
     <style>
       html {
         background: var(--bg-color, #fff);
@@ -37,8 +37,8 @@
           s.parentNode.insertBefore(hm, s);
         })();
       </script><link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials"><meta name="theme-color" content="#096dd9"><link rel="apple-touch-icon" href="/assets/icon/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white"><link rel="mask-icon" href="/assets/icon/apple-touch-icon.png" color="#096dd9"><meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144.png"><meta name="msapplication-TileColor" content="#096dd9"><link rel="alternate" type="application/atom+xml" href="https://codemake.fun/atom.xml" title="Yang's Blog Atom Feed"><link rel="alternate" type="application/json" href="https://codemake.fun/feed.json" title="Yang's Blog JSON Feed"><link rel="alternate" type="application/rss+xml" href="https://codemake.fun/rss.xml" title="Yang's Blog RSS Feed"><title>Offline 应用 | Yang's Blog</title><meta name="description" content="Web 应用不仅可以在浏览器缓存资源文件（HTML、CSS、JS 脚本、图片等），还可以把应用本身储存到浏览器。 缓存的资源文件必须在线使用，只有先从服务器加载网页，然后才能使用本地缓存；但是，应用一旦储存，就可以离线使用。另外，用户常规性地清除浏览器缓存，并不会清除储存的应用，除非用户显式地卸载或删除它们。 为了开启离线储存，必须创建一个 manif...">
-    <link rel="preload" href="/assets/style-CD-3po_P.css" as="style"><link rel="stylesheet" href="/assets/style-CD-3po_P.css">
-    <link rel="modulepreload" href="/assets/app-BybQgHW9.js"><link rel="modulepreload" href="/assets/offline.html-CyrKkWL9.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="preload" href="/assets/style-G8xlCrY7.css" as="style"><link rel="stylesheet" href="/assets/style-G8xlCrY7.css">
+    <link rel="modulepreload" href="/assets/app-DdwQwFQ1.js"><link rel="modulepreload" href="/assets/offline.html-BWiUzO5a.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-DlAUqK2U.js">
     
   </head>
   <body>
@@ -61,6 +61,6 @@ MyApp.js
   <span class="token keyword">if</span> <span class="token punctuation">(</span>reload<span class="token punctuation">)</span> location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>脚本可以注册<code>online</code>和<code>offline</code>事件的监听函数，通过<code>navigator.onLine</code>属性，判断浏览器是否在线从而进行数据同步。</p><p>每次浏览器加载一个具有<code>manifest</code>属性的网页，浏览器就会触发一个<code>checking</code>事件，然后去加载 Manifest 文件。</p><ul><li>如果应用已经储存，并且 Manifest 文件没有变化，那么触发<code>noupdate</code>事件。</li><li>如果应用已经储存，并且 Manifest 文件有变化，那么触发<code>downloading</code>事件，浏览器重新下载所有离线资源。下载过程中，触发<code>progress</code>事件，下载结束触发<code>updateready</code>事件。</li><li>如果应用没有储存，下载结束将触发<code>cached</code>事件。</li><li>如果离线，无法检查 Manifest 文件，浏览器会触发一个<code>error</code>事件。</li><li>如果浏览器在线，而且应用已经储存，但是 Manifest 文件返回 404，浏览器触发<code>obsolete</code>事件，将储存的应用移除。</li></ul><p>所有这些事件都是可以取消的。监听函数可以返回<code>false</code>，取消这些事件的默认动作。</p><p><code>applicationCache. status</code>属性返回离线储存的状态。</p><ul><li>ApplicationCache.UNCACHED (0)<br> This application does not have a manifest attribute: it is not cached.</li><li>ApplicationCache.IDLE (1)<br> The manifest has been checked and this application is cached and up to date.</li><li>ApplicationCache.CHECKING (2)<br> The browser is checking the manifest file.</li><li>ApplicationCache.DOWNLOADING (3)<br> The browser is downloading and caching files listed in the manifest.</li><li>ApplicationCache.UPDATEREADY (4)<br> A new version of the application has been downloaded and cached.</li><li>ApplicationCache.OBSOLETE (5)<br> The manifest no longer exists and the cache will be deleted.</li></ul></div><!--[--><!----><!--]--><footer class="page-meta"><!----><div class="meta-item git-info"><div class="update-time"><span class="label">上次编辑于: </span><!----></div><div class="contributors"><span class="label">贡献者: </span><!--[--><!--[--><span class="contributor" title="email: 874530670@qq.com">sunzhenyang</span><!--]--><!--]--></div></div></footer><!----><div id="vp-comment" class="giscus-wrapper input-top" style="display:block;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100"><circle cx="28" cy="75" r="11" fill="currentColor"><animate attributeName="fill-opacity" begin="0s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></circle><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 47a28 28 0 0 1 28 28"><animate attributeName="stroke-opacity" begin="0.1s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 25a50 50 0 0 1 50 50"><animate attributeName="stroke-opacity" begin="0.2s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path></svg></div><!--[--><!----><!--]--><!--]--></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">今日事，今日毕！</div><div class="vp-copyright">Copyright by 阮一峰</div></footer></div><!--]--><!--[--><!----><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-BybQgHW9.js" defer></script>
+    <script type="module" src="/assets/app-DdwQwFQ1.js" defer></script>
   </body>
 </html>
